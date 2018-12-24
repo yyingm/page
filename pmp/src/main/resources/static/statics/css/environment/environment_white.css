@@ -1,0 +1,95 @@
+\n/*-------------------全局  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;font:14px  Helvetica, Arial, sans-serif;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+/*body{background:#212429;}*/
+/*-----------------  全局  end ---------------------*/
+
+/*-----------------  媒体查询  begin ---------------------*/
+@media all and ( max-width:1800px ){
+    .environment-conditioner-list>li{height:30px!important;}
+}
+@media all and ( max-width:1550px ){
+    /**{font-size:12px!important;}*/
+    .environment-title{font-size:16px!important;}
+    .environment-item-value{font-size:16px!important;}
+    .environment-conditioner-list{top:20%!important;}
+    .environment-conditioner-list>li,.environment-conditioner-title,.environment-conditioner-value{height:24px!important;line-height:25px!important;}
+}
+@media all and ( max-width:1450px ){
+    *{font-size:11px!important;}
+    .environment-title{font-size:14px!important;}
+    .environment-item-value{font-size:16px!important;}
+    .environment-conditioner-list{top:20%!important;}
+    .environment-conditioner-list>li,.environment-conditioner-title,.environment-conditioner-value{height:22px!important;line-height:22px!important;}
+    .environment-pencil{margin-top:3%;}
+}
+@media all and ( max-width:1350px ){
+    *{font-size:10px!important;}
+    .environment-title{font-size:14px!important;}
+    .environment-item-value{font-size:16px!important;}
+    .environment-conditioner-list{top:20%!important;}
+    .environment-conditioner-list>li,.environment-conditioner-title,.environment-conditioner-value{height:22px!important;line-height:22px!important;}
+    .environment-pencil{margin-top:3%;}
+}
+
+@media all and ( max-width:1330px ){
+    .header-box{width:1330px!important;}
+    .wrap{width:1330px!important;}
+}
+/*-----------------  媒体查询  end ---------------------*/
+
+
+/*-----------------  content  begin ---------------------*/
+.environment-con{width:91.14%;background:#ebe9e9;}
+.enviroment-num{position: absolute;top:2.3%;;left:8.5%;font-weight:bold;color:black;font-size: 14px;}
+.environment-img-wrap{width:48%;}
+.environment-img-box{position:relative;padding-top:80.85%;}
+.environment-con-img{position:absolute;top:0;left:0;width:100%;height:100%;}
+.environment-item-wrap{margin-left:2%;width:50%;padding-top:3%;}
+.environment-item-con-wrap{width:25.65%;margin-right:10%;margin-bottom:8%;}
+.environment-item-con-box{position:relative;padding-top:74.36%;}
+.environment-item-con{position:absolute;top:0;left:0;width:100%;height:100%;}
+.environment-title{color:black;font-size:20px;position:absolute;top:1%;left:22%;}
+.environment-item{width:65%;height:33px;line-height:33px;color:black;position:absolute;font-size: 14px;}
+.environment-item-temperature{top:41%;left:22%;}
+.environment-item-humidity{top:66%;left:22%;}
+.environment-item-title{width:40%;text-align:center;height:33px;line-height:33px;}
+.environment-item-value{font-size:25px;width:46%;height:33px;line-height:33px;}
+.environment-item-value-temperature{color:#ff7e00;}
+.environment-item-value-humidity{color:#ff0000;}
+.environment-status{position:absolute;top:38%;left:23%;width:53.68%;height:44.14%;}
+.environment-conditioner-box{position:relative;padding-top:152.58%;}
+.environment-conditioner-list{position:absolute;top:20%;left:3.4%;width:92.78%;height:70.95%;}
+.environment-conditioner-list>li{height:35px;line-height:30px;color:black;}
+.environment-conditioner-title{color:black;text-align:center;height:30px;line-height:30px;margin-right:2%;margin-left:2%;}
+.environment-conditioner-status{width:30px;height:14px;margin-top:5%;}
+.environment-status-red{background:#ff0000;}
+.environment-status-green{background:#00ff00;}
+.environment-conditioner-btn{cursor:pointer;border:1px solid #acacac;outline:none;background:#171717;margin-top:5%;color:#acacac;width:38px;height:18px;line-height:18px;border-radius:3px;-moz-border-radius:3px;,-webkit-border-radius:3px;behavior:url(../ie-css3.htc)}
+.environment-conditioner-btn-on{cursor:pointer;border:1px solid #acacac;outline:none;background:#16ca30;margin-top:5%;color:white;width:38px;height:18px;line-height:18px;border-radius:3px;-moz-border-radius:3px;,-webkit-border-radius:3px;behavior:url(../ie-css3.htc)}
+.environment-conditioner-value{margin-right:1%;text-align:center;color:black;height:30px;line-height:30px;}
+.environment-conditioner-input{border:1px solid #c5c5c5;width:33px;height:18px;color:black;margin-top:3%;}
+.environment-pencil{cursor:pointer;position:absolute;top:0;left:0;width:100%;height:100%;}
+.environment-pencil-wrap{width:11.29%;}
+.environment-pencil-wrap{padding-top:12%;position:relative;}
+.environment-infrared{position: absolute;top: 38%;left: 27%;width:44.68%;height: 44.14%;}
+.alerm_switch {
+    float: right;
+    padding: 3px 5px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.open{background: green;}
+.close{background: red;}
+
+/*东湖医药园*/
+.wenShiDu dt,.wenShiDu dd{color:#000;}
+#nav{background: #ddd;}
+.yyycon{background:#ebe9e9 ;}
+html{background:#ebe9e9 ;}
+.header-box{background: #c9c9c9;}
+/*-----------------  content  end ---------------------*/

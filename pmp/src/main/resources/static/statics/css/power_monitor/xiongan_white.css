@@ -1,0 +1,85 @@
+/*-----------------  全局样式  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#ddd!important;}
+/*-----------------  全局样式  end ---------------------*/
+
+
+/*-----------------  content begin ---------------------*/
+.con_left_wrap{background: #fff;}
+.con_left{background: #ddd;width:1704px;margin:23px auto 50px;padding-bottom: 50px;}
+.con_top{width:98%;height:40px;line-height: 40px;border-bottom:2px solid #c4c5c5;margin:0 auto;}
+.menu_btn{height: 40px;line-height: 40px;padding:0 8px;color:#c4c5c5;cursor:pointer;}
+.btn_selected{border-bottom:2px solid #2a84f6;color:#1961ba;}
+.con_wrap{}
+.build_wrap{width:90px;margin: 35px 50px auto 13px;}
+.build_name{width:100%;text-align: center;color:#fff;height:35px;line-height: 35px;}
+.room_box{width:1550px;}
+.room_con_wrap1{
+	width:170px;
+	margin-top:55px;
+	margin-right:50px;
+}
+.room_title{
+	background: #1961ba;
+	height:28px;
+	line-height: 28px;
+	color:#fff;
+	text-align: right;
+	padding-right:10px;
+}
+.room_title1{
+	width:160px;
+}
+.data_wrap{
+	border:1px solid #556372;
+	border-top:none;
+}
+.data_wrap1{
+	height:261px;
+	width:168px;
+}
+.ele_instrument1{
+	margin:6px auto 8px 10px;
+}
+.data_num_wrap1{
+	height:20px;
+	line-height: 20px;
+	margin-bottom: 3px;
+}
+.data_num_name1{
+	color: #6d6c6b;
+	margin-left:30px;
+	width:40px;
+}
+.data_num1{
+	color:#2fc564;
+}
+/*挂式配电箱*/
+.room_con_wrap2{
+	width:300px;
+	margin-top:55px;
+	margin-right:50px;
+}
+.room_title2{
+	width:290px;
+}
+.data_wrap2{
+	height:170px;
+	width:298px;
+}
+.data_wrap2 .ele_instrument{
+	margin:6px auto 20px 10px;
+}
+.data_num_wrap2{
+	width:149px;
+	float:left;
+	height:20px;
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+/*-----------------  content end ---------------------*/
+
+

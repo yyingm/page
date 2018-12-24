@@ -1,0 +1,26 @@
+/* CSS Document */
+*{margin:0; padding:0;}
+body{font-size:12px;width:100%; background:#f1f1f1; font-family:"Microsoft YaHei";}
+a{text-decoration:none; color:#000;}
+ul{list-style:none;}
+img{border:none;}
+input{font-family:"Microsoft YaHei";}
+
+.wrapper{ width:1140px;margin:0 auto;}
+.left{float:left;}
+.middle{float:left;margin-left:300px;}
+.right{float:right;}
+.clearfix:after{ content:".";display:block;clear:both; font-size:0; height:0; overflow:hidden;}
+.clearfix{zoom:1;}
+.red{color:#900; font-weight:bold;}
+.alpha{filter:alpha(opacity=60);-moz-opacity:0.6;-khtml-opacity:0.6;opacity:0.6;}
+.alpha1{filter:alpha(opacity=10);-moz-opacity:0.1;-khtml-opacity:0.1;opacity:0.1;}
+
+.ml{margin-left:10px;}
+.mr{margin-right:10px;}
+.mr30{margin-right:30px;}
+.mt{margin-top:10px;}
+.mb{margin-bottom:10px;}
+.mb1{margin-bottom:15px;}
+.ab{display:block;}
+.beHand{cursor:pointer;}

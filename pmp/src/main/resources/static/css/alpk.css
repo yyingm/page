@@ -1,0 +1,124 @@
+/* CSS Document */
+.alpkBoxT{position:absolute; color:#FFF;}
+.alpkBoxT1{ left:8px; top:-48px;}
+.alpkBoxT2{ left:35px; top:-48px;}
+.alpkBoxT3{ left:434px; top:-48px;}
+.alpkBoxT4{ left:80px; top:-48px;}
+.alpkBoxT5{ left:334px; top:-48px;}
+.alpkBoxT6{ left:360px; top:-48px;}
+.alpkBoxT7{ left:35px; top:-48px;}
+
+
+.alpkDataT2{ margin:5px auto; color:#FFF;}
+.alpkOCP1{left:23px; top:136px;}
+.alpkOCP2{left:45px; top:28px;}
+.alpkOCP3{left:50px; top:28px;}
+.alpkOCP4{left:46px; top:39px;}
+.alpkOCP5{left:46px; top:78px;}
+.alpkOCP6{left:47px; top:27px;}
+.alpkOCP7{left:47px; top:154px;}
+
+
+.alpkIconP1{ top:-27px; left:0px;}
+.alpkIconP2{ top:-37px; left:15px;}
+
+
+.alpkDataMB{ height:84px;}
+.alpkDataH2{height:45px;}
+.alpkDataH3{height:37px;}
+
+
+
+
+
+/*alpk3*/
+.alpk2Tem{
+	width:1500px; 
+	height:310px; 
+	background:#eee;
+	-webkit-box-shadow: 0 0 14px #888888;
+	-moz-box-shadow: 0 0 14px #888888;
+	-ms-box-shadow: 0 0 14px #888888;
+	box-shadow: 0 0 14px #888888;
+	background:#eee;
+	margin-bottom:100px;
+	}
+.alpkTabel
+	{ 
+		float:left;
+		width:410px;
+		height:200px;
+		background:#e3e3e3;
+		border-collapse:collapse;
+		font-family:Microsoft YaHei;
+		font-size:14px;
+		margin:0 45px;
+		
+	}
+
+.alpkTabel th
+	{
+		background:#15834a;
+		height:25px; 
+		line-height:25px;
+		text-align:center;
+		color:#FFF;
+		border:2px solid #FFF;
+	}
+.alpkTabel tbody td
+	{
+		height:40px; 
+		line-height:40px;
+		text-align:center;
+		font-weight:600;
+		border:2px solid #FFF;
+	}
+
+.alpk2Tit{ margin:0 auto 30px; font-size:22px; font-weight:600; padding-top:30px;}
+.alpkZT
+	{ 
+		display:block;
+		width:68px; 
+		height:20px; 
+		border-radius:10px;
+		-webkit-border-radius:10px;
+		-moz-border-radius:10px;
+		-ms-border-radius:10px;
+		background:#55e415;
+		margin:0 auto;
+	}
+
+
+/*alpk4*/
+.alpk3MB{ height:40px;}
+.alpk3T{color:#FFF; margin:10px auto;}
+
+.alpkOCP8{left:43px; top:78px;}
+.alpkOCP9{left:143px; top:82px;}
+.alpkOCP10{left:50px; top:78px;}
+.alpkOCP11{left:42px; top:78px;}
+.alpkOCP12{left:50px; top:83px;}
+.alpkOCP13{left:40px; top:78px;}
+
+.alpk_OC2{ position:absolute;}
+.alpk_OC2_P1{ top:58px; left:39px;}
+.alpk_OC2_P2{ top:58px; left:46px;}
+.alpk_OC2_P3{ top:58px; left:36px;}
+
+.alpk_OC3{ position:absolute;}
+.alpk_OC3_P1{ top:240px; left:94px;}
+.alpk_OC3_P2{ top:58px; left:46px;}
+.alpk_OC3_P3{ top:58px; left:46px;}
+
+
+
+
+
+
+
+
+
+
+
+
+

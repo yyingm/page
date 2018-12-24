@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"></meta>
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css"></link>
+<link rel="stylesheet" type="text/css" href="../css/multiple-select.css"></link>
+<link rel="stylesheet" type="text/css" href="../css/fontStyle.css"></link>
+<link rel="stylesheet" type="text/css" href="../css/fontStyleGray.css"></link>
+<link rel="stylesheet" type="text/css" href="../css/monitorFonts.css"></link>
+<link rel="stylesheet" type="text/css" href="../css/newFont/iconfont.css"></link>
+<link rel="stylesheet" type="text/css" href="../css/msg/iconfont.css"></link>
+<link rel="stylesheet" type="text/css" href="../css/report_icon/iconfont.css"></link>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<link rel="stylesheet" href="../css/all.css"></link>
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
+<script src="../js/highcharts.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/fakeLoader.css"></link>
+<script src="../js/respond.min.js"></script>
+<script type="text/javascript" src="../js/fakeLoader.js"></script>
+<script src="../js/paging.js"></script>
+<script type="text/javascript" src="../js/multiple-select.js"></script>
+<script type="text/javascript" src="../js/jquery.ez-bg-resize.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/base.css"></link>
+<link rel="stylesheet" type="text/css" href="../css/style.css"></link>
+<link rel="stylesheet" type="text/css" href="../css/dianlu.css"></link>
+<link rel="stylesheet" type="text/css" href="../css/dianlu_yby.css"></link>
+<link rel="stylesheet" type="text/css" href="../css/minHai.css"></link>
+<link rel="stylesheet" type="text/css" href="../css/lwm.css"></link>
+<link rel="stylesheet" type="text/css" href="../css/kd.css"></link>
+<link rel="stylesheet" type="text/css" href="../css/whswc.css"></link>
+<link rel="stylesheet" type="text/css" href="../css/whgc.css"></link>
+<script type="text/javascript" src="../js/jquery.md5.js"></script>
+<style>
+        *{font-size:13px;}
+        .top{width:1903px;z-index:999;}
+        .logo{width:170px;}
+        .logo img{margin:0;}
+        .nav{z-index:999;margin-top:27px;}
+        body,.dianlu1, .dianlu2{background: #212429;}
+        .content{background:none;}
+        .newDL1{padding-left:0;}
+        .topRight{display:none;}
+        .kdDT{width:40px;}
+        .lwm2Group li .whgcDw1{width:25px;}
+        .lwm2Group li span{text-align:center;}
+        #nav{height:2083px;}
+        .header-box{width:100%;padding-right: 77px;}
+        .header{width:105%}
+    </style>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        list-style:none;
+    }
+    .clear:after{content:'';display:block;clear:both;}
+    body {
+        position: relative;
+    }
+
+    .alertBox {
+        width: 910px;
+        background: white;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        position: absolute;
+        top: 200px;
+        z-index: 999;
+        border: 1px solid #a0a0a0;
+        -moz-box-shadow: 10px 10px 10px #888888; /* Firefox */
+        -webkit-box-shadow: 10px 10px 10px #888888; /* webkit */
+        box-shadow: 10px 10px 10px #888888;
+
+    }
+
+    .alertBox table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        border:none;
+    }
+
+    .alertTitle{
+        text-align: center;
+        width:118px!important;
+        border-bottom: 1px solid #a0a0a0;
+        border-right: 1px solid #a0a0a0;
+        border-top:none;
+        margin-top:-2px;
+        height:45px;
+        line-height:45px;
+        font-size:16px;
+        font-weight: 600;
+    }
+    .alertTitle:nth-last-child(1){border-right:0;}
+    .alertMes:nth-last-child(1){border-right:0;}
+    .alertMes:nth-child(1){border-left:none!important;}
+    .alertMes{
+        font-size:14px;
+        word-wrap:break-word;
+        word-break:break-all;
+        border-bottom: 1px solid #a0a0a0;
+        border-right: 1px solid #a0a0a0;
+
+    }
+
+    .alertBtn {
+        width: 100px;
+        height: 35px;
+        text-align: center;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        margin-top:30px;
+        margin-bottom:10px;
+        background:#428bca;
+        color:white;
+        margin:10px auto ;
+        margin-left:43px;
+    }
+    .alertBox table tr{text-align:center;}
+    .alertBox table td{padding:3px 6px;width:158px!important;}
+    .alert-btn-wrap{width:100%;height:50px;text-align:center;}
+    .alert-box-title{border-bottom: 1px solid #a0a0a0;line-height: 50px;font-size: 20px;font-weight: bold;height:50px;width:100%;}
+    .alertBox .tcdPageCode a{border:1px solid white;}
+
+    /*换肤的提示框*/
+   .ui-button{background:none;color:black;}
+   .ui-dialog .ui-dialog-content{padding:40px 1em 10px;height:30px;line-height: 30px;}
+   #dialog-confirm{height:30px;line-height:30px;margin-left:70px;}
+   .confirm_button{background:#0073ea;color:white!important;border:1px solid #0073ea;}
+   .ui-button .ui-icon {background-image: url(../images/ui-images/ui-icons_666666_256x240.png);
+    border:1px solid #666;}
+    .ui-button .ui-icon:hover{url(../images/ui-images/ui-icons_666666_256x240.png);background-color:none;}
+    .ui-dialog .ui-dialog-buttonpane button{border:1px solid #cac7c7;}
+    .ui-button .ui-icon {background-image: url(../images/ui-images/ui-icons_666666_256x240.png);}
+     label.ui-button{color:#ddd}
+     span.ui-button{color:#ddd}
+     button.ui-button{color:#ddd}
+     .ui-dialog .ui-dialog-buttonpane button{color:black;}
+     .ui-draggable .ui-dialog-titlebar .ui-button .ui-icon{border:none;}
+     .ui-dialog-buttonpane{background: none;}
+    
+    .companyName{position: absolute;width: 100%!important;text-align: center;margin-left: 0!important;}
+    .companyWrap{padding-top:0!important;}
+    .hbjj_logo_icon{width: 45%;height:45%;margin-left: 25%;margin-top: 5%;}
+    .alert-icon{max-width: 20px;max-height: 20px;}
+</style>
+</head>
+<body>
+
+123
+<div class="left dianlu1 newDL1" style="width:1765px;min-height:2050px;margin-top: 30px;">
+      
+
+        <div style="padding-left:120px;">
+            <div class="clearfix whgc1IE7" style="width:1644px;margin-top:60px;">
+                <div class="left hcfs4" style="position:relative; ">
+                    <div class="left jinxian2Position" style="width:200px;">
+                        
+                        <div class="clearfix">
+                            <div class="left hcfsModel1Station">
+                                
+                                <p>
+                                    <img src="../statics/images/line/whgc/whgcImg1.png"/>
+                                </p>
+                                <ul class="whswcInfor whgcHeight"><!-- <?php echo $alias[2]['alias']?> -->
+                                    <li class="save_name" style="cursor: pointer;"><span>${stringList[2]}</span><input type="text" class="up_name" name="alias" ids="a1_b3" style="display: none;cursor: pointer;"/></li>
+                                </ul>
+                                <ul class="lwm2Group whgcW2">
+                                    <li class="clearfix"><span class="kdDT-title">Ta</span><span id="a1_b3_ep" class="lwmData">55.0</span><span class="kdDT whgcDw1">°C</span></li>
+                                    <li class="clearfix"><span class="kdDT-title">Tb</span><span id="a1_b3_ep" class="lwmData">54.0</span><span class="kdDT whgcDw1">°C</span></li>
+                                    <li class="clearfix"><span class="kdDT-title">Tc</span><span id="a1_b3_ep" class="lwmData">54.5</span><span class="kdDT whgcDw1">°C</span></li>
+                                </ul>
+
+
+                                <div class="pie-chart-left clearfix mb20" style="position:relative;width:280px; height:280px; left:-63px; top:13px;">
+                                    <div class="left pie-pic" style="width:280px; height:280px;background:#212429;">
+                                        <div id="rate_a1_b1_s" class="pie_detail" style="width:280px;height:280px;"></div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                     
+                </div>
+                
+                <div class="left whswcBlock1" style="width:220px;height:960px;">
+                    <div class="whswcBlock1">
+                        <P class="minHaiLT2 kdImg1DataTit whgcT1">1AA1</P>
+                        <img class="kaidiPin1" src="../statics/images/line/whgc/whgcImg2.png" alt="" />
+                        <span id="a1_b1_kgzt3" class="OC1 cursor_pointer cursor_pointer <#if (hashMap.a1_b1_kgzt3.val =='1.00')>newDianLu1C<#else >newDianLu1O</#if> whgcOCP1"></span>
+                        
+                    </div>
+                    <ul class="whswcInfor whgcHeight"><!-- <?php echo $alias[0]['alias']?> -->
+                        <li class="save_name" style="cursor: pointer;"><span>${stringList[0]}</span><input type="text" class="up_name" name="alias" ids="a1_b1" style="display: none;cursor: pointer;"/></li>
+                    </ul>
+                    <ul class="lwm2Group whgcW2" style="margin-bottom:95px;">
+                        <li class="clearfix"><span class="kdDT-title">Ua</span><span id="a1_b1_ua" class="lwmData">${(hashMap.a1_b1_ua.val)!"0"}</span><span class="kdDT whgcDw1">V</span></li><!-- <?php echo $res_yb['a1']['b1']['a1_b1_ua']['val']?> -->
+                        <li class="clearfix"><span class="kdDT-title">Ub</span><span id="a1_b1_ub" class="lwmData">${(hashMap.a1_b1_ub.val)!"0"}</span><span class="kdDT whgcDw1">V</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Uc</span><span id="a1_b1_uc" class="lwmData">${(hashMap.a1_b1_uc.val)!"0"}</span><span class="kdDT whgcDw1">V</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Ia</span><span id="a1_b1_ia" class="lwmData">${(hashMap.a1_b1_ia.val)!"0"}</span><span class="kdDT whgcDw1">A</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Ib</span><span id="a1_b1_ib" class="lwmData">${(hashMap.a1_b1_ib.val)!"0"}</span><span class="kdDT whgcDw1">A</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Ic</span><span id="a1_b1_ic" class="lwmData">${(hashMap.a1_b1_ic.val)!"0"}</span><span class="kdDT whgcDw1">A</span></li>
+                        <li class="clearfix"><span class="kdDT-title">P</span><span id="a1_b1_p" class="lwmData">${(hashMap.a1_b1_p.val)!"0"}</span><span class="kdDT whgcDw1">W</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Q</span><span id="a1_b1_q" class="lwmData">${(hashMap.a1_b1_q.val)!"0"}</span><span class="kdDT whgcDw1">var</span></li>
+                        <li class="clearfix"><span class="kdDT-title">S</span><span id="a1_b1_s" class="lwmData">${(hashMap.a1_b1_s.val)!"0"}</span><span class="kdDT whgcDw1">VA</span></li>
+                        
+                        <li class="clearfix"><span class="kdDT-title">Ep</span><span id="a1_b1_ep" class="lwmData">${(hashMap.a1_b1_ep.val)!"0"}</span><span class="kdDT whgcDw1">kWh</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Eq</span><span id="a1_b1_eq" class="lwmData">${(hashMap.a1_b1_eq.val)!"0"}</span><span class="kdDT whgcDw1">kvarh</span></li>
+                        <li class="clearfix"><span class="kdDT-title">cosφ</span><span id="" class="lwmData">${(hashMap.a1_b1_cosq.val)!"0"}</span><span class="kdDT whgcDw1"></span></li>
+                        <li class="clearfix"><span class="kdDT-title">F</span><span id="a1_b1_f" class="lwmData">${(hashMap.a1_b1_f.val)!"0"}</span><span class="kdDT whgcDw1">Hz</span></li>
+                        <li class="clearfix"><span class="kdDT-title">负载率</span><span id="a1_b1_η" class="lwmData">${(hashMap.a1_b1_s.val?number/12500)?string("0")}</span><span class="kdDT whgcDw1">%</span></li>
+                        <li class="clearfix"><span class="kdDT-title">THD-Va</span><span id="a1_b1_g1_thd-va" class="lwmData">${(hashMap.a1_b1_g1_thd_va.val)!"0"}</span><span class="kdDT whgcDw1">%</span></li>
+                        <li class="clearfix"><span class="kdDT-title">THD-Vb</span><span id="a1_b1_g1_thd-vb" class="lwmData">${(hashMap.a1_b1_g1_thd_vb.val)!"0"}</span><span class="kdDT whgcDw1">%</span></li>
+                        <li class="clearfix"><span class="kdDT-title">THD-Vc</span><span id="a1_b1_g1_thd-vc" class="lwmData">${(hashMap.a1_b1_g1_thd_vc.val)!"0"}</span><span class="kdDT whgcDw1">%</span></li>
+                        <li class="clearfix"><span class="kdDT-title">THD-Ia</span><span id="a1_b1_g1_thd-ia" class="lwmData">${(hashMap.a1_b1_g1_thd_ia.val)!"0"}</span><span class="kdDT whgcDw1">%</span></li>
+                        <li class="clearfix"><span class="kdDT-title">THD-Ib</span><span id="a1_b1_g1_thd-ib" class="lwmData">${(hashMap.a1_b1_g1_thd_ib.val)!"0"}</span><span class="kdDT whgcDw1">%</span></li>
+                        <li class="clearfix"><span class="kdDT-title">THD-Ic</span><span id="a1_b1_g1_thd-ic" class="lwmData">${(hashMap.a1_b1_g1_thd_ic.val)!"0"}</span><span class="kdDT whgcDw1">%</span></li>
+                                                                                                                              
+                    </ul>
+                </div>
+                <div class="left whswcBlock1" style="width:200px;margin-left:-10px;">
+                    <div class="whswcBlock1">
+                        <P class="minHaiLT2 kdImg1DataTit whgcT2">1AA2</P>
+                        <img class="kaidiPin1" src="../statics/images/line/whgc/whgcImg3.png" alt="" />
+                        <span id="a1_b2_kgzt3" class="OC1 cursor_pointer cursor_pointer <#if (hashMap.a1_b2_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP2"></span>
+                        
+                    </div>
+                    <ul class="whswcInfor whgcHeight">
+                        <li class="save_name" style="cursor: pointer;"><span>${stringList[1]}</span><input type="text" class="up_name" name="alias" ids="a1_b2" style="display: none;cursor: pointer;"/></li>
+                    </ul>
+                    
+                    <ul class="lwm2Group whgcW2">
+                        <li class="clearfix"><span class="kdDT-title">Ua</span><span id="a1_b2_ua" class="lwmData">${(hashMap.a1_b2_ua.val)!"0"}</span><span class="kdDT whgcDw1">V</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Ub</span><span id="a1_b2_ub" class="lwmData">${(hashMap.a1_b2_ub.val)!"0"}</span><span class="kdDT whgcDw1">V</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Uc</span><span id="a1_b2_uc" class="lwmData">${(hashMap.a1_b2_uc.val)!"0"}</span><span class="kdDT whgcDw1">V</span></li>
+                        
+                        <li class="clearfix"><span class="kdDT-title">Ia</span><span id="a1_b2_ia" class="lwmData">${(hashMap.a1_b2_ia.val)!"0"}</span><span class="kdDT whgcDw1">A</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Ib</span><span id="a1_b2_ib" class="lwmData">${(hashMap.a1_b2_ib.val)!"0"}</span><span class="kdDT whgcDw1">A</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Ic</span><span id="a1_b2_ic" class="lwmData">${(hashMap.a1_b2_ic.val)!"0"}</span><span class="kdDT whgcDw1">A</span></li>
+                        <li class="clearfix"><span class="kdDT-title">P</span><span id="a1_b2_p" class="lwmData">${(hashMap.a1_b2_p.val)!"0"}</span><span class="kdDT whgcDw1">W</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Q</span><span id="a1_b2_q" class="lwmData">${(hashMap.a1_b2_q.val)!"0"}</span><span class="kdDT whgcDw1">var</span></li>
+                        <li class="clearfix"><span class="kdDT-title">S</span><span id="a1_b2_s" class="lwmData">${(hashMap.a1_b2_s.val)!"0"}</span><span class="kdDT whgcDw1">VA</span></li>
+                    </ul>
+                </div>
+                <div class="left whswcBlock1" style="width:200px;">
+                    <div class="whswcBlock1">
+                        <P class="minHaiLT2 kdImg1DataTit  whgcT2">1AA3</P>
+                        <img id="c7_b1_di3" class="kaidiPin1" src="../statics/images/line/whgc/<#if (hashMap.c7_b1_di3.val)! ==''>whgcImg4_new_open<#else >whgcImg4_new_close</#if>.png" alt="" />
+                        <!-- <?php echo $http://www.sl-pmp.com/;?>static/images/line/whgc/<?php echo $res_yb_tg55['c7']['b1']['c7_b1_di3']['val']?'whgcImg4_new_open':'whgcImg4_new_close';?>.png -->
+                        <span id="c7_b1_di1" class="OC1 cursor_pointer cursor_pointer <#if (hashMap.c7_b1_di1.val)?? && (hashMap.c7_b1_di1.val) ==''>newDianLu1C<#else >newDianLu1O</#if> whgcOCP2"></span>
+                        
+                    </div>
+                    <ul class="whswcInfor whgcHeight">
+                         <li class="save_name" style="cursor: pointer;"><span>${stringList[22]}</span><input type="text" class="up_name" name="alias" ids="c7_b1" style="display: none;cursor: pointer;"/></li>
+                           <!-- var ids = $(this).parent().parent().next().children().children()[1].id -->
+                    </ul>
+                    
+                    <ul class="lwm2Group whgcW2">
+                        <li class="clearfix"><span class="kdDT-title">Ua</span><span id="c7_b1_ua" class="lwmData">${(hashMap.c7_b1_ua.val)!"0"}</span><span class="kdDT whgcDw1">V</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Ub</span><span id="c7_b1_ub" class="lwmData">${(hashMap.c7_b1_ub.val)!"0"}</span><span class="kdDT whgcDw1">V</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Uc</span><span id="c7_b1_uc" class="lwmData">${(hashMap.c7_b1_uc.val)!"0"}</span><span class="kdDT whgcDw1">V</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Ia</span><span id="c7_b1_ia" class="lwmData">${(hashMap.c7_b1_ia.val)!"0"}</span><span class="kdDT whgcDw1">A</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Ib</span><span id="c7_b1_ib" class="lwmData">${(hashMap.c7_b1_ib.val)!"0"}</span><span class="kdDT whgcDw1">A</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Ic</span><span id="c7_b1_ic" class="lwmData">${(hashMap.c7_b1_ic.val)!"0"}</span><span class="kdDT whgcDw1">A</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Iaa</span><span id="c7_b1_iaa" class="lwmData">${(hashMap.c7_b1_iaa.val)!"0"}</span><span class="kdDT whgcDw1">A</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Ibb</span><span id="c7_b1_ibb" class="lwmData">${(hashMap.c7_b1_ibb.val)!"0"}</span><span class="kdDT whgcDw1">A</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Icc</span><span id="c7_b1_icc" class="lwmData">${(hashMap.c7_b1_icc.val)!"0"}</span><span class="kdDT whgcDw1">A</span></li>
+                                                                                                                    
+
+                        <li class="clearfix"><span class="kdDT-title">Va-THD</span><span id="c7_b1_thd-va" class="lwmData">${(hashMap.c7_b1_thd_va.val)!"0"}</span><span class="kdDT whgcDw1">%</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Vb-THD</span><span id="c7_b1_thd-vb" class="lwmData">${(hashMap.c7_b1_thd_vb.val)!"0"}</span><span class="kdDT whgcDw1">%</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Vc-THD</span><span id="c7_b1_thd-vc" class="lwmData">${(hashMap.c7_b1_thd_vc.val)!"0"}</span><span class="kdDT whgcDw1">%</span></li>
+                                                                                                                                              
+                        <li class="clearfix"><span class="kdDT-title">Ia-THD</span><span id="c7_b1_thd-ia" class="lwmData">${(hashMap.c7_b1_thd_ia.val)!"0"}</span><span class="kdDT whgcDw1">%</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Ib-THD</span><span id="c7_b1_thd-ib" class="lwmData">${(hashMap.c7_b1_thd_ib.val)!"0"}</span><span class="kdDT whgcDw1">%</span></li>
+                        <li class="clearfix"><span class="kdDT-title">Ic-THD</span><span id="c7_b1_thd-ic" class="lwmData">${(hashMap.c7_b1_thd_ic.val)!"0"}</span><span class="kdDT whgcDw1">%</span></li>
+                    </ul>                                                                                                  
+                </div>
+                
+                
+                <div class="left hcfs4">
+                    <div>
+                       
+                        <div class="hcfsModel2Station">
+                        	<P class="minHaiLT2 kdImg1DataTit whgcT3">1AA4</P>
+                            <img src="../statics/images/line/whgc/whgcImg5.png" alt="" />
+                            <ul class="hcfs4modelAllData hcfs4model3Data">
+                                <li class=""></li>
+                                <li class="clearfix"></li>
+                                <li class="clearfix"></li>
+                                <li class="clearfix"></li>
+                                <li class="clearfix"></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="clearfix" style=" margin-left:71px; position:relative;">
+                            <ul class="whgc_dataTit">
+                                <li class="hcfs4model2DataDT">Ua</li>
+                                <li class="hcfs4model2DataDT">Ub</li>
+                                <li class="hcfs4model2DataDT">Uc</li>
+                                <li class="hcfs4model2DataDT">Ia</li>
+                                <li class="hcfs4model2DataDT">Ib</li>
+                                <li class="hcfs4model2DataDT">Ic</li>
+                                <li class="hcfs4model2DataDT">Ep</li>
+                                <li class="hcfs4model2DataDT" style="width: 80px;margin-left: -10px;">THD-Va</li>
+                                <li class="hcfs4model2DataDT" style="width: 80px;margin-left: -10px;">THD-Vb</li>
+                                <li class="hcfs4model2DataDT" style="width: 80px;margin-left: -10px;">THD-Vc</li>
+                                <li class="hcfs4model2DataDT" style="width: 80px;margin-left: -10px;">THD-Ia</li>
+                                <li class="hcfs4model2DataDT" style="width: 80px;;margin-left: -10px;">THD-Ib</li>
+                                <li class="hcfs4model2DataDT" style="width: 80px;;margin-left: -10px;">THD-Ic</li>
+                            </ul>
+                            <div class="left hcfsModel1Station whgcW1">
+                                <dl>
+                                    <dt class="MZBtnPosition whgcH2">
+                                        <img src="../statics/images/line/whgc/whgcImg5_1.png" alt="" />
+                                        <span id="a1_b5_kgzt3" class="OC1 cursor_pointer cursor_pointer <#if (hashMap.a1_b4_di.val)?? && (hashMap.a1_b4_di.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                    </dt>
+                                    <dd class="mt">1AA4-1</dd>
+                                     <!-- <dd class="mb"></dd> -->
+                                     <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[3]}</span><input type="text" class="up_name" name="alias" style="display: none;cursor: pointer;"/></dd> 
+                                    <dd class="save_name mb" style="cursor: pointer;"><span></span><input type="text" class="up_name" name="alias" ids="a1_b4" style="display: none;cursor: pointer;"/></dd>
+                                      <!-- var ids = $(this).parent().parent().next().children().children()[1].id -->
+                                </dl>
+                                <ul class="lwm2Group whswcGroup">
+                                    <li id="a1_b4_ua" class="lwmData"><span>${(hashMap.a1_b4_ua.val)!"0"}</span></li>
+                                    <li id="a1_b4_ub" class="lwmData"><span>${(hashMap.a1_b4_ub.val)!"0"}</span></li>
+                                    <li id="a1_b4_uc" class="lwmData"><span>${(hashMap.a1_b4_uc.val)!"0"}</span></li>
+                                    <li id="a1_b4_ia" class="lwmData"><span>${(hashMap.a1_b4_ia.val)!"0"}</span></li>
+                                    <li id="a1_b4_ib" class="lwmData"><span>${(hashMap.a1_b4_ib.val)!"0"}</span></li>
+                                    <li id="a1_b4_ic" class="lwmData"><span>${(hashMap.a1_b4_ic.val)!"0"}</span></li>
+                                    <li id="a1_b4_ep" class="lwmData"><span>${(hashMap.a1_b4_ep.val)!"0"}</span></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="left hcfsModel1Station whgcW1">
+                                <dl>
+                                    <dt class="MZBtnPosition">
+                                        <img src="../statics/images/line/whgc/whgcImg5_2.png" alt="" />
+                                        <span id="a1_b5_kgzt3" class="OC1 cursor_pointer cursor_pointer <#if (hashMap.a1_b5_kgzt3.val)?? &&(hashMap.a1_b5_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                    </dt>
+                                    <dd class="mt">1AA4-2</dd>
+                                    <!-- <dd class="mb">二楼办公室照明</dd> -->
+                                    <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[4]}</span><input type="text" class="up_name" name="alias" ids="a1_b5" style="display: none;cursor: pointer;"/></dd>
+                                </dl>
+                                <ul class="lwm2Group whswcGroup">
+                                    <li id="a1_b5_ua" class="lwmData">${(hashMap.a1_b5_ua.val)!"0"}</li>
+                                    <li id="a1_b5_ub" class="lwmData">${(hashMap.a1_b5_ub.val)!"0"}</li>
+                                    <li id="a1_b5_uc" class="lwmData">${(hashMap.a1_b5_uc.val)!"0"}</li>
+                                    <li id="a1_b5_ia" class="lwmData">${(hashMap.a1_b5_ia.val)!"0"}</li>
+                                    <li id="a1_b5_ib" class="lwmData">${(hashMap.a1_b5_ib.val)!"0"}</li>
+                                    <li id="a1_b5_ic" class="lwmData">${(hashMap.a1_b5_ic.val)!"0"}</li>
+                                    <li id="a1_b5_ep" class="lwmData">${(hashMap.a1_b5_ep.val)!"0"}</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="left hcfsModel1Station whgcW1">
+                                <dl>
+                                    <dt class="MZBtnPosition">
+                                        <img src="../statics/images/line/whgc/whgcImg5_2.png" alt="" />
+                                        <span id="a1_b6_kgzt3" class="OC1 cursor_pointer cursor_pointer <#if (hashMap.a1_b6_kgzt3.val)?? && (hashMap.a1_b6_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                    </dt>
+                                    <dd class="mt">1AA4-3</dd>
+                                    <!-- <dd class="mb">一楼办公室照明</dd> -->
+                                     <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[5]}</span><input type="text" class="up_name" name="alias" ids="a1_b6" style="display: none;cursor: pointer;"/></dd>
+                                </dl>
+                                <ul class="lwm2Group whswcGroup">
+                                    <li id="a1_b6_ua" class="lwmData">${(hashMap.a1_b6_ua.val)!"0"}</li>
+                                    <li id="a1_b6_ub" class="lwmData">${(hashMap.a1_b6_ub.val)!"0"}</li>
+                                    <li id="a1_b6_uc" class="lwmData">${(hashMap.a1_b6_uc.val)!"0"}</li>
+                                    <li id="a1_b6_ia" class="lwmData">${(hashMap.a1_b6_ia.val)!"0"}</li>
+                                    <li id="a1_b6_ib" class="lwmData">${(hashMap.a1_b6_ib.val)!"0"}</li>
+                                    <li id="a1_b6_ic" class="lwmData">${(hashMap.a1_b6_ic.val)!"0"}</li>
+                                    <li id="a1_b6_ep" class="lwmData">${(hashMap.a1_b6_ep.val)!"0"}</li>
+                                </ul>
+                            </div>
+                            <div class="left hcfsModel1Station whgcW1">
+                                <dl>
+                                    <dt class="MZBtnPosition">
+                                        <img src="../statics/images/line/whgc/whgcImg5_2.png" alt="" />
+                                        <span id="a1_b7_kgzt3" class="OC1 cursor_pointer <#if (hashMap.a1_b7_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                    </dt>
+                                    <dd class="mt">1AA4-4</dd>
+                                    <!-- <dd class="mb">充电柜</dd> -->
+                                    <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[6]}</span><input type="text" class="up_name" name="alias" ids="a1_b7" style="display: none;cursor: pointer;"/></dd>
+                                </dl>
+                                <ul class="lwm2Group whswcGroup">
+                                    <li id="a1_b7_ua" class="lwmData">${(hashMap.a1_b7_ua.val)!"0"}</li>
+                                    <li id="a1_b7_ub" class="lwmData">${(hashMap.a1_b7_ub.val)!"0"}</li>
+                                    <li id="a1_b7_uc" class="lwmData">${(hashMap.a1_b7_uc.val)!"0"}</li>
+                                    <li id="a1_b7_ia" class="lwmData">${(hashMap.a1_b7_ia.val)!"0"}</li>
+                                    <li id="a1_b7_ib" class="lwmData">${(hashMap.a1_b7_ib.val)!"0"}</li>
+                                    <li id="a1_b7_ic" class="lwmData">${(hashMap.a1_b7_ic.val)!"0"}</li>
+                                    <li id="a1_b7_ep" class="lwmData">${(hashMap.a1_b7_ep.val)!"0"}</li>
+                                </ul>
+                            </div>
+                            <div class="left hcfsModel1Station whgcW1">
+                                <dl>
+                                    <dt class="MZBtnPosition">
+                                        <img src="../statics/images/line/whgc/whgcImg5_2.png" alt="" />
+                                        <span id="a1_b8_kgzt3" class="OC1 cursor_pointer <#if (hashMap.a1_b8_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                    </dt>
+                                    <dd class="mt">1AA4-5</dd>
+                                    <!-- <dd class="mb">消防泵</dd> -->
+                                    <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[7]}</span><input type="text" class="up_name" name="alias" ids="a1_b8" style="display: none;cursor: pointer;"/></dd>
+                                </dl>
+                                <ul class="lwm2Group whswcGroup">
+                                    <li id="a1_b8_ua" class="lwmData">${(hashMap.a1_b8_ua.val)!"0"}</li>
+                                    <li id="a1_b8_ub" class="lwmData">${(hashMap.a1_b8_ub.val)!"0"}</li>
+                                    <li id="a1_b8_uc" class="lwmData">${(hashMap.a1_b8_uc.val)!"0"}</li>
+                                    <li id="a1_b8_ia" class="lwmData">${(hashMap.a1_b8_ia.val)!"0"}</li>
+                                    <li id="a1_b8_ib" class="lwmData">${(hashMap.a1_b8_ib.val)!"0"}</li>
+                                    <li id="a1_b8_ic" class="lwmData">${(hashMap.a1_b8_ic.val)!"0"}</li>
+                                    <li id="a1_b8_ep" class="lwmData">${(hashMap.a1_b8_ep.val)!"0"}</li>
+                                </ul>
+                            </div>
+                            <div class="left hcfsModel1Station whgcW1">
+                                <dl>
+                                    <dt class="MZBtnPosition">
+                                        <img src="../statics/images/line/whgc/whgcImg5_3.png" alt="" />
+                                        <span id="a1_b9_kgzt3" class="OC1 cursor_pointer <#if (hashMap.a1_b9_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                    </dt>
+                                    <dd class="mt">1AA4-6</dd>
+                                    <!-- <dd class="mb">拉拔机等设备</dd> -->
+                                    <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[8]}</span><input type="text" class="up_name" name="alias" ids="a1_b9" style="display: none;cursor: pointer;"/></dd>
+                                </dl>
+                                <ul class="lwm2Group whswcGroup">
+                                    <li id="a1_b9_ua" class="lwmData">${(hashMap.a1_b9_ua.val)!"0"}</li>
+                                    <li id="a1_b9_ub" class="lwmData">${(hashMap.a1_b9_ub.val)!"0"}</li>
+                                    <li id="a1_b9_uc" class="lwmData">${(hashMap.a1_b9_uc.val)!"0"}</li>
+                                    <li id="a1_b9_ia" class="lwmData">${(hashMap.a1_b9_ia.val)!"0"}</li>
+                                    <li id="a1_b9_ib" class="lwmData">${(hashMap.a1_b9_ib.val)!"0"}</li>
+                                    <li id="a1_b9_ic" class="lwmData">${(hashMap.a1_b9_ic.val)!"0"}</li>
+                                    <li id="a1_b9_ep" class="lwmData">${(hashMap.a1_b9_ep.val)!"0"}</li>
+                                    <li id="a1_b9_g1_thd-va" class="lwmData">${(hashMap.a1_b9_g1_thd_va.val)!"0"}<span class="kdDT whgcDw1" style="float: right;margin-right: -40px;">%</span></li>
+                                    <li id="a1_b9_g1_thd-vb" class="lwmData">${(hashMap.a1_b9_g1_thd_vb.val)!"0"}<span class="kdDT whgcDw1" style="float: right;margin-right: -40px;">%</span></li>
+                                    <li id="a1_b9_g1_thd-vc" class="lwmData">${(hashMap.a1_b9_g1_thd_vc.val)!"0"}<span class="kdDT whgcDw1" style="float: right;margin-right: -40px;">%</span></li>
+                                                                                                   
+                                    <li id="a1_b9_g1_thd-ia" class="lwmData">${(hashMap.a1_b9_g1_thd_ia.val)!"0"}<span class="kdDT whgcDw1" style="float: right;margin-right: -40px;">%</span></li>
+                                    <li id="a1_b9_g1_thd-ib" class="lwmData">${(hashMap.a1_b9_g1_thd_ib.val)!"0"}<span class="kdDT whgcDw1" style="float: right;margin-right: -40px;">%</span></li>
+                                    <li id="a1_b9_g1_thd-ic" class="lwmData">${(hashMap.a1_b9_g1_thd_ic.val)!"0"}<span class="kdDT whgcDw1" style="float: right;margin-right: -40px;">%</span></li>
+                                        
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="left hcfs4" style="margin-left: -2px;"><img src="../statics/images/line/whgc/whgcImg7_01.png" alt="" /></div>
+                                
+            </div>
+            
+            
+            <div class="clearfix" style="width:1590px; margin-left:30px;">
+                <div class="left hcfs4">
+                    <div class="left">
+                        
+                        <div class="clearfix">
+                            
+                            <div>
+                                <div class="hcfsModel2Station">
+                                	<P class="minHaiLT2 kdImg1DataTit whgcT4">1AA7</P>
+                                    <img src="../statics/images/line/whgc/whgcImg6.png" alt="" />
+                                    <ul class="hcfs4modelAllData hcfs4model3Data">
+                                        <li class=""></li>
+                                        <li class="clearfix"></li>
+                                        <li class="clearfix"></li>
+                                        <li class="clearfix"></li>
+                                        <li class="clearfix"></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="clearfix" style="position:relative; margin-left:40px;">
+                                    <ul class="whgc_dataTit whgc_dataTitP2">
+                                        <li class="hcfs4model2DataDT">Ua</li>
+                                        <li class="hcfs4model2DataDT">Ub</li>
+                                        <li class="hcfs4model2DataDT">Uc</li>
+                                        <li class="hcfs4model2DataDT">Ia</li>
+                                        <li class="hcfs4model2DataDT">Ib</li>
+                                        <li class="hcfs4model2DataDT">Ic</li>
+                                        <li class="hcfs4model2DataDT">Ep</li>
+                                        <li class="hcfs4model2DataDT">P</li>
+                                        <li class="hcfs4model2DataDT">Q</li>
+                                        <li class="hcfs4model2DataDT">Cosφ</li>
+                                        <li class="hcfs4model2DataDT" style="width: 80px;margin-left: -10px;">THD-Va</li>
+                                        <li class="hcfs4model2DataDT" style="width: 80px;margin-left: -10px;">THD-Vb</li>
+                                        <li class="hcfs4model2DataDT" style="width: 80px;margin-left: -10px;">THD-Vc</li>
+                                        <li class="hcfs4model2DataDT" style="width: 80px;margin-left: -10px;">THD-Ia</li>
+                                        <li class="hcfs4model2DataDT" style="width: 80px;;margin-left: -10px;">THD-Ib</li>
+                                        <li class="hcfs4model2DataDT" style="width: 80px;;margin-left: -10px;">THD-Ic</li>
+                                    </ul>
+                                    <div class="left hcfsModel1Station whgcW1">
+                                        <dl>
+                                            <dt class="MZBtnPosition whgcH2">
+                                                <img src="../statics/images/line/whgc/whgcImg5_1.png" alt="" />
+                                                <span id="c1_b10_kgzt3" class="OC1 cursor_pointer <#if (hashMap.c1_b10_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                            </dt>
+                                            <dd class="mt">1AA7-1</dd>
+                                            <!-- <dd class="mb">备用</dd> -->
+                                            <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[9]}</span><input type="text" class="up_name" name="alias" ids="c1_b10" style="display: none;cursor: pointer;"/></dd>
+                                        </dl>
+                                        <ul class="lwm2Group whswcGroup">
+                                            <li id="c1_b10_ua" class="lwmData">${(hashMap.c1_b10_ua.val)!"0"}</li>
+                                            <li id="c1_b10_ub" class="lwmData">${(hashMap.c1_b10_ub.val)!"0"}</li>
+                                            <li id="c1_b10_uc" class="lwmData">${(hashMap.c1_b10_uc.val)!"0"}</li>
+                                            <li id="c1_b10_ia" class="lwmData">${(hashMap.c1_b10_ia.val)!"0"}</li>
+                                            <li id="c1_b10_ib" class="lwmData">${(hashMap.c1_b10_ib.val)!"0"}</li>
+                                            <li id="c1_b10_ic" class="lwmData">${(hashMap.c1_b10_ic.val)!"0"}</li>
+                                            <li id="c1_b10_ep" class="lwmData">${(hashMap.c1_b10_ep.val)!"0"}</li>
+                                            <li id="c1_b10_ib" class="lwmData">${(hashMap.c1_b10_ib.val)!"0"}</li>
+                                            <li id="c1_b10_ic" class="lwmData">${(hashMap.c1_b10_ic.val)!"0"}</li>
+                                            <li id="c1_b10_ep" class="lwmData">${(hashMap.c1_b10_ep.val)!"0"}</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="left hcfsModel1Station whgcW1">
+                                        <dl>
+                                            <dt class="MZBtnPosition">
+                                                <img src="../statics/images/line/whgc/whgcImg5_3.png" alt="" />
+                                                <span id="c1_b10_kgzt3" class="OC1 cursor_pointer <#if (hashMap.c1_b11_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                            </dt>
+                                            <dd class="mt">1AA7-2</dd>
+                                            <!-- <dd class="mb">铜牌挤压机</dd> -->
+                                            <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[22]}</span><input type="text" class="up_name" name="alias" ids="c1_b11" style="display: none;cursor: pointer;"/></dd>
+                                        </dl>
+                                        <ul class="lwm2Group whswcGroup">
+                                            <li id="c1_b11_ua" class="lwmData">${(hashMap.c1_b11_ua.val)!"0"}</li>
+                                            <li id="c1_b11_ub" class="lwmData">${(hashMap.c1_b11_ub.val)!"0"}</li>
+                                            <li id="c1_b11_uc" class="lwmData">${(hashMap.c1_b11_uc.val)!"0"}</li>
+                                            <li id="c1_b11_ia" class="lwmData">${(hashMap.c1_b11_ia.val)!"0"}</li>
+                                            <li id="c1_b11_ib" class="lwmData">${(hashMap.c1_b11_ib.val)!"0"}</li>
+                                            <li id="c1_b11_ic" class="lwmData">${(hashMap.c1_b11_ic.val)!"0"}</li>
+                                            <li id="c1_b11_ep" class="lwmData">${(hashMap.c1_b11_ep.val)!"0"}</li>
+                                            <li id="c1_b11_ib" class="lwmData">${(hashMap.c1_b11_p.val)!"0"}</li>
+                                            <li id="c1_b11_ic" class="lwmData">${(hashMap.c1_b11_q.val)!"0"}</li>
+                                            <li id="c1_b11_ep" class="lwmData">${(hashMap.c1_b11_cosq.val)!"0"}</li>
+                                            <li id="c1_b11_g1_thd-va" class="lwmData">${(hashMap.c1_b11_g1_thd_va.val)!"0"}<span class="kdDT whgcDw1" style="float: right;margin-right: -40px;">%</span></li>
+                                            <li id="c1_b11_g1_thd-vb" class="lwmData">${(hashMap.c1_b11_g1_thd_vb.val)!"0"}<span class="kdDT whgcDw1" style="float: right;margin-right: -40px;">%</span></li>
+                                            <li id="c1_b11_g1_thd-vc" class="lwmData">${(hashMap.c1_b11_g1_thd_vc.val)!"0"}<span class="kdDT whgcDw1" style="float: right;margin-right: -40px;">%</span></li>
+                                                                                                             
+                                            <li id="c1_b11_g1_thd-ia" class="lwmData">${(hashMap.c1_b11_g1_thd_ia.val)!"0"}<span class="kdDT whgcDw1" style="float: right;margin-right: -40px;">%</span></li>
+                                            <li id="c1_b11_g1_thd-ib" class="lwmData">${(hashMap.c1_b11_g1_thd_ib.val)!"0"}<span class="kdDT whgcDw1" style="float: right;margin-right: -40px;">%</span></li>
+                                            <li id="c1_b11_g1_thd-ic" class="lwmData">${(hashMap.c1_b11_g1_thd_ic.val)!"0"}<span class="kdDT whgcDw1" style="float: right;margin-right: -40px;">%</span></li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+                 
+                <div class="left hcfs4">
+                    
+                    
+                    <div>
+                        <div class="hcfsModel2Station">
+                        	<P class="minHaiLT2 kdImg1DataTit whgcT5">1AA6</P>
+                            <img src="../statics/images/line/whgc/whgcImg8.png" alt="" />
+                            
+                            <ul class="hcfs4modelAllData hcfs4model3Data">
+                                <li class=""></li>
+                                <li class="clearfix"></li>
+                                <li class="clearfix"></li>
+                                <li class="clearfix"></li>
+                                <li class="clearfix"></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="clearfix" style=" margin-left:13px; position:relative;">
+                            <ul class="whgc_dataTit">
+                                <li class="hcfs4model2DataDT">Ua</li>
+                                <li class="hcfs4model2DataDT">Ub</li>
+                                <li class="hcfs4model2DataDT">Uc</li>
+                                <li class="hcfs4model2DataDT">Ia</li>
+                                <li class="hcfs4model2DataDT">Ib</li>
+                                <li class="hcfs4model2DataDT">Ic</li>
+                                <li class="hcfs4model2DataDT">Ep</li>
+                            </ul>
+                            <div class="left hcfsModel1Station whgcW1">
+                                <dl>
+                                    <dt class="MZBtnPosition whgcH2">
+                                        <img src="../statics/images/line/whgc/whgcImg5_1.png" alt="" />
+                                        <span id="c1_b4_kz1" style="cursor:pointer;" class="OC1 switch_span <#if (hashMap.c1_b4_kz1.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                        <input type="hidden" class="switch" id="c1_b4_kz1" value="${hashMap.c1_b4_kz1.val}" />
+                                    </dt>
+                                    <dd class="mt">1AA6-1</dd>
+                                    <!-- <dd class="mb">自控演示</dd> -->
+                                    <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[15]}</span><input type="text" class="up_name" name="alias" ids="c1_b4" style="display: none;cursor: pointer;"/> </dd>
+                                </dl>
+                                <ul class="lwm2Group whswcGroup">
+                                    <li id="c1_b4_ua" class="lwmData">${(hashMap.c1_b4_ua.val)!"0"}</li>
+                                    <li id="c1_b4_ub" class="lwmData">${(hashMap.c1_b4_ub.val)!"0"}</li>
+                                    <li id="c1_b4_uc" class="lwmData">${(hashMap.c1_b4_uc.val)!"0"}</li>
+                                    <li id="c1_b4_ia" class="lwmData">${(hashMap.c1_b4_ia.val)!"0"}</li>
+                                    <li id="c1_b4_ib" class="lwmData">${(hashMap.c1_b4_ib.val)!"0"}</li>
+                                    <li id="c1_b4_ic" class="lwmData">${(hashMap.c1_b4_ic.val)!"0"}</li>
+                                    <li id="c1_b4_ep" class="lwmData">${(hashMap.c1_b4_ep.val)!"0"}</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="left hcfsModel1Station whgcW1">
+                                <dl>
+                                    <dt class="MZBtnPosition">
+                                        <img src="../statics/images/line/whgc/whgcImg5_2.png" alt="" />
+                                        <span id="c1_b5_kgzt3" class="OC1 cursor_pointer <#if (hashMap.c1_b5_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                    </dt>
+                                    <dd class="mt">1AA6-2</dd>
+                                    <!-- <dd class="mb">备用</dd> -->
+                                    <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[16]}</span><input type="text" class="up_name" name="alias" ids="c1_b5" style="display: none;cursor: pointer;"/> </dd>
+                                </dl>
+                                <ul class="lwm2Group whswcGroup">
+                                    <li id="c1_b5_ua" class="lwmData">${(hashMap.c1_b5_ua.val)!"0"}</li>
+                                    <li id="c1_b5_ub" class="lwmData">${(hashMap.c1_b5_ub.val)!"0"}</li>
+                                    <li id="c1_b5_uc" class="lwmData">${(hashMap.c1_b5_uc.val)!"0"}</li>
+                                    <li id="c1_b5_ia" class="lwmData">${(hashMap.c1_b5_ia.val)!"0"}</li>
+                                    <li id="c1_b5_ib" class="lwmData">${(hashMap.c1_b5_ib.val)!"0"}</li>
+                                    <li id="c1_b5_ic" class="lwmData">${(hashMap.c1_b5_ic.val)!"0"}</li>
+                                    <li id="c1_b5_ep" class="lwmData">${(hashMap.c1_b5_ep.val)!"0"}</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="left hcfsModel1Station whgcW1">
+                                <dl>
+                                    <dt class="MZBtnPosition">
+                                        <img src="../statics/images/line/whgc/whgcImg5_2.png" alt="" />
+                                        <span id="c1_b6_kgzt3" class="OC1 cursor_pointer <#if (hashMap.c1_b6_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                    </dt>
+                                    <dd class="mt">1AA6-3</dd>
+                                    <!-- <dd class="mb">备用</dd> -->
+                                    <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[17]}</span><input type="text" class="up_name" name="alias" ids="c1_b6" style="display: none;cursor: pointer;"/> </dd>
+                                </dl>
+                                <ul class="lwm2Group whswcGroup">
+                                    <li id="c1_b6_ua" class="lwmData">${(hashMap.c1_b6_ua.val)!"0"}</li>
+                                    <li id="c1_b6_ub" class="lwmData">${(hashMap.c1_b6_ub.val)!"0"}</li>
+                                    <li id="c1_b6_uc" class="lwmData">${(hashMap.c1_b6_uc.val)!"0"}</li>
+                                    <li id="c1_b6_ia" class="lwmData">${(hashMap.c1_b6_ia.val)!"0"}</li>
+                                    <li id="c1_b6_ib" class="lwmData">${(hashMap.c1_b6_ib.val)!"0"}</li>
+                                    <li id="c1_b6_ic" class="lwmData">${(hashMap.c1_b6_ic.val)!"0"}</li>
+                                    <li id="c1_b6_ep" class="lwmData">${(hashMap.c1_b6_ep.val)!"0"}</li>
+                                </ul>
+                            </div>
+                            <div class="left hcfsModel1Station whgcW1">
+                                <dl>
+                                    <dt class="MZBtnPosition">
+                                        <img src="../statics/images/line/whgc/whgcImg5_2.png" alt="" />
+                                        <span id="c1_b7_kgzt3" class="OC1 cursor_pointer <#if (hashMap.c1_b7_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                    </dt>
+                                    <dd class="mt">1AA6-4</dd>
+                                    <!-- <dd class="mb">工厂用电AP10</dd> -->
+                                    <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[18]}</span><input type="text" class="up_name" name="alias" ids="c1_b7" style="display: none;cursor: pointer;"/> </dd>
+                                </dl>
+                                <ul class="lwm2Group whswcGroup">
+                                    <li id="c1_b7_ua" class="lwmData">${(hashMap.c1_b7_ua.val)!"0"}</li>
+                                    <li id="c1_b7_ub" class="lwmData">${(hashMap.c1_b7_ub.val)!"0"}</li>
+                                    <li id="c1_b7_uc" class="lwmData">${(hashMap.c1_b7_uc.val)!"0"}</li>
+                                    <li id="c1_b7_ia" class="lwmData">${(hashMap.c1_b7_ia.val)!"0"}</li>
+                                    <li id="c1_b7_ib" class="lwmData">${(hashMap.c1_b7_ib.val)!"0"}</li>
+                                    <li id="c1_b7_ic" class="lwmData">${(hashMap.c1_b7_ic.val)!"0"}</li>
+                                    <li id="c1_b7_ep" class="lwmData">${(hashMap.c1_b7_ep.val)!"0"}</li>
+                                </ul>
+                            </div>
+                            <div class="left hcfsModel1Station whgcW1">
+                                <dl>
+                                    <dt class="MZBtnPosition">
+                                        <img src="../statics/images/line/whgc/whgcImg5_2.png" alt="" />
+                                        <span id="c1_b8_kgzt3" class="OC1 cursor_pointer <#if (hashMap.c1_b8_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                    </dt>
+                                    <dd class="mt">1AA6-5</dd>
+                                    <!-- <dd class="mb">工厂用电AP11</dd> -->
+                                    <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[19]}</span><input type="text" class="up_name" name="alias" ids="c1_b8" style="display: none;cursor: pointer;"/> </dd>
+                                </dl>
+                                <ul class="lwm2Group whswcGroup">
+                                    <li id="c1_b8_ua" class="lwmData">${(hashMap.c1_b8_ua.val)!"0"}</li>
+                                    <li id="c1_b8_ub" class="lwmData">${(hashMap.c1_b8_ub.val)!"0"}</li>
+                                    <li id="c1_b8_uc" class="lwmData">${(hashMap.c1_b8_uc.val)!"0"}</li>
+                                    <li id="c1_b8_ia" class="lwmData">${(hashMap.c1_b8_ia.val)!"0"}</li>
+                                    <li id="c1_b8_ib" class="lwmData">${(hashMap.c1_b8_ib.val)!"0"}</li>
+                                    <li id="c1_b8_ic" class="lwmData">${(hashMap.c1_b8_ic.val)!"0"}</li>
+                                    <li id="c1_b8_ep" class="lwmData">${(hashMap.c1_b8_ep.val)!"0"}</li>
+                                </ul>
+                            </div>
+                            <div class="left hcfsModel1Station whgcW1">
+                                <dl>
+                                    <dt class="MZBtnPosition">
+                                        <img src="../statics/images/line/whgc/whgcImg5_3.png" alt="" />
+                                        <span id="c1_b9_kgzt3" class="OC1 cursor_pointer <#if (hashMap.c1_b9_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                    </dt>
+                                    <dd class="mt">1AA6-6</dd>
+                                    <!-- <dd class="mb">工厂用电AP12</dd> -->
+                                    <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[20]}</span><input type="text" class="up_name" name="alias" ids="c1_b9" style="display: none;cursor: pointer;"/> </dd>
+                                </dl>
+                                <ul class="lwm2Group whswcGroup">
+                                    <li id="c1_b9_ua" class="lwmData">${(hashMap.c1_b9_ua.val)!"0"}</li>
+                                    <li id="c1_b9_ub" class="lwmData">${(hashMap.c1_b9_ub.val)!"0"}</li>
+                                    <li id="c1_b9_uc" class="lwmData">${(hashMap.c1_b9_uc.val)!"0"}</li>
+                                    <li id="c1_b9_ia" class="lwmData">${(hashMap.c1_b9_ia.val)!"0"}</li>
+                                    <li id="c1_b9_ib" class="lwmData">${(hashMap.c1_b9_ib.val)!"0"}</li>
+                                    <li id="c1_b9_ic" class="lwmData">${(hashMap.c1_b9_ic.val)!"0"}</li>
+                                    <li id="c1_b9_ep" class="lwmData">${(hashMap.c1_b9_ep.val)!"0"}</li>                             
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="left hcfs4">
+                
+                
+                <div>
+                    <div class="hcfsModel2Station">
+                    	<P class="minHaiLT2 kdImg1DataTit whgcT5">1AA5</P>
+                        <img src="../statics/images/line/whgc/whgcImg8.png" alt="" />
+                        
+                        <ul class="hcfs4modelAllData hcfs4model3Data">
+                            <li class=""></li>
+                            <li class="clearfix"></li>
+                            <li class="clearfix"></li>
+                            <li class="clearfix"></li>
+                            <li class="clearfix"></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="clearfix" style=" margin-left:23px; position:relative;">
+                        <ul class="whgc_dataTit">
+                            <li class="hcfs4model2DataDT">Ua</li>
+                            <li class="hcfs4model2DataDT">Ub</li>
+                            <li class="hcfs4model2DataDT">Uc</li>
+                            <li class="hcfs4model2DataDT">Ia</li>
+                            <li class="hcfs4model2DataDT">Ib</li>
+                            <li class="hcfs4model2DataDT">Ic</li>
+                            <li class="hcfs4model2DataDT">Ep</li>
+                        </ul>
+                        <div class="left hcfsModel1Station whgcW1">
+                            <dl>
+                                <dt class="MZBtnPosition whgcH2">
+                                    <img src="../statics/images/line/whgc/whgcImg5_1.png" alt="" />
+                                    <span id="a1_b10_kgzt3" class="OC1 cursor_pointer <#if (hashMap.a1_b10_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                </dt>
+                                <dd class="mt">1AA5-1</dd>
+                                <!-- <dd class="mb">备用</dd> -->
+                                <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[9]}</span><input type="text" class="up_name" name="alias" ids="a1_b10" style="display: none;cursor: pointer;"/> </dd>
+                            </dl>
+                            <ul class="lwm2Group whswcGroup">
+                                <li id="a1_b10_ua" class="lwmData">${(hashMap.a1_b10_ua.val)!"0"}</li>
+                                <li id="a1_b10_ub" class="lwmData">${(hashMap.a1_b10_ub.val)!"0"}</li>
+                                <li id="a1_b10_uc" class="lwmData">${(hashMap.a1_b10_uc.val)!"0"}</li>
+                                <li id="a1_b10_ia" class="lwmData">${(hashMap.a1_b10_ia.val)!"0"}</li>
+                                <li id="a1_b10_ib" class="lwmData">${(hashMap.a1_b10_ib.val)!"0"}</li>
+                                <li id="a1_b10_ic" class="lwmData">${(hashMap.a1_b10_ic.val)!"0"}</li>
+                                <li id="a1_b10_ep" class="lwmData">${(hashMap.a1_b10_ep.val)!"0"}</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="left hcfsModel1Station whgcW1">
+                            <dl>
+                                <dt class="MZBtnPosition">
+                                    <img src="../statics/images/line/whgc/whgcImg5_2.png" alt="" />
+                                    <span id="a1_b11_kgzt3" class="OC1 cursor_pointer <#if (hashMap.a1_b11_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                </dt>
+                                <dd class="mt">1AA5-2</dd>
+                                <!-- <dd class="mb">备用</dd> -->
+                                   <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[10]}</span><input type="text" class="up_name" name="alias" ids="a1_b11" style="display: none;cursor: pointer;"/> </dd>
+                            </dl>
+                            <ul class="lwm2Group whswcGroup">
+                                <li id="a1_b11_ua" class="lwmData">${(hashMap.a1_b11_ua.val)!"0"}</li>
+                                <li id="a1_b11_ub" class="lwmData">${(hashMap.a1_b11_ub.val)!"0"}</li>
+                                <li id="a1_b11_uc" class="lwmData">${(hashMap.a1_b11_uc.val)!"0"}</li>
+                                <li id="a1_b11_ia" class="lwmData">${(hashMap.a1_b11_ia.val)!"0"}</li>
+                                <li id="a1_b11_ib" class="lwmData">${(hashMap.a1_b11_ib.val)!"0"}</li>
+                                <li id="a1_b11_ic" class="lwmData">${(hashMap.a1_b11_ic.val)!"0"}</li>
+                                <li id="a1_b11_ep" class="lwmData">${(hashMap.a1_b11_ep.val)!"0"}</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="left hcfsModel1Station whgcW1">
+                            <dl>
+                                <dt class="MZBtnPosition">
+                                    <img src="../statics/images/line/whgc/whgcImg5_2.png" alt="" />
+                                    <span id="a1_b12_kgzt3" class="OC1 cursor_pointer <#if (hashMap.a1_b12_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                </dt>
+                                <dd class="mt">1AA5-3</dd>
+                                <!-- <dd class="mb">范东平</dd> -->
+                                   <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[11]}</span><input type="text" class="up_name" name="alias" ids="a1_b12" style="display: none;cursor: pointer;"/> </dd>
+                            </dl>
+                            <ul class="lwm2Group whswcGroup">
+                                <li id="a1_b12_ua" class="lwmData">${(hashMap.a1_b12_ua.val)!"0"}</li>
+                                <li id="a1_b12_ub" class="lwmData">${(hashMap.a1_b12_ub.val)!"0"}</li>
+                                <li id="a1_b12_uc" class="lwmData">${(hashMap.a1_b12_uc.val)!"0"}</li>
+                                <li id="a1_b12_ia" class="lwmData">${(hashMap.a1_b12_ia.val)!"0"}</li>
+                                <li id="a1_b12_ib" class="lwmData">${(hashMap.a1_b12_ib.val)!"0"}</li>
+                                <li id="a1_b12_ic" class="lwmData">${(hashMap.a1_b12_ic.val)!"0"}</li>
+                                <li id="a1_b12_ep" class="lwmData">${(hashMap.a1_b12_ep.val)!"0"}</li>
+                            </ul>
+                        </div>
+                        <div class="left hcfsModel1Station whgcW1">
+                            <dl>
+                                <dt class="MZBtnPosition">
+                                    <img src="../statics/images/line/whgc/whgcImg5_2.png" alt="" />
+                                    <span id="c1_b1_kgzt3" class="OC1 cursor_pointer <#if (hashMap.c1_b1_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if>  whgcOCP3"></span>
+                                </dt>
+                                <dd class="mt">1AA5-4</dd>
+                                <!-- <dd class="mb">工厂用电AP13</dd> -->
+                                   <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[12]}</span><input type="text" class="up_name" name="alias" ids="c1_b1" style="display: none;cursor: pointer;"/> </dd>
+                            </dl>
+                            <ul class="lwm2Group whswcGroup">
+                                <li id="c1_b1_ua" class="lwmData">${(hashMap.c1_b1_ua.val)!"0"}</li>
+                                <li id="c1_b1_ub" class="lwmData">${(hashMap.c1_b1_ub.val)!"0"}</li>
+                                <li id="c1_b1_uc" class="lwmData">${(hashMap.c1_b1_uc.val)!"0"}</li>
+                                <li id="c1_b1_ia" class="lwmData">${(hashMap.c1_b1_ia.val)!"0"}</li>
+                                <li id="c1_b1_ib" class="lwmData">${(hashMap.c1_b1_ib.val)!"0"}</li>
+                                <li id="c1_b1_ic" class="lwmData">${(hashMap.c1_b1_ic.val)!"0"}</li>
+                                <li id="c1_b1_ep" class="lwmData">${(hashMap.c1_b1_ep.val)!"0"}</li>
+                            </ul>
+                        </div>
+                        <div class="left hcfsModel1Station whgcW1">
+                            <dl>
+                                <dt class="MZBtnPosition">
+                                    <img src="../statics/images/line/whgc/whgcImg5_2.png" alt="" />
+                                    <span id="c1_b2_kgzt3" class="OC1 cursor_pointer <#if (hashMap.c1_b2_kgzt3.val) =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                </dt>
+                                <dd class="mt">1AA5-5</dd>
+                                <!-- <dd class="mb">工厂用电AP14</dd> -->
+                                   <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[13]}</span><input type="text" class="up_name" name="alias" ids="c1_b2" style="display: none;cursor: pointer;"/> </dd>
+                            </dl>
+                            <ul class="lwm2Group whswcGroup">
+                                <li id="c1_b2_ua" class="lwmData">${(hashMap.c1_b2_ua.val)!"0"}</li>
+                                <li id="c1_b2_ub" class="lwmData">${(hashMap.c1_b2_ub.val)!"0"}</li>
+                                <li id="c1_b2_uc" class="lwmData">${(hashMap.c1_b2_uc.val)!"0"}</li>
+                                <li id="c1_b2_ia" class="lwmData">${(hashMap.c1_b2_ia.val)!"0"}</li>
+                                <li id="c1_b2_ib" class="lwmData">${(hashMap.c1_b2_ib.val)!"0"}</li>
+                                <li id="c1_b2_ic" class="lwmData">${(hashMap.c1_b2_ic.val)!"0"}</li>
+                                <li id="c1_b2_ep" class="lwmData">${(hashMap.c1_b2_ep.val)!"0"}</li>
+                            </ul>
+                        </div>
+                        <div class="left hcfsModel1Station whgcW1">
+                            <dl>
+                                <dt class="MZBtnPosition">
+                                    <img src="../statics/images/line/whgc/whgcImg5_3.png" alt="" />
+                                    <span id="c1_b3_kgzt3" class="OC1 cursor_pointer <#if (hashMap.c1_b3_kgzt3.val)! =='1.00'>newDianLu1C<#else >newDianLu1O</#if> whgcOCP3"></span>
+                                </dt>
+                                <dd class="mt">1AA5-6</dd>
+                                <!-- <dd class="mb">工厂用电AP15</dd> -->
+                                   <dd class="save_name mb" style="cursor: pointer;"><span>${stringList[14]}</span><input type="text" class="up_name" name="alias" ids="c1_b3" style="display: none;cursor: pointer;"/> </dd>
+                            </dl>
+                            <ul class="lwm2Group whswcGroup">
+                                <li id="c1_b3_ua" class="lwmData">${(hashMap.c1_b3_ua.val)!"0"}</li>
+                                <li id="c1_b3_ub" class="lwmData">${(hashMap.c1_b3_ub.val)!"0"}</li>
+                                <li id="c1_b3_uc" class="lwmData">${(hashMap.c1_b3_uc.val)!"0"}</li>
+                                <li id="c1_b3_ia" class="lwmData">${(hashMap.c1_b3_ia.val)!"0"}</li>
+                                <li id="c1_b3_ib" class="lwmData">${(hashMap.c1_b3_ib.val)!"0"}</li>
+                                <li id="c1_b3_ic" class="lwmData">${(hashMap.c1_b3_ic.val)!"0"}</li>
+                                <li id="c1_b3_ep" class="lwmData">${(hashMap.c1_b3_ep.val)!"0"}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+             
+                
+        </div>
+        </div>
+        </div>
+</body>
+
+<script type="application/javascript">
+
+
+//饼图  
+var ajaxrate = [{'name':'实时负载率','y':parseInt($('#a1_b1_η').text())},{'name':'剩余可支配容量比','y':parseInt(100-parseInt($('#a1_b1_η').text()))}];//负载率比值
+var options = {
+    chart: {
+        backgroundColor: 'rgba(255, 255, 255, 0)', 
+        plotBackgroundColor: null,
+        plotBackgroundImage:null,  
+        plotBorderWidth: null,
+        plotShadow: false
+    },
+    legend: { //图例设置
+        align:'center',
+        labelFormat:'{name}',
+        itemStyle:{
+            color:'#fff'
+        }
+    },
+    title: {
+        text: '进线柜负载率',
+        style:{
+            color:'#fff',
+            fontSize: '12pt',
+        }
+    },
+    credits: {
+        enabled: false
+    },
+    tooltip: {
+        pointFormat: '<b>{point.percentage:.1f}%</b> ',
+
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                color: '#fff',
+                connectorColor: '#fff',
+                formatter: function() {
+                    return Highcharts.numberFormat(this.percentage,2) +' %';
+                }
+            },
+            showInLegend: true,
+            
+        },
+    },
+    series: [{
+        type: 'pie',
+        name: '占比',
+        data: ajaxrate,            
+        colors:['#fff362','#34bd76'],
+        animation: false
+        
+    }]
+};  
+$('#rate_a1_b1_s').highcharts(options);
+
+
+//    flash();
+function flash()
+{
+    var tg = "TG10";
+    $.ajax({
+        type: 'GET',
+        url: "http://localhost:8080/pmp/getPowerData",
+        async:false,
+        success: function(data){
+            if(data){
+                var obj = eval(data);
+
+//                console.log(obj);
+
+                for(var i in obj)
+                {
+
+                   
+                    var tag_obj = $('#'+i);
+                    var tag_arr = i.split('_');
+                    if (tag_obj.attr('class')=='switch') {
+                        if (obj[i]['val'] ==1 && !tag_obj.hasClass('newDianLu1C')) {
+                            //$('#'+i).val(obj[i]['val']);
+                            $('#'+i).prev().attr('class', 'OC1 cursor_pointer newDianLu1C whgcOCP3');
+                        } else if (obj[i]['val'] ==0 && !tag_obj.hasClass('newDianLu1O')) {
+                            $('#'+i).val(obj[i]['val']);
+                            $('#'+i).prev().attr('class', 'OC1 cursor_pointer newDianLu1O whgcOCP3');
+                        }   
+                    } else if(tag_arr[2] == 'kgzt3') {
+                    /* 两个页面不一样的地方在之前用上面的这个方法刷新开关变量，在显示开关变量的下一行有个hidden的input
+                                                        这个页面你去掉了，所以没办法用之前方式，基于本页面开关变量都写kgzt3可以用这个，但是，最好和史工确认开关变量
+                                                        之前有三种 */                        
+                    	if (obj[i]['val'] ==1 && !tag_obj.hasClass('newDianLu1C')) {
+
+                            $('#'+i).attr('class', 'OC1 cursor_pointer newDianLu1C whgcOCP3');
+                        } else if (obj[i]['val'] ==0 && !tag_obj.hasClass('newDianLu1O')) {
+
+                            $('#'+i).attr('class', 'OC1 cursor_pointer newDianLu1O whgcOCP3');
+                        }   
+                    } else if(i == 'c1_b4_kz1') {
+                    /* 两个页面不一样的地方在之前用上面的这个方法刷新开关变量，在显示开关变量的下一行有个hidden的input
+                                                        这个页面你去掉了，所以没办法用之前方式，基于本页面开关变量都写kgzt3可以用这个，但是，最好和史工确认开关变量
+                                                        之前有三种 */                        
+                        if (obj[i]['val'] ==1 && !tag_obj.hasClass('newDianLu1C')) {
+
+                            $('#'+i).attr('class', 'OC1 cursor_pointer newDianLu1C whgcOCP3');
+                        } else if (obj[i]['val'] ==0 && !tag_obj.hasClass('newDianLu1O')) {
+
+                            $('#'+i).attr('class', 'OC1 cursor_pointer newDianLu1O whgcOCP3');
+                        }   
+                    } else if (i == 'c7_b1_di1') {
+                        if (obj[i]['val'] ==1 && !tag_obj.hasClass('newDianLu1C')) {
+
+                            $('#'+i).attr('class', 'OC1 cursor_pointer newDianLu1C whgcOCP2');
+                        } else if (obj[i]['val'] ==0 && !tag_obj.hasClass('newDianLu1O')) {
+
+                            $('#'+i).attr('class', 'OC1 cursor_pointer newDianLu1O whgcOCP2');
+                        }   
+                    } else if (i == 'c7_b1_di3') {
+                        if (obj[i]['val'] ==1 && tag_obj.attr('src')!= "../statics/images/line/whgc/whgcImg4_new_open.png") {
+
+                            $('#'+i).attr('src', "../statics/images/line/whgc/whgcImg4_new_open.png");
+                        } else if (obj[i]['val'] ==0 && tag_obj.attr('src')!= "../statics/images/line/whgc/whgcImg4_new_close.png") {
+
+                            $('#'+i).attr('stc', "../statics/images/line/whgc/whgcImg4_new_close.png");
+                        } 
+
+                    } else {//开关和电量
+                        old_val = tag_obj.html();
+                        if(i == 'a1_b1_s'){
+                            var rate = parseInt(((obj[i]['val']/1250000)*100).toFixed(0));
+                            var left_rate = parseInt(100-rate);
+                            if($("#a1_b1_η").text() != rate)
+                            {
+                                $("#a1_b1_η").text(rate).css('color','yellow');
+                                var datas=[{'name':'实时负载率','y':rate},{'name':'剩余可支配容量比','y':left_rate}];
+                                options.series[0].data = datas;
+                                $('#rate_a1_b1_s').highcharts(options);
+                            }
+                          
+                        }
+                        if(old_val != obj[i]['val'])
+                        {
+                            tag_obj.html(obj[i]['val']).css('color','yellow');
+                        }
+                       
+
+                    }
+                }
+            }
+        }
+    });
+}
+//flash();
+
+var interval = setInterval(function () {
+    flash();
+}, 3000);
+
+
+
+</script>
+
+
+</html>

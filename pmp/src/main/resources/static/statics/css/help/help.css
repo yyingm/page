@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+.help-right{width:91.14%;}
+#nav{background:#25292e;}
+@media all and ( max-width:840px ){
+	.header-box{width:840px!important;}
+	.wrap{width:840px!important;}
+}
+
+#help_content {
+	width:600px;
+	height:210px;
+	margin: 8% auto;
+	padding:30px 30px 30px 30px;
+	vertical-align:middle;
+	color:#fff;
+
+	font-size:18px;
+	
+	border: 3px solid #383a3f;
+   /* -moz-border-radius: 15px;      !* Gecko browsers *!
+    -webkit-border-radius: 15px;   !* Webkit browsers *!
+    border-radius:15px;            !* W3C syntax *!*/
+}

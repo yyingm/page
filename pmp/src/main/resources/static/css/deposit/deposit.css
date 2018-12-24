@@ -1,0 +1,287 @@
+/* CSS Document */
+.contentR{
+	
+}
+.mb30{ margin-bottom:30px;}
+.userPowerContainer{ 
+	position:relative;
+	
+	}
+.userPower{position:absolute;top:134px; left:48px; z-index:0; text-align:center;}
+.userPower li{
+	width:105px; 
+	height:42px; 
+	line-height:42px;
+	border-right:none; 
+	background:#25292e;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	margin-bottom:30px;
+	font-size:16px;
+	font-weight:600;
+	color:#9c9c9c;
+	cursor:pointer;
+	/*-webkit-box-shadow:
+	-3px 0 3px #2a84f6,
+	0 0 0 #fff,
+	-3px -4px 3px #2a84f6,
+	-3px 4px 3px #2a84f6;
+	 
+	-moz-box-shadow:
+	-3px 0 3px #2a84f6,
+	0 0 0 #fff,
+	-3px -4px 3px #2a84f6,
+	-3px 4px 3px #2a84f6;
+  	box-shadow:
+	-3px 0 3px #2a84f6,
+	0 0 0 #fff,
+	-3px -4px 3px #2a84f6,
+	-3px 4px 3px #2a84f6;
+	;*/
+	
+	}
+
+.userPower li a{
+	color:#47505c;
+}
+.userPower li.active{
+	width:108px; 
+	background:#2a2e34;
+	border:none;
+	-webkit-box-shadow:
+	-3px 0 3px #2a84f6,
+	0 0 0 #fff,
+	-3px -4px 3px #2a84f6,
+	-3px 4px 3px #2a84f6;
+	 
+	-moz-box-shadow:
+	-3px 0 3px #2a84f6,
+	0 0 0 #fff,
+	-3px -4px 3px #2a84f6,
+	-3px 4px 3px #2a84f6;
+  	box-shadow:
+	-3px 0 3px #2a84f6,
+	0 0 0 #fff,
+	-3px -2px 3px #2a84f6,
+	-3px 2px 3px #2a84f6;
+	;
+	color:#fff;
+	}
+.userPower li.active a{
+	color:#fff;
+}
+.containerBoxBorder{
+	color:white!important;
+	width:1500px;
+	padding-bottom: 50px;
+	/*height:950px;*/
+	background:#2a2e34;
+	border:none;
+	-webkit-box-shadow:
+	0 0 5px #2a84f6,
+	0 0 0 #2a84f6,
+	0 0 5px #2a84f6,
+	0 0 5px #2a84f6;
+	 
+	-moz-box-shadow:
+	0 0 5px #2a84f6,
+	0 0 0 #2a84f6,
+	0 0 5px #2a84f6,
+	0 0 5px #2a84f6;
+  	box-shadow:
+	0 0 5px #2a84f6,
+	0 0  0 #2a84f6,
+	0 0 5px #2a84f6,
+	0 0 5px #2a84f6;
+	margin-left:156px;
+	color:#484848;}
+.containerBoxBorder1000 {
+	height:1000px;
+}
+.containerBoxBorder p,.containerBoxBorder label{color:white;}
+.powerData{ position:absolute; color:#999; width:70px; text-align:center;}
+.powerData1{ top:144px; left:36px; z-index:9;}
+.powerData2{top:144px; left:213px; z-index:9;}
+
+.powerOneBox{
+	padding-left:36px;
+	padding-right:40px;
+	}
+	
+.userPowerQuery{font-size:16px; color:#333;}
+.userPowerQuery .mb60{ margin-bottom:60px;}
+.userPowerQuery h1{
+	text-align:center;
+	font-size:36px; 
+	color:#3575bd; 
+	padding-top:20px;
+	margin-bottom:20px;
+	}
+.powerUserInforTit{
+	font-size:18px; 
+	width:98px; 
+	text-align:right; 
+	border-left:3px solid #3575bd; 
+	margin-bottom:35px;
+	color:white;
+	}
+.powerInfor p{height: 20px; line-height: 30px; float:left;font-size:16px; margin-bottom:30px; margin-right:10px;}
+.powerInfor label{display:inline-block;font-size:16px;margin-right:10px;}
+.powermb30{ margin-bottom:20px;}
+.powerUserInfor{ margin-left:30px;}
+.powerUserInfor .red{ color:#e83714;}
+.userPowerQuery .ui-selectmenu-button.ui-button{
+	width:200px!important;
+	margin-right: 10px;
+	height:20px;
+	}
+.userPowerQuery .ui-button .ui-icon{border:none;}
+.powerTime{
+	display:inline-block; 
+	width:174px; 
+	height:30px; 
+	line-height:30px; 
+	padding:0 3px; 
+	border:none; 
+	background: #212429;
+	border:1px solid #555454 !important; 
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px; 
+	color:white;
+	/* color:#dbdbdb; */
+	}
+.powerShow{
+	display:inline-block; 
+	float:left; 
+	width:84px; 
+	height:30px; 
+	line-height:30px; 
+	padding:0 3px; 
+	border:none; 
+	background: #212429;
+	border:1px solid #555454 !important;  
+	color:white;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	}
+.queryPower{
+	display:inline-block; 
+	float:left;
+	width:80px; 
+	height:32px; 
+	line-height:32px;
+	color:#FFF;
+	border:1px solid #555454; 
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px; 
+	font-size:16px; 
+	background:#2a84f6; 
+	margin-right:10px;
+	}
+.boxWidth{width:400px;}
+
+.userPowerRecharge{width:465px; margin:0 auto;}
+.userPowerRecharge h1{ font-size:36px; color:#3575bd; padding-top:20px; margin-bottom:50px;}
+.reChargeInfor label,.reChargeInfor input{ float:left;font-size:18px; margin-bottom:30px; margin-right:5px;}
+.reChargeInfor input{
+	height:30px; 
+	line-height:30px; 
+	padding:0 3px; 
+	border:none; 
+	border:1px solid #dbdbdb; 
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px; 
+	
+	}
+.userPowerRecharge .tiJiao{
+	display:inline-block; 
+	width:220px; 
+	height:40px; 
+	line-height:40px; 
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px; 
+	font-size:16px; 
+	background:#549beb; 
+	color:#FFF; 
+	margin-bottom:30px;
+	}
+.powerBeiZhu{ text-align:left; font-size:16px;}
+	
+	
+/*personal*/
+.personalInfor{width:316px; margin:0 auto; padding-top:150px; font-size:16px; color:#333;}
+.personalInfor label,.personalInfor input{ float:left;}
+.personalInfor label{
+	width:80px; 
+	height:30px; 
+	line-height:30px;
+	margin-right:5px;
+	text-align:left;
+	}
+.personalInfor input{
+	width:180px;
+	 height:30px; 
+	 line-height:30px; 
+	 background:none;
+	 border:none;
+	 border-radius:5px;
+	 -webkit-border-radius:5px;
+	 -moz-border-radius:5px; 
+	 padding:0 3px; 
+	 margin-right:10px;
+	 }
+.personalInfor input.have{border:1px solid #dbdbdb;}
+.personalInfor input.personalInforModify{
+	border:1px solid #dbdbdb; 
+	width:80px; 
+	height:24px; 
+	line-height:22px;
+	border:none; 
+	border:1px solid #dbdbdb; 
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px; 
+	padding:0 3px; 
+	margin-left:105px; 
+	cursor:pointer;
+	}
+
+.modifyPassword input{border:1px solid #dbdbdb;}
+.errorFlag{position:relative;}
+
+
+/*depositManage*/
+.userPowerManage{padding-top:20px; font-size:16px; color:#333;}
+.userPowerManage h1{font-size:36px; margin:0 auto 20px; text-align:center;color:#3575bd; }
+
+.depositManage{ width:1477px; background:#3575bd; margin:0 auto;}
+
+.depositManage thead td{ height:30px; font-size:16px; line-height:30px; background:#FFF; border:none; text-align:center;}
+.depositManage td{ background:#FFF; height:20px; line-height:20px; font-size:14px; border:none; color:#333;}
+
+/*deposit_reporting*/
+#daybytag_date{ margin-bottom: 30px; margin-left: 50px;}
+.commonTit{color:#3575bd;}
+.userNameTit{ margin-left:52px; margin-bottom:10px;}
+
+
+.sort_a{ position: relative;}
+.show_sort{position: absolute;}
+.show_sort_p1{left:30px; top: 6px;}
+.show_sort_p2{left:56px; top: 6px;}
+.show_sort_p3{left:40px; top: 6px;}
+.show_sort_p4{left:72px; top: 6px;}
+
+
+
+
+
+
+
+

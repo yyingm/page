@@ -1,0 +1,70 @@
+/* CSS Document */
+.huangPiDT{/*width:30px;*/ text-align:left;}
+.hPOC1{ left:58px; top:99px;}
+.hPOC2{ left:47px; top:39px;}
+.hPOC3{ left:53px; top:100px;}
+.hPOC4{ left:46px; top:56px;}
+.hPOC5{ left:43px; top:56px;}
+.hPOC6{ left:114px; top:89px; width:17px; height:38px;}
+.hPOC7{ left:243px; top:89px; width:17px; height:38px;}
+.hPOC8{ left:106px; top:89px 
+ ; width:17px; height:38px;}
+.hPOC9{ left:45px;}
+
+.hpWhite1{ left:76px; top:106px;}
+.hpWhite2{ left:65px; top:47px;}
+.hpWhite3{ left:71px; top:106px;}
+.hpWhite4{ left:65px; top:64px;}
+.hpWhite5{ left:61px; top:62px;}
+.hpWhite9{ left:63px;}
+/*.minHaiSW1-1 ul li span{ float:left; height:20px; line-height:20px; margin:5px auto;}
+
+ .huangPiD{ margin-bottom:5px;}
+.minHaiSW1-1 .huangPiDT{ float:left;}*/
+.jKBtn{ width:500px; height:20px;}
+.jKBtn input{ display:inline-block;border:none;cursor:pointer;padding:4px 4px;border-radius:5px;-webkit-border-radius:4px;-moz-border-radius:4px;}
+.huangPiDemo{ position:absolute; left:160px; top:103px; z-index:10;}
+.huangPiDemo li{ width:60px; height:19px; padding-left:30px;color:#FFF; font-size:14px;}
+.huangPiDemo li.huangPiO{ background:url(../images/line/huangPi/redRound.png) no-repeat; margin-bottom:20px;}
+.huangPiDemo li.huangPiC{ background:url(../images/line/huangPi/greenRound.png) no-repeat;}
+.lineGui{ font-size:16px; color:#FFF; margin:10px auto;}
+.huangPiDemo1{ left:160px; top:75px;}
+.huangPiDemo2{ left:148px; top:75px;}
+.huangPiDemo3{ left:140px; top:75px;}
+.huangPiDemo4{ left:160px; top:50px; font-size: 14px; width: 91px;}
+.huangPiDemo4 img{  margin-right: 15px;}
+/*.huangPi2{ position:relative;}*/
+.minHaiSW1-1{ position:relative;}
+/*.monitor2{ margin-top:20px;}*/
+.monitor2 li{ padding-left:30px; color:#FFF; text-align:left; font-size:14px; line-height:30px;}
+.monitor2 li.open{ background:url(../images/line/huangPi/redRound.png) no-repeat 0 6px;}
+.monitor2 li.close{ background:url(../images/line/huangPi/greenRound.png) no-repeat 0 6px;}
+.monitor2 li.open2{ background:url(../images/line/huangPi/redRound.png) no-repeat 274px 6px;}
+.monitor2 li.close2{ background:url(../images/line/huangPi/greenRound.png) no-repeat 274px 6px;}
+
+.monitor1W{ width:60px;}
+
+.hpBigIcon{ width:30px; height:117px;left:139px;top:110px; cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+/*-----------------  全局变量 begin  ------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;font:14px  Helvetica, Arial, sans-serif;border:none;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#212429;}
+
+
+/*-----------------  全局变量 end  ------------------*/
+.con{width: 91.1%;}
+.con_wrap{
+    border:1px solid #333131;
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px 50px;
+}
+.con_title{
+    height: 45px;
+    line-height: 45px;
+    letter-spacing: 2px;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+}
+.form_con{
+    width: 98%;
+    margin:10px auto;
+}
+.form_con table{
+    width: 100%;
+    border:1px solid #615e5e;
+    border-collapse:collapse;
+    border-bottom: none;
+}
+table tr,table td{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+}
+table td{
+    border-right:1px solid #615e5e;
+    border-bottom:1px solid #615e5e;
+}
+.table_title{
+    width: 100%;
+    border-bottom:1px solid #615e5e;
+    height: 45px;
+    line-height: 45px;
+}
+.route_num,.grade{width: 25%;}
+.route_name{width: 50%;}
+.grade{text-align: center;}
+.radio_wrap{
+    display: inline-block;
+    width: 15%;
+}
+.text_wrap{
+    width: 33.33%;
+}
+.text_wrap input{
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    color:white;
+    padding-left: 3%;
+    background: none;
+    border:1px solid #615e5e;
+    border-radius: 3px;
+    margin-top: 3px;
+    outline: none;
+}
+.bottom_table{margin-top: 50px;}
+.btn_wrap{
+    margin-top: 30px;
+}
+.option_btn{
+    padding: 5px 20px;
+    color: white;
+    background: #2a84f6;
+    text-align: center;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+    border:1px solid #2a84f6;
+}
+.cancel_btn,.return_btn,.cut_btn{
+    background: #767a80;
+    border:1px solid #767a80;
+}
+.option_btn:hover{
+    border:1px solid white;
+}
+
+
+
+@media all and ( max-width: 1920px ){
+    .date{margin-top: 8%!important;}
+}
+

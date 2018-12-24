@@ -1,0 +1,116 @@
+table.dataTable {
+	width: 100%;
+}
+
+table.dataTable th.dataTableHeader {
+	color: #fff;
+	background-color: #939393;
+	padding: 5px;
+	text-align: left;
+	height:40px;line-height:40px;
+}
+
+table.dataTable td {
+	padding: 5px;
+	height:30px;line-height:30px;
+}
+
+table.dataTable td a {
+	padding-right: 5px;
+
+}
+
+table.dataTable tr.odd_row {
+	color:#747474;
+}
+
+table.dataTable tr.odd_row td{
+	border:1px solid #dfdfdf;
+}
+
+table.dataTable tr.even_row {
+	background-color: #f8f8f8;
+}
+
+table.dataTable th.dataTableHeader a,
+table.dataTable th.dataTableHeader a:link,
+table.dataTable th.dataTableHeader a:active,
+table.dataTable th.dataTableHeader a:visited {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+}
+
+* html table.dataTable th.dataTableHeader a {
+	width: 100%;
+}
+
+table.dataTable th.dataTableHeader a:hover {
+	text-decoration: underline;
+}
+
+table.dataTable thead td,
+table.dataTable tfoot td.dataTableFooter {
+	border: 0;
+	padding: 0;
+}
+
+ul.dataTablePagination {
+	margin: 0 0 0 -1px;
+	border-style: solid;
+	border-color: #fff;
+	border-width: 1px 1px 0 1px;
+	padding: 5px;
+}
+
+
+* html ul.dataTablePagination {
+	margin: 0;
+}
+
+ul.dataTablePagination li {
+	display: inline;
+}
+
+ul.dataTablePagination li.currentPage {
+	font-weight: bold;
+}
+
+/* for stuff like: You are viewing items 1 through 10 of 16. */
+span.dataTableDisplayInfo {
+	display: block;
+	float: right;
+	margin: 5px 5px 5px 0;
+}
+.dataTable tr{background:#fff; }
+
+a{color:#666666}
+.dataTable-id{text-align:center!important;}
+#msg_content{height:50px;line-height:50px;text-align:center;color:black;font-size:18px;width:100%;border-bottom:2px solid #e5e1e1;margin-bottom:10px;}
+.action-title>.dataTableHeader{background:#939393!important;color:white!important;}
+.content-right{background:white;}
+.borderLNone{border-left:none;}
+.borderRNone{border-right:none;}
+
+body, th, td { font-family: Arial, Verdana, sans-serif; font-size: 0.9em; }
+table.dataTable tr.marked { background-color: #FFD900; }
+a.tcdNumber:hover{ text-decoration:none;}
+.tcdPageCode{padding: 15px 20px;text-align: left;color: #ccc;}
+.tcdPageCode a{display: inline-block;color:#7b7b7b;display: inline-block;height: 25px;	line-height: 25px;padding: 0 10px;border: 1px solid #fff;	margin: 0 2px;border-radius: 4px;vertical-align: middle;}
+.tcdPageCode a:hover{text-decoration: none;border: 1px solid #7b7b7b;}
+.tcdPageCode span.current{display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;color:#000;background:none;border:1px solid #fff;;vertical-align: middle; cursor:pointer;}
+.tcdPageCode span.disabled{	display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;	color:#7b7b7b;background: none;border:none;vertical-align: middle;}
+#logs_manage tr{background:#e3e3e3;color:#666666;}
+.dataTable tr:nth-child(odd) .dataTable-id{border:1px solid #e3e3e3;border-right:none;}
+.dataTable tr:nth-child(odd) .dataTable-title,.dataTable tr:nth-child(odd) .dataTable-author,.dataTable tr:nth-child(odd) .dataTable-time{border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
+.dataTable tr:nth-child(odd) .dataTable-operate{border:1px solid #e3e3e3;border-left:none;}
+
+
+.powerManagesContent h1 {height: 50px;line-height: 50px;padding-left: 20px;font-size: 16px;}
+.ui-selectmenu-text{color:black;}
+.roleWrap .ui-button .ui-icon{border:none;}
+
+table.dataTable tr.odd_row:hover{
+	background-color: #939393;
+	color:white;
+}

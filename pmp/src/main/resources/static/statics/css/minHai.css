@@ -1,0 +1,20 @@
+/* CSS Document */
+.minHaiSW1-1{position:relative;}
+.minHaiOC1{left:107px; top:136px;}
+.minHaiOC2{left:43px; top:28px;}
+.minHaiOC3{left:45px; top:39px;}
+.minHaiSW1-1 ul{}
+.minHaiSW1-1 ul li{ margin:5px auto;}
+.minHaiDT{ display:inline-block;width:68px; height:20px; line-height:20px;font-size:14px; color:#FFF; text-align:right; margin-right:10px;}
+.minHaiD{display:inline-block;width:80px; border:1px solid #404e83; height:18px; line-height:18px;font-size:12px; color:#01ff5b; text-align:center;}
+.minHaiSW1-1 .canTingInfor{height:53px; margin-bottom:20px;color:#01ff5b;}
+.minHaiSW1-1 .canTingInfor li{ line-height:11px; }
+.guiName1,.guiName2{position:absolute;color:#fff;}
+.guiName1{left:128px; top:139px;}
+.guiName2{left:60px; top:42px;}
+.minHaiLT1,.minHaiLT2,.minHaiLT3,.minHaiLT4,.minHaiLT5{width:72px; position:absolute; color:#FFF;}
+.minHaiLT1{ left:74px; top:-48px;}
+.minHaiLT2{left:14px; top:-50px;}
+.minHaiLT3{ left:62px; top:-50px;}
+.minHaiLT4{left:158px; top:-50px;}
+.minHaiLT5{left:117px; top:-50px;}

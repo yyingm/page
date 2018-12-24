@@ -1,0 +1,143 @@
+/*-----------------  全局样式  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#25292e!important;}
+/*-----------------  全局样式  end ---------------------*/
+/*.sky-line-horizon{height:2px;background:#ffff00;position:absolute;}
+.sky-switch-OC{left: 51px;top: 41px;}
+.sky-switch{position:absolute;background:#ff0000;width:27px;height:12px;cursor:pointer;}
+.sky-switch-on{position:absolute;background:#00ff00;width:27px;height:12px;cursor:pointer;}
+.sky-line-name{position:relative;top: -27px;left: 12px;}*/
+.content{
+	width: 100%;
+	background: #212429;
+}
+.right_wrap{
+	float: left;
+	width: 90%;
+	padding-left: 20px;
+	padding-bottom: 100px;
+}
+/*导航按钮 样式*/
+.guide_wrap{
+	padding-top: 30px;
+	margin-bottom: 20px;
+}
+.guide_btn{
+	background:#efea3a;
+	border:none;cursor:pointer;
+	padding:4px 4px;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+}
+.guide_selected{background: red;}
+
+/*横着的线*/
+.horizon_line{
+	height: 2px;
+	width: 1550px;
+	background:#ffff00;
+
+}
+/*竖着的线*/
+.vertical_line{
+	height: 500px;
+	width: 2px;
+	background:#ffff00;
+}
+.line_box{
+	position: relative;
+}
+
+/*开关*/
+.switch_span{
+	width: 11px;
+	height: 24px;
+	position: absolute;
+	top: 37px;
+    left: 45px; 
+}
+/*横着的开关*/
+.switch_span_horizon{
+	width: 24px;
+	height: 11px;
+	position: absolute;
+	top: 35px;
+    left: 49px; 
+}
+/*开关状态*/
+.switch_open{background: #00ff00;}
+.switch_close{background: #ff0000;}
+.switch_drop{background: #a0a0a0;}
+
+/*一列数据*/
+.line_col{
+	width: 485px;
+}
+.line_name{
+	 width: 265px; 
+	color: white;
+	height: 80px;
+	line-height: 80px;
+	margin-left: 5px;
+}
+.line_col .line_box{
+	width: 480px;
+}
+/*数据*/
+.data_wrap li,.data_wrap span{
+	height: 35px;
+	line-height: 35px;
+	color: white;
+}
+.data_wrap li{
+	width: 160px;
+}
+.data_wrap .data_name{
+	width: 38px;
+	text-align: right;
+}
+.data_wrap .data_value{
+	color: #01ff5b;
+	width: 79px;
+	border:1px solid #404e83;
+	height: 30px;
+    line-height: 30px;
+    margin-right: 4px;
+    text-align: center;
+    font-size: 12px;
+}
+.line_box_name li{
+	color: white;
+	text-align: center;
+}
+
+/*竖着的数据*/
+.vertical_data{
+	margin-top: 50px;
+	margin-left: -20px;
+}
+.vertical_data .data_name{
+	color: white;
+	margin-bottom: 5px;
+	height: 25px;
+	line-height: 25px;
+	text-align: right;
+	float: left;
+	width: 50px;
+	padding-right: 3px;
+}
+.vertical_data .data_value{
+	color: #01ff5b;
+    border: 1px solid #404e83;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 5px;
+    width: 80px;
+    float: left;
+}

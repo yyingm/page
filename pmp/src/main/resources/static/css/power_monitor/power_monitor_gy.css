@@ -1,0 +1,207 @@
+/*-----------------  全局样式  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;color: white;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#25292e!important;}
+/*-----------------  全局样式  end ---------------------*/
+
+/*-----------------  媒体查询  end ---------------------*/
+
+
+/*-----------------  content begin ---------------------*/
+.gy_box,.gy_box_bottom{position: relative;}
+.gy_box_title{
+	color: white;
+	font-size: 16px;
+	width: 100%;
+}
+/*数据*/
+.data_wrap{margin-top:30px;}
+.data_wrap li,.data_wrap li span{
+	height: 25px;
+	line-height: 25px;
+	margin-bottom: 5px;
+}
+.data_wrap .data_con_name{
+	width: 70px;
+	text-align: right;
+	float: left;
+	margin-right: 5px;
+}
+.data_wrap .data_con{
+	width: 100px;
+	text-align: center;
+	float: left;
+	border:1px solid #404e83;;
+    color: #01ff5b;
+}
+.img_tip{
+	position: absolute;
+	top: 65px;
+	left: -10px;
+	color: white;
+}
+/*上部手车*/
+.sc_img{
+	position: absolute;
+	top: 43px;
+	left: 39px;
+}
+/*底部手车*/
+.sc_img_bottom{
+	position: absolute;
+	top: 17px;
+	left: 46px;
+}
+.gy_box .switch_span{
+	position: absolute;
+	top: 63px;
+	left: 43px;
+}
+/*分割线*/
+.split_line{
+	width: 100%;
+	height: 3px;
+	background: red;
+}
+/*下半部分*/
+.gy_box_bottom{
+	width: 110px;
+	text-align: center;
+}
+.gy_box_bottom .switch_span{
+	width: 11px;
+    height: 24px;
+    position: absolute;
+    top: 36px;
+    left: 51px;
+}
+.gy_box_bottom .jdd_img{
+	position: absolute;
+	top: 199px;
+	left: 73px;
+}
+.gy_box_bottom{
+	margin-left: 30px;
+}
+.gy_box_bottom .img_tip{
+	position: absolute;
+	top: 38px;
+	left: 5px;
+	color: white;
+}
+
+/*底部的第一个与其他的不同*/
+.gy_box_bottom_fir .sc_img_bottom{
+	position: absolute;
+	top: 17px;
+	left: 82px;
+}
+.gy_box_bottom_fir{
+	width: 180px;
+}
+.data_wrap_bottom_fir{
+	margin-left: -30px;
+}
+.gy_box_bottom_fir .switch_span{
+	top: 37px;
+	left: 87px;
+}
+.gy_box_bottom_fir .gy_box_title{
+	margin-top: 287px;
+}
+.gy_box_bottom_fir .jdd_img{
+	position: absolute;
+	top: 199px;
+	left: 108px;
+}
+.gy_box_bottom_fir .img_tip{
+	position: absolute;
+	top: 38px;
+	left: 28px;
+	color: white;
+}
+/*连接线*/
+.connect_line{
+	width: 207px;
+    height: 3px;
+    background: red;
+    position: absolute;
+    top: 297px;
+    left: 56px;
+}
+/*每个回路的名称*/
+.item_title{color: white;text-align: center;height:25px;margin-top: -25px;}
+/*手车名称*/
+.sc_name{position: absolute;color: white;top: 180px;left: 90px;}
+/*成都医学城高压*/
+.by_zl .sc_img_bottom{
+	top: 78px;
+    left: 79px;
+}
+.by_zl .switch_span{
+	top: 98px;
+    left: 84px;
+}
+.jl_pt_unit{
+	width: 180px;
+	margin-left: -20px;
+}
+.sc_zl{
+    position: absolute;
+    top: 78px;
+    left: 44px;
+}
+.zl_switch_span,.switch_span_ll,.switch_span_gl{
+	width: 11px;
+    height: 24px;
+    position: absolute;
+}
+.zl_switch_span{
+    top: 98px;
+    left: 49px;
+}
+.zl_jdd{
+	position: absolute;
+    top: 219px;
+    left: 65px;
+}
+.ll_gl_unit{
+	width: 210px;
+}
+.sc_ll{
+	position: absolute;
+    top: 75px;
+    left: 36px;
+}
+.sc_gl{
+	position: absolute;
+    top: 75px;
+    left: 148px;
+}
+.switch_span_ll{
+	top: 95px;
+    left: 41px;
+}
+.switch_span_gl{
+	top: 95px;
+    left: 153px;
+}
+.gl_data_wrap{
+	margin-left: 6px;
+}
+
+.gaoya_line .img_tip{
+	top: 101px;
+    left: 16px;
+}
+.by_zl .img_tip{
+	top: 102px;
+    left: 51px;
+}
+.jdd_name{
+	position: absolute;
+	top: 197px;
+    left: 87px;
+}

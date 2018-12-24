@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+.left{
+	float: left;
+}
+.right{
+	float:right;
+}
+/*.nav{background: #25292e}
+@media all and ( max-width:1445px ){
+	.dataBox{width :64.5%!important;}
+}
+@media all and ( max-width:1335px ){
+	.dataBox{width :62.5%!important;}
+}
+@media all and ( max-width:1260px ){
+	.dataBox{width :61%!important;}
+	.font_box{padding-left:15%!important;}
+	.itemL{margin-right: 22%!important;}
+}
+@media all and ( max-width:1210px ){
+	.dataBox{width :59%!important;}
+	.itemL{margin-right: 20%!important;}
+}
+@media all and ( max-width:1150px ){
+	.dataBox{width :56%!important;}
+	.item{margin-top:50px!important;}
+}
+@media all and ( max-width:1080px ){
+	.dataBox{width :53%!important;}
+	.font_box{padding-left: 9%!important;}
+	.item{width:120%!important;}
+	.itemL{margin-right: 7%!important;}
+}
+@media all and ( max-width:1000px ){
+    .header-box{width:1000px!important;}
+    .logo{width:69px!important;}
+    .content{width:1000px!important;}
+}*/
+.content{width:100%;}
+.clear:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.con_right {
+	width:91.14%;
+	float: left;
+	padding-top: 3%;
+}
+.dataWrap{width:100%;}
+.dataBox {
+	margin:0 auto;
+	width: 89%;
+	height: 315px;
+	background: #ddd;
+	margin-bottom:20px;
+}
+
+.dataBoxTitle {
+	background: #c9c9c9;
+	width: 99%;
+	height: 40px;
+	color: white;
+	font-size: 16px;
+	line-height: 40px;
+	padding-left: 1%;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.font_box{
+	width:100%;
+	background: #ddd;
+	padding-top:50px;
+}
+.item{
+	color:white;
+	font-size:16px;
+	height:20px;line-height:20px;
+	margin-top:50px;
+	
+}
+.itemL{
+	width:41.72%;
+	text-align: right;
+	color:#828384;
+}
+.itemR{
+	width:58.28%;
+}
+.changeBox{
+	width:35%;
+	height:23px;
+	padding-left:5px;
+	border:1px solid #828384;
+	background:#ddd;
+	border-radius:3px;
+	margin-left:2%;
+	margin-right:4%;
+	color:#000;
+	font-size:14px;
+}
+.printBtn{
+	width:80px;
+	height:25px;
+	line-height: 25px;
+	color:#000;
+	border:1px solid #9ba3ae;
+	background: #ccc;
+	border-radius: 5px;
+	margin-right:25px;
+	cursor: pointer;
+}
+.selectBtn{
+	background:#2a84f6;
+	border-color:#adb6c2;
+	color:#fff
+}

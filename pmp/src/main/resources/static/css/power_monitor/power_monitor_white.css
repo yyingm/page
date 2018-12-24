@@ -1,0 +1,29 @@
+/*-----------------  全局样式  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#25292e!important;}
+/*-----------------  全局样式  end ---------------------*/
+
+/*-----------------  媒体查询  end ---------------------*/
+.nav{background:#ddd;}
+.active dd{cursor: pointer;}
+.clearfix dd{cursor: pointer;}
+.content{background:#ebe9e9;}
+.powerManagesContent{color:white;margin-left:30px;}
+.power-Query-h1{margin:30px 0 10px;font-size:24px;text-align:center;color:black;}
+.powerItim{width:190px;text-align:center;color:black;}
+
+#nav{background: #ddd;}
+.header-box{background:#c9c9c9;}
+.sjjg_con{background: #25292e;}
+
+
+/*-----------------  content begin ---------------------*/
+
+
+
+/*-----------------  content end ---------------------*/
+
+

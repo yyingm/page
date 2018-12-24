@@ -1,0 +1,84 @@
+/*-----------------  全局样式  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#25292e!important;}
+/*-----------------  全局样式  end ---------------------*/
+
+
+/*-----------------  content begin ---------------------*/
+.content{width:2700px;}
+.con_r{
+	padding-top:50px;
+	padding-left:85px;
+	width: 2400px;
+}
+.tree_wrap{
+	margin-right:50px;
+}
+.top_line{
+	height:2px;
+	width:540px;
+	background: #0000ff;
+}
+.room_wrap{
+	position: relative;
+}
+.floor_name{
+	color:white;
+	width:85px;
+	height:55px;
+	display: table;
+	text-align: center;
+}
+
+.room_name{
+	color: #eeee00;
+	width:115px;
+	height:55px;
+	display: table;
+	text-align: center;
+   	
+}
+.room_name span,.floor_name span{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.room_status_red{
+	width: 26px;
+    height: 11px;
+    position: absolute;
+    cursor: pointer;
+    top: 23px;
+    left: 302px;
+}
+.room_status_red{background: red;}
+.room_status_green{background: green;}
+.room_data{
+	width: 74px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    padding: 0 3px;
+    border: 1px solid #dd8912;
+    margin-top: 18px;
+    margin-left: 10px;
+    color: #fff;
+}
+.border_b{
+	border-bottom: 1px dashed #0000ff;;
+}
+.foor_num{
+	width:65px;
+	height:55px;
+	line-height: 55px;
+	color:#fff;
+	text-align: center;
+	
+}
+/*-----------------  content end ---------------------*/
+
+

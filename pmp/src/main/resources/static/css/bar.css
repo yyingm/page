@@ -1,0 +1,53 @@
+.content-right-powermanage {
+	float:left;
+	width: 100%;
+    margin-bottom: 30px;
+	background: #FFF;
+}
+
+.fieldset {
+	margin:10px;
+	padding:10px;
+}
+
+.bar_option {
+	width:800px;
+	margin-bottom:10px;
+}
+
+.bar_div {
+	float:left;
+	width:850px;
+	height:366px;
+	background:#FFF;
+}
+
+.bar_div_info {
+	float:left;
+	width:748px;
+	height:265px;
+	border:1px solid #FFF;
+	margin:0 1px 0px 0;
+	padding:50px 50px;
+	font-size:22px;
+}
+.bar_div_info div{
+	float:left;
+	position:relative;
+	margin-bottom:20px;
+}
+.bar_div_info img {
+	float:left;
+}
+.icon32 {
+	margin-top:-3px;
+}
+.icon24 {
+	position:absolute;
+	left:140px;
+	top:2px;
+}
+.bar_div_info span {
+	float:left;
+	margin-left:5px;
+}

@@ -1,0 +1,108 @@
+/*-----------------  全局样式  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#212429;}
+/*-----------------  全局样式  end ---------------------*/
+
+/*-----------------  媒体查询  begin ---------------------*/
+@media all and ( max-width:1300px ){
+    .bulb,.bulb-off,.wind,.wind-off{height:15px!important;width:15px!important;line-height:15px!important;}
+}
+@media all and ( max-width:800px ){
+    .header-box{width:800px!important;}
+    .wrap{width:800px!important;}
+}
+/*-----------------  媒体查询  end ---------------------*/
+
+
+/*-----------------  content begin ---------------------*/
+.proportion-con-wrap{width:91.14%;padding-top:20px;padding-bottom:100px;background:white;}
+.proportion-con-box{width:97.71%;margin:0 auto;}
+.proportion-con-title{width:100%;height:60px;line-height:60px;color:#000;margin-bottom:10px;border:2px solid #e5e1e1;}
+.proportion-item-name{width:90px;height:60px;line-height:60px;font-size:14px;}
+.proportion-item-con{margin-top: 1.2%;outline:none;width:200px;height:24px;color:#000;background:#e5e1e1;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;behavior:url(../ie-css3.htc);}
+.proportion-con{width:100%;border:2px solid #e5e1e1;}
+
+.proportion-pie-wrap{width:57.02%;margin-right:0.58%;margin-bottom:10px;}
+.proportion-pie-box{position:relative;padding-top:57.95%;}
+.proportion-pie-con{width:100%;height:100%;position:absolute;left:0;top:0;border:1px solid #e5e1e1;}
+
+.proportion-value-wrap{width:42.11%;margin-bottom:10px;}
+.proportion-value-box{position:relative;padding-top:78.47%;border-collapse: collapse;overflow: auto;}
+.proportion-value-con{width:100%;height:100%;position:absolute;left:0;top:0;border-collapse: separate;border-spacing: 0 2px;}
+/*.proportion-value-con tr{display:block;margin:2px 0;}*/
+.proportion-value-con-title{width:96.39%;height:40px;color:#fff;text-align:left;background:#939393;margin-top:0!important;font-size:14px;line-height:40px;}
+.proportion-cate{width:33%;padding-left:2%;}
+.proportion-num{width:20%;}
+.proportion-percent{width:15%;}
+.proportion-yesterday{width:20%;}
+.proportion-circle{width:10%;}
+.proportion-value-tr-odd{height:24px;background:#fff;width:100%;}
+.proportion-value-tr-even{height:24px;background:#e3e3e3;width:100%;}
+.proportion-value-tr-odd>td,.proportion-value-tr-even>td{height:24px;line-height:24px;color:#939393;font-size:14px;}
+
+.proportion-bar-wrap{width:49.71%;margin-right:0.58%;margin-bottom:10px;}
+.proportion-bar-box{position:relative;padding-top:56.47%;}
+.proportion-bar-con{width:100%;height:100%;position:absolute;left:0;top:0;border:1px solid #e5e1e1;}
+
+.proportion-area-wrap{width:49.71%;margin-bottom:10px;}
+.proportion-area-box{position:relative;padding-top:56.47%;}
+.proportion-area-con{width:100%;height:100%;position:absolute;left:0;top:0;border:1px solid #e5e1e1;}
+
+.proportion-mountain-wrap{width:100%;}
+.proportion-mountain-box{position:relative;padding-top:28.1%;}
+.proportion-mountain-con{width:100%;height:100%;position:absolute;left:0;top:0;border:1px solid #e5e1e1;}
+
+.ele-cycle-btn{cursor:pointer;margin-right:10px;border:1px solid #a0a9b4;background:#212429;margin-top:1.2%;width:60px;height:22px;text-align: center;line-height:22px;border-radius: 3px;-moz-border-radius:3px;-webkit-border-radius:3px;behavior:url(../ie-css3.htc);}
+.ele-cycle-btnCircle{margin:6% 5% auto;background:#7c838e;width:14px;height:14px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;behavior:url(../ie-css3.htc)}
+.ele-quantity-btn{margin-right:10px;width:46px;cursor:pointer;border:1px solid #a0a9b4;background:#212429;margin-top:0.6%;height:22px;text-align: center;line-height:22px;border-radius: 3px;-moz-border-radius:3px;-webkit-border-radius:3px;behavior:url(../ie-css3.htc);}
+.ele-quantity-btnBig{width:60px;margin-right:10px;cursor:pointer;border:1px solid #a0a9b4;background:#212429;margin-top:0.6%;height:22px;text-align: center;line-height:22px;border-radius: 3px;-moz-border-radius:3px;-webkit-border-radius:3px;behavior:url(../ie-css3.htc);}
+.ele-btnCircle-active{width: 13px;height: 13px;background:#303740;border:1px solid #ffffff;}
+.ele-btn-active{background:#2a84f6;border:1px solid black;color:#ffffff;}
+.ele-data-date{margin-top:19px;height:22px;width:200px;color:#000;background:#e5e1e1;border-radius: 3px;-moz-border-radius:3px;-webkit-border-radius:3px;behavior:url(../ie-css3.htc);}
+
+
+/*-----------------  content end ---------------------*/
+
+/*UI*/
+ label.ui-button .ui-icon{background-image:none;} 
+ .period_option label.ui-button{color:#000;}
+ .ui-button{background:#e5e1e1;border:none;color:#000;}
+ .ui-icon-background{background:#7c838e;}
+ .ui-button .ui-icon{background-image:none;}
+ .ui-state-active{background:#212429!important;color:#fff;}
+.ui-button:hover,.ui-icon-background, .ui-state-active .ui-icon-background{border:none;}
+.ui-button:focus {
+    border: 1px solid #0073ea;
+    font-weight: bold;
+    color: #ffffff;
+}
+.ui-state-active,.ui-button .ui-icon:hover{background-image:none;}
+.ui-icon,
+.ui-widget-content .ui-icon {
+    background-image:none;
+}
+.ui-widget-header .ui-icon {
+    background-image:none;
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon,
+.ui-button:hover .ui-icon,
+.ui-button:focus .ui-icon {
+    background-image:none;
+}
+.ele-data-date{padding-left:1%;}
+
+/*.highcharts-legend-box text,.highcharts-series-group {color:black!important;fill:black!important;}
+.highcharts-legend-item text,.highcharts-area-series text,.highcharts-color-undefined text,.highcharts-series-0 text{color:black!important;fill:black!important;}
+.monitor-lengend,.danwei{color:black!important;}*/
+.highcharts-title{olor:black!important;fill:black!important;}
+.highcharts-legend-item text,.highcharts-area-series text,.highcharts-color-undefined text,.highcharts-series-0 text{color:black!important;fill:black!important;stroke-width:none!important;}
+.highcharts-legend-item tspan,.highcharts-area-series tspan,.highcharts-color-undefined tspan,.highcharts-series-0 tspan{color:black!important;fill:black!important;stroke-width:0!important;}
+.ui-datepicker .ui-widget-header .ui-icon{background-image: url(../../images/ui-images/ui-icons_0073ea_256x240.png);border:none;}
+.ui-datepicker .ui-widget-header .ui-icon:hover{background-image: url(../../images/ui-images/ui-icons_ffffff_256x240.png);border:none;}
+
+
+.zjjgWrap{background: #ddd;}

@@ -1,0 +1,15 @@
+/*-----------------  全局变量 begin  ------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;font:14px  Helvetica, Arial, sans-serif;border:none;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#25292e;}
+
+/*-----------------  全局变量 end  ------------------*/
+
+.content{#212429;}
+.user_update_con{width:1700px;padding-top:40px;margin-left:15px;color:white;}
+.page_title{height:50px;line-height:50px;color:white;font-size:18px;text-align:center;border-bottom:2px solid #373636;width:1680px;margin:0 auto;}
+.containerBoxBorder{color:#adb6c2;margin-left:8px;}
+.dataTable{margin-top:15px;}
+#logs_manage input[type="text"],#logs_manage input[type="password"]{width:150px;padding-left:5px;height:22px;color:#adb6c2;border:1px solid #535960;background: #212429;}

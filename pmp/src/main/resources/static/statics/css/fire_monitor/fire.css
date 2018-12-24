@@ -1,0 +1,231 @@
+/*-------------------header  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;font:12px  Helvetica, Arial, sans-serif;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#25292e!important;}
+/*-----------------  header  end ---------------------*/
+
+/*-----------------  媒体查询  begin ---------------------*/
+@media all and ( max-width:1690px ){
+	.fire-con-name-double{line-height:16px!important;}
+}
+@media all and ( max-width:1300px ){
+	.bulb,.bulb-off,.wind,.wind-off{height:15px!important;width:15px!important;line-height:15px!important;}
+	.fire-con-status{width:13px!important;height:13px!important;}
+}
+@media all and ( max-width:1000px ){
+	*{font-size:10px!important;}
+	.header-box{width:1000px!important;}
+	.wrap{width:1000px!important;}
+}
+/*-----------------  媒体查询  end ---------------------*/
+
+
+/*-----------------  content  begin ---------------------*/
+.fire-wrap{width:91.14%;background:#212429;padding-bottom:100px;}
+.fire-box{width:97%;margin:20px auto 0;}
+.con-title{height:45px;width:100%;text-align:center;line-height:45px;color:#2b7ce5;font-size:20px;margin-bottom:10px;}
+.con-title-a{background:#303740;}
+.con-title-b{background:#282d34;}
+.fire-con-box{width:100%;background:#25292e;}
+.fire-nav{width:5.6%;height:346px;}
+.fire-nav-list{color:#adb6c2;width:100%;text-align:center;height:31px;line-height:31px;}
+.fire-con{width:13.3%;height:346px;border-left:1px dashed #adb6c2;}
+.fire-con-wrap{width:93%;margin:1% auto;}
+.fire-con-title{width:100%;text-align:center;color:#adb6c2;height:33px;line-height: 33px;}
+.fire-con-name{font-size:12px;width:43.5%;text-align:center;height:31px;line-height:31px;color:#ffffff;}
+.fire-con-status-wrap{cursor:pointer;width:13%;height:31px;line-height:31px;text-align:center;}
+.fire-con-status{height:16px;width:16px;border-radius:50%;display:inline-block;margin-top:18%;}
+.fire-con-status-on{background:#19d419;color:#19d419!important;}
+.fire-con-status-mid{background:yellow;}
+.fire-con-status-off{background:red;color:red!important;}
+.fire-con-status-drop{background:#cccccc;}
+.fire-con-value{margin-left:3%;height:21px;line-height:21px;width:38%;text-align:center;color:#ffffff;border:1px solid #2b7ce5;}
+
+
+.fire-nav-list-3{height:45px;line-height:45px;}
+.fire-nav-list-3-last{height: 58px;line-height: 41px;border-bottom: 1px dashed #adb6c2;margin-bottom: 11%;}
+
+/*石家庄精诚火灾*/
+.jc_wrap{
+	width: 1920px;
+
+}
+.jc_wrap .wrap{
+	width: 1920px;
+}
+.outer_wrap{
+	width: 91.1%;
+	background: #212429;
+	padding-bottom: 80px;
+}
+.monitor_wrap{
+	width: 1600px;
+	padding-top: 100px;
+	margin: 0 auto;
+}
+.con_wrap>img{
+	margin-left:100px;
+	margin-bottom: 30px;
+}
+.item_name li{
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+	width: 90px;
+	text-align: right;
+	margin-right: 10px;
+	color: white;
+}
+.item_list{
+	/*width: 650px;*/
+	margin-bottom: 20px;
+}
+.item_title{
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.status{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 5px;
+	text-align: center;
+}
+.item_box{
+	width: 164px;
+	margin-left: 10px;
+}
+
+.item_box li{
+
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.status_li{border:none;}
+.num_box{
+	width:85px;
+	text-align: center;
+	border:1px solid #2a84f6;
+	color: white;
+	height: 28px;
+	line-height: 28px;
+}
+.floor_name{
+	border:none;
+	margin-left: 30px;
+	color: white;
+}
+audio{display: none;}
+/*报警弹框*/
+.alert_wrap{
+	width: 500px;
+	height: 200px;
+	background: #fff;
+	position: absolute;
+	top: 150px;
+	box-shadow: 0 0 10px #fff;
+	border-radius: 5px;
+
+}
+.alert_wrap p{
+	width: 95%;
+	height: 150px;
+	line-height: 150px;
+	margin:0 auto;
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 2px;
+	border-bottom:1px solid #908c8c;
+}
+.confirm_btn{
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	width: 100px;
+	margin-right: 5%;
+	border:none;
+	outline: none;
+	margin-top:5px;
+	background: #ddd;
+	cursor: pointer;
+
+}
+/*复位按钮*/
+
+.con_wrap .reset_btn{
+	background: #c0c0c0;
+    outline: none;
+    border: none;
+    text-align: center;
+    padding: 6px 40px;
+    margin-left: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin:5px auto;
+    display: block;
+    letter-spacing: 2px;
+    font-size: 21px;
+	color:white;
+    margin-top: 20px;
+	background-color: #95120A;
+}
+#dialog_form{
+	display: none;
+}
+.reset_con{
+	background: white;
+    width: 400px;
+    height:215px;
+    border-radius: 3px;
+    position: absolute;
+    padding: 20px 45px;
+}
+.validateTips{
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}
+#confirm_form label{
+	height: 30px;
+	line-height: 30px;
+	margin-right: 10px;
+}
+#confirm_form #password{
+	height: 30px;
+	line-height: 30px;
+	width: 180px;
+}
+#confirm_form .split_line{
+	height: 1px;
+    width: 100%;
+    margin: 30px auto;
+    background: #878585;
+}
+#confirm_form .submit_btn{
+	padding: 8px 25px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+
+@media (max-width: 1000px){
+	.jc_wrap .wrap {
+		width: 1920px!important;
+	}
+}
+@media (max-width: 1080px){
+	.div2 .fontClass {
+		font-size: 20px!important;
+		margin: 5px 20px auto!important;
+	}
+}
+@media (max-width: 1120px){
+	.div2 {text-align: left!important;}
+}

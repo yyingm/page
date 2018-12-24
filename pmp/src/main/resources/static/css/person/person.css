@@ -1,0 +1,61 @@
+.content-right{
+	width:85%;
+}
+.userPowerContainer{
+	width: 500px;
+    height: 250px;
+    margin: 8% auto;
+    padding: 30px 30px 30px 110px;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 18px;
+    border: 3px solid #383a3f;
+    
+    }
+    .userPower{
+    	width:100%;
+    	margin-top:20px;
+    }
+    .userPower li{
+    	float:left;
+    	padding:3px 10px;
+    	border-radius: 3px;
+    	cursor: pointer;
+    	border:1px solid #a6a9b3;
+    	margin-right:15px;
+    }
+    .active{
+    	background: #2a84f6;
+    	color:white;
+    }
+    .userPowerContainer li{
+    	margin-bottom: 15px;
+    }
+    .mb30{height:30px;line-height:30px;margin-bottom: 10px;}
+    .mb30 label{float: left;width:80px;height:30px;line-height:30px;}
+    .mb30 input{
+    	width:297px;
+    	height:25px;
+    	line-height: 25px;
+    	border:1px solid #a6a9b3;
+    	border-radius: 3px;
+    	background: #212429;
+    	color:white;
+    	padding-left:10px;
+    	}
+    	.personalInforModify{
+    		width:60px;
+    		text-align: center;
+    		height:30px;
+    		line-height: 30px;
+    		border-radius: 3px;
+    		float: right;
+    		margin-right:110px;
+    		margin-top:25px;
+    		background: #212429;
+    		color:#a6a9b3;
+    		border:1px solid #a6a9b3;
+    		cursor: pointer;
+    	}
+    	#edit{margin-left:10px;cursor: pointer;}
+    	.nav{background: #25292e;}

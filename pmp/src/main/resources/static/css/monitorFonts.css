@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('monitorFonts/icomoon.eot?tgtvmp');
+  src:  url('monitorFonts/icomoon.eot?tgtvmp#iefix') format('embedded-opentype'),
+    url('monitorFonts/icomoon.ttf?tgtvmp') format('truetype'),
+    url('monitorFonts/icomoon.woff?tgtvmp') format('woff'),
+    url('monitorFonts/icomoon.svg?tgtvmp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fontClass{
+	font-size: 20px;
+	margin:5px 17px auto;
+	float: left;
+	color:gray;
+}
+.icon-cool_monitor_gray:before {
+  content: "\b800";
+  color: #288dff;
+}
+.icon-cool_monitor_white:before {
+  content: "\b801";
+  color: #fff;
+}
+.icon-gas_monitor_gray:before {
+  content: "\b802";
+  color: #288dff;
+}
+.icon-gas_monitor_white:before {
+  content: "\b803";
+  color: #fff;
+}
+.icon-thermal_monitor_gray:before {
+  content: "\b804";
+  color: #288dff;
+}
+.icon-thermal_monitor_white:before {
+  content: "\b805";
+  color: #fff;
+}
+.icon-water_monitor_gray:before {
+  content: "\b806";
+  color: #288dff;
+}
+.icon-water_monitor_white:before {
+  content: "\b807";
+  color: #fff;
+}
+
+div{
+	background: transparent;
+}

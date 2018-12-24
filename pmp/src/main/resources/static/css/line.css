@@ -1,0 +1,157 @@
+.power-Query-h1{
+	color:#ffffff;height:35px;line-height: 35px;padding-left:2%;width:97.5%;background:#303740;
+}
+.content-right-powermanage {
+	margin:0 auto;
+	margin-top:10px;
+	width: 99%;
+    margin-bottom: 30px;
+	background: #212429;
+}
+
+.type_option>label{color:#ffffff;}
+.fieldset {
+	padding-left: 2%;width:97.5%;
+	border:none;
+	background:#303740;
+	margin-bottom:10px;
+}
+
+.line_option {
+	width:800px;
+	margin-bottom:10px;
+}
+
+.line_div {
+	float:left;
+	width:850px;
+	height:366px;
+	/*background:#FFF;*/
+}
+
+/*月电压曲线*/
+.type_option, .period_option, .tag_option {
+	margin-bottom:10px;
+}
+.u_month_div, .u_day_div {
+	float:left;
+	width:100%;
+	margin:0 50px 30px 0;
+}
+
+/**
+ * 实时电压曲线
+ */
+.type_option, .period_option, .bar_option, .tag_option {
+	height:30px;
+	margin-bottom:15px;
+}
+.type_option {
+	width:550px;
+	height:70px;
+}
+.type_option > label, .period_option > label, .bar_option > label, .tag_option > label ,.type_option_thd > label{
+	float:left;
+	color:#7c838e;
+	height:30px;
+	line-height: 30px;
+}
+.type_option_i {
+	width:280px;
+	float:left;
+	margin:10px 0 0 85px;
+}
+.radio_group, .radio_group_thd {
+	margin-left:100px;
+}
+.radio_group > span, .radio_group_thd > span{
+	display:block;
+	margin-bottom:10px;
+	/*width:100%;*/
+}
+.content-right{width:91%;float:left}
+.content-right-thd{width:91%;float:left}
+.type_option{width:40%;color:#a0a9b4;height:35px;line-height:35px;float:left;}
+.tag_option,.line_option,.times_option{width:38.5%;color:#a0a9b4;height:35px;line-height:35px;float:left;}
+.period_option,.bar_option{width:56.78%;height:35px;line-height:35px;color:#a0a9b4;float:left;}
+.hasDatepicker{height:30px;width:35%;border:1px solid #535960;color:#a0a9b4;background:#303740;border-radius: 3px;-moz-border-radius:3px;-webkit-border-radius:3px;behavior:url(../ie-css3.htc);}
+.times_select {
+	/*margin-left: 130px;*/
+	margin-top: -15px;
+}
+
+.times_select1 {
+	margin-left: 130px;
+	margin-top: -15px;
+}
+
+
+.line_table{width:50%;border:1px solid #a0a0a0;position:absolute;top:725px;margin-bottom:50px;}
+
+.line_table_title td{width:100%;}
+.line_table table{width:100%;border-collapse: collapse;}
+.line_table table td{height:35px;line-height:35px;color:white;}
+.line_table table{border-bottom:#a0a0a0;}
+.line_table_title td{font-weight:bold;width:100%;color:#3a76cb!important;font-size:20px;text-align:center;}
+#nav{background:#25292e;}
+.tag_option .ui-button .ui-icon{border:none;background-image: url(../images/ui-images/ui-icons_666666_256x240.png);}
+.type_option .ui-state-active.ui-button .ui-icon,.period_option .ui-state-active.ui-button .ui-icon, .bar_option .ui-state-active.ui-button .ui-icon,.type_option_thd  .ui-state-active.ui-button .ui-icon{border-color:#dddddd;}
+
+
+.content-right .ui-button{background:#212429;border:1px solid #535960;color:#adb6c2;font-weight:normal;}
+
+    .ui-button .ui-icon{background-image:none;}
+    .ui-icon-background, .ui-state-active .ui-icon-background{background-color:white;}
+    .content-right .ui-state-active{background:#2a84f6!important;color:white;}
+    .ui-icon-background{background:#7c838e;}
+    .ui-datepicker-month{float:left;}
+    .type_option>label{height:45px;}
+    .type_option{width:61%;}
+    @media all and ( max-width: 1133px ){
+        .header-box{width:1133px!important;}
+        .content{width:1133px!important;}
+    }
+    .ui-state-hover .ui-icon,
+    .ui-state-focus .ui-icon,
+    .ui-button:hover .ui-icon,
+    .ui-button:focus .ui-icon {
+        background-image:none;
+    }
+    .ui-button:hover{background-image:none;}
+    .ui-button .ui-icon{background-image:none;}
+    .ui-button:hover{background-image:none;}
+    .ui-button:focus {
+        border: 1px solid #0073ea;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    .ui-state-active,.ui-button .ui-icon:hover{background-image:none;}
+    .ui-icon,
+    .ui-widget-content .ui-icon {
+        background-image:none;
+    }
+    .ui-widget-header .ui-icon {
+        background-image:none;
+    }
+    .ui-state-hover .ui-icon,
+    .ui-state-focus .ui-icon,
+    .ui-button:hover .ui-icon,
+    .ui-button:focus .ui-icon {
+        background-image:none;
+    }
+    .type_option {width: 55%;}
+    .tag_option{width:100%;}
+    .period_option, .bar_option{width:60%;}
+    .fieldset{padding-top:15px;}
+    .ui-selectmenu-button.ui-button{width:300px;}
+    .Wdate{height: 30px;
+            width: 35%;
+            border: 1px solid #535960;
+            color: #a0a9b4;
+            background: #303740;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;}
+    /*#ui-datepicker-div{
+    	display: none!important;
+    }*/

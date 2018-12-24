@@ -1,0 +1,359 @@
+/* CSS Document */
+*{margin:0; padding:0;}
+body{font-size:12px;width:100%; background:#f1f1f1; font-family:"Microsoft YaHei";}
+a{text-decoration:none; color:#000;}
+ul{list-style:none;}
+img{border:none;}
+input{font-family:"Microsoft YaHei";}
+
+body{background:#25292e;}
+.con_right{
+	width: 91.12%;
+	background: #212429;
+	text-align: center;
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 130px;
+}
+.left_monitor{
+	width: 1135px;
+	height: 805px;
+	position: absolute;
+	right: 135px;
+	top: 42px;
+	height: 800px;
+}
+.unit_monitor{
+	width: 16.65%;
+	height: 250px;
+	position: relative;
+} 
+.unit_monitor_con{
+	position: relative;
+}
+.off_status{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background: #7f8185;
+	position: absolute;
+	left: 81px;
+	display: none;
+}
+.open_img{
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	border-radius: 50%;
+	left: 81px;
+	
+}
+.all_monitor{
+    position: absolute;
+    left: -19px;
+    top: 38px;
+    display: block;
+}
+.open_img_fir{
+	top: 74px;
+}
+.open_img_sec{
+	top: 172px;
+}
+.open_btn_wrap{
+	position: absolute;
+	left: 76px;
+	width: 40px;
+	height: 14px;
+	border:2px solid #e6e6e6;
+	background: #2d3644;
+	padding: 3px;
+	cursor: pointer;
+}
+.open_btn_fir{
+	top: 116px;
+}
+.open_btn_sec{
+	top: 213px;
+}
+.btn_con{
+	width: 14px;
+	height: 14px;
+	background: #28c820;
+	position: absolute;
+	right: 3px;
+	top: 3px;
+}
+.btn_con_close{
+	width: 14px;
+	height: 14px; 
+	background: #ff0000;
+	position: absolute;
+	right: 29px;
+	top: 3px;
+}
+.open{
+	background: #28c820;
+	right: 3px;
+}
+.data_num{
+	width: 100px;
+	color: #28c820;
+	position: absolute;
+	left: 49px;
+}
+.data_num_fir{
+	top:51px;
+}
+.data_num_sec{
+	top: 153px;
+}
+.show{
+	display: block;
+}
+.right_monitor{
+	position: absolute;
+    width: 308px;
+    top: 21px;
+    left: 155px;
+    height: 900px;
+}
+.right_monitor .unit_monitor{
+	height: auto;
+}
+.control_select{
+    outline: none;
+    width: 166px;
+    height: 24px;
+    color: #999999;
+    border: 1px solid #929ba6;
+    background: #212429;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    margin-top: 75px;
+    background: #333943;
+}
+.option_btn{
+	outline: none;
+    width: 166px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 22px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-weight: bold;
+	font-size: 16px;
+}
+.option_open{
+	background: #28c820;
+    border: 1px solid #fff;
+}
+.option_close{
+	background: red;
+	border:1px solid #535960;
+	color: #000000;
+}
+.outline{color:rgb(127, 129, 133)}
+
+/*高新大厦*/
+.xfsc{
+	position: absolute;
+    top: 103px;
+    left: -3px;
+}
+.right_monitor .data_num{
+	top: 57px;
+
+}
+.right_monitor .open_btn_wrap{
+	top: 114px;
+}
+.zsb{
+	position: absolute;
+	top: 44px;
+	left: 112px;
+}
+.lhsb{
+	position: absolute;
+	top: 163px;
+    left: 115px;
+    z-index: 99;
+}
+.shys{
+	position: absolute;
+	top: 555px;
+    left: 123px;
+}
+.xjf{
+	position: absolute;
+	top: 250px;
+	left: 115px;
+}
+.xjf .open_btn_fir{
+	left: 126px;
+	top: 80px;
+}
+.xjf .open_btn_sec{
+	left: 126px;
+	top: 178px;
+}
+.xjf .data_num_fir{
+	left: 100px;
+	top: 61px;
+}
+.xjf .data_num_sec{
+	left: 100px;
+	top: 158px;
+}
+.rhs{
+	position: absolute;
+	top: 630px;
+	left: 123px;
+}
+.zxrh{
+	position: absolute;
+	top: 430px;
+	left: 115px;
+}
+.wfy{
+	position: absolute;
+	top: 515px;
+	left: -6px;
+}
+
+/*弹框*/
+#dialog_psd{
+	display: none;
+}
+.psd_input{
+	width: 165px;
+	height: 30px;
+	padding-left:10px;
+	border:1px solid #ddd;
+}
+.ui-widget.ui-widget-content{
+	box-shadow: 0 0 10px #555;
+}
+.ui-widget-overlay{
+	background: #b4b2b282;
+}
+/*更改弹框样式*/
+.ui-dialog .ui-dialog-titlebar{
+	background: #5f93d5;
+}
+#dialog_psd{
+	background: #adb0ae7d;
+}
+.xfsc{
+	position: absolute;
+	top: 98px;
+	left: 46px;
+	color: #28c820;
+}
+.room_name1{
+	position: absolute;
+	top: 71px;
+	left: 42px;
+	color: #fff;
+	width: 30px;
+}
+.room_name2{
+	position: absolute;
+	top: 169px;
+	left: 42px;
+	color: #fff;
+	width: 30px;
+}
+.option_name{color:red;font-weight: bold;}
+.border_p{
+	border:1px solid red;
+	padding:3px 0;
+}
+.option_tip{
+	margin-top:-15px;
+}
+.optoin_des{
+	color: red;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+/*清华启迪园*/
+.qhqdy_wrap{
+	padding-bottom: 20px;
+}
+.con_title{
+    width: 95%;
+    margin: 25px auto 65px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    border-bottom: 2px solid #494545;
+    color: white;
+    text-align: left;
+    letter-spacing: 2px;
+    padding-left: 10px;
+
+}
+.area_wrap{
+	margin-bottom: 70px;
+}
+.area_name{
+	color: white;
+    margin: 0 30px 0 50px;
+    height: 105px;
+    line-height: 105px;
+    width: 110px;
+    font-size: 19px;
+}
+.area_con{
+	position: relative;
+}
+.split_line{
+	height: 2px;
+    width: 1370px;
+    background: #3a4ed9;
+    position: absolute;
+    top: 18px;
+    z-index: 0;
+    left: 110px;
+
+}
+.item_name,.item_data{
+	color:white;
+	width: 100px;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
+}
+.item_data{
+	border:1px solid #404e83;
+	color: #7cd712;
+}
+.item_wrap li{
+	margin-bottom: 5px;
+}
+.item_wrap .img_wrap{
+	height: 39px;
+}
+.img_wrap img{
+	position: relative;
+	z-index: 10;
+}
+.item_wrap{
+	margin-right: 25px;
+	float: left;
+}
+.unit_wrap{
+	width: 100px;
+	margin-right: 10px;
+}
+.unit_wrap li{
+	text-align: right;
+}
+.unit_wrap .item_data{
+	border:none;
+	color: white;
+}

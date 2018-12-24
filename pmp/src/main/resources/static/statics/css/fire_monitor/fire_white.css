@@ -1,0 +1,52 @@
+/*-------------------header  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;font:12px  Helvetica, Arial, sans-serif;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#212429;}
+/*-----------------  header  end ---------------------*/
+
+/*-----------------  媒体查询  begin ---------------------*/
+@media all and ( max-width:1690px ){
+    .fire-con-name-double{line-height:16px!important;}
+}
+@media all and ( max-width:1300px ){
+    .bulb,.bulb-off,.wind,.wind-off{height:15px!important;width:15px!important;line-height:15px!important;}
+    .fire-con-status{width:13px!important;height:13px!important;}
+}
+@media all and ( max-width:1000px ){
+    *{font-size:10px!important;}
+    .header-box{width:1000px!important;}
+    .wrap{width:1000px!important;}
+}
+/*-----------------  媒体查询  end ---------------------*/
+
+
+/*-----------------  content  begin ---------------------*/
+.fire-wrap{width:91.14%;padding-bottom:100px;background:white;}
+.fire-box{width:97%;margin:20px auto 0;}
+.con-title{height:45px;width:100%;text-align:center;line-height:45px;color:#fff;font-size:20px;margin-bottom:10px;}
+.con-title-a{background:#c5c5c5;}
+.con-title-b{background:#aeaeae;}
+.fire-con-box{width:100%;background:#ededed;}
+.fire-nav{width:5.6%;height:346px;}
+.fire-nav-list{color:#000;width:100%;text-align:center;height:31px;line-height:31px;}
+.fire-con{width:13.3%;height:346px;border-left:1px dashed #adb6c2;}
+.fire-con-wrap{width:93%;margin:1% auto;}
+.fire-con-title{width:100%;text-align:center;color:#000;height:33px;line-height: 33px;}
+.fire-con-name{font-size:12px;width:43.5%;text-align:center;height:31px;line-height:31px;color:#000;}
+.fire-con-status-wrap{cursor:pointer;width:13%;height:31px;line-height:31px;text-align:center;}
+.fire-con-status{height:16px;width:16px;border-radius:50%;display:inline-block;margin-top:18%;}
+.fire-con-status-on{background:#19d419;}
+.fire-con-status-mid{background:yellow;}
+.fire-con-status-off{background:red;}
+.fire-con-status-drop{background:#cccccc;}
+.fire-con-value{margin-left:3%;height:21px;line-height:21px;width:38%;text-align:center;color:#000;border:1px solid #2b7ce5;}
+
+
+.fire-nav-list-3{height:45px;line-height:45px;}
+.fire-nav-list-3-last{height: 58px;line-height: 41px;border-bottom: 1px dashed #adb6c2;margin-bottom: 11%;}
+
+
+
+/*content  end*/

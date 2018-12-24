@@ -1,0 +1,166 @@
+/* CSS Document */
+.pinRelative{ position:relative;height:313px;}
+.kdImg1Tit{ font-family:"SimHei"; font-size:40px; color:#35bd77;margin:40px auto; text-align:center;}
+.kdImg1DataTit{font-family:"SimHei"; font-size:16px; color:#FFF; margin:20px auto; text-align:center;}
+
+.kaidiOC1_s1{top:42px;left:86px;}
+.kaidiOC1_s2{top:60px;left:67px;}
+.kaidiOC1_s3{top:42px;left:65px;}
+.kaidiOC1_s4{top:42px;left:71px;}
+.kaidiOC1_s5{top:298px;left:64px;}
+.kaidiOC1_s6{top:303px;left:72px;}
+.kaidiOC1_s7{top:280px;left:67px;}
+.kaidiOC1_s8{top:298px;left:82px;}
+
+.kaidiOC2_s1{position:absolute; top:22px; left:81px;}
+.kaidiOC2_s2{top:40px; left:61px;}
+.kaidiOC2_s3{ top:22px; left:60px;}
+.kaidiOC2_s4{ top:277px; left:59px;}
+.kaidiOC2_s5{top:277px;left:76px;}
+
+.kaidiOC2_s1 .hid{display:none;}
+
+
+.kaidiOC3_s1{top:205px; left:109px;}
+.kaidiOC3_s2{top:146px; left:109px;}
+
+.PTdescribe{ width:95px; margin:0 auto; margin-bottom:200px;}
+.PTdescribe dl{ margin-bottom:20px;}
+.PTdescribe dt{ float:left; width:12px; height:24px;  margin-right:10px;}
+.PTdescribe dt.red{background:#F00;}
+.PTdescribe dt.green{background:#01ff5b;}
+.PTdescribe dd{ float:left; font-size:16px; color:#FFF;}
+.kdPinInfor
+{ 
+	width:137px;
+	height:132px; 
+	line-height:30px; 
+	border:1px solid #35bd77; 
+	background:#434749; 
+	font-size:18px; 
+	color:#FFF; 
+	border-radius:5px; 
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px; 
+	margin:48px auto 0;
+	text-align:center;
+	padding:30px 0 15px;
+}
+.kdPinInfor dt,.kdPinInfor dd{width:107px; margin:0 auto;}
+.kdPinInfor dd.kaidiInforLine{width:122px;height:2px; margin:15px auto 10px;background:#35bd77;}
+.kdPinInforLast{ height:162px; padding:10px 0 5px;}
+.kdPinInforLast dd{width:109px;}
+.kdPinInforLast dd.kaidiInforLine{margin:5px auto 5px;}
+
+
+
+
+
+
+
+.lwm2Group{ margin:0 auto;}
+.lwm2Group li .kdDT{ width:40px;color:#FFF; line-height:20px;}
+.kdGroup1{width:132px;}
+.kdGroup2{width:90px;margin:0 auto;}
+
+.kdGroup2 li
+{
+	color: #01ff5b;
+    border: 1px solid #404e83;
+    width: 88px;
+    height: 20px;
+    line-height: 20px;
+	margin-bottom:6px;
+}
+.whiteFont{ color:#FFF; font-size:14px; margin-left:100px; line-height:20px;}
+.pl50{ padding-left:50px;}
+
+/*kd4*/
+.wenShiDu{ position:absolute; font-size:14px; color:#FFF; line-height:32px;}
+.wenDuFont{ color:#ff7e00; font-size:24px; margin:0 10px;}
+.shiDuFont{ color:#ff0000; font-size:24px;margin:0 10px;}
+
+.wenShiDuPosition1{ top:463px; left:125px;}
+.wenShiDuPosition2{ top:283px; left:199px;}
+.wenShiDuPosition3{ top:100px; left:316px;}
+.wenShiDuPosition4{ top:17px; left:663px;}
+.wenShiDuPosition5{ top:17px; left:980px;}
+.wenShiDuPosition6{ top:100px; left:1390px;}
+.wenShiDuPosition7{ top:283px; left:1475px;}
+.wenShiDuPosition8{ top:480px; left:1560px;}
+
+
+
+.FJState{position:absolute; top:694px; left:1442px;}
+.FJState span{ float:left; color:#35bd77; font-size:18px; font-family:"SimHei"; line-height:25px;}
+.FJState .modelBtn{
+    float:left;
+	width:50px; 
+	height:24px; 
+	font-size:14px; 
+	color:#FFF; 
+	text-align:center;
+	border:1px solid #FFF;
+	border-radius:5px; 
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	 margin-right:20px;
+	 background:#01060d;
+	 cursor:pointer;
+	 
+	}
+.modelBtn.active{ background:#35bd77;}
+.handList{ position:absolute; top:24px; left:89px; display:none;/**/}
+.handList li{
+	width:50px; 
+	height:24px; 
+	font-size:14px; 
+	color:#FFF; 
+	text-align:center;
+	border:1px solid #FFF;
+	border-radius:5px; 
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	background:#01060d;
+	cursor:pointer;
+	}
+
+.handList li.active{ background:#35bd77;}
+.kdQiangOC li{display:none;}
+.kdQiangOC li.qiangOCActive{ display:block;}
+.kdQiangOC{ position:absolute;}
+
+
+.kdQiangOCPosition1{ top:545px; left:477px;}
+.kdQiangOCPosition2{ top:412px; left:542px;}
+.kdQiangOCPosition3{ top:316px; left:588px;}
+
+.kdQiangOCPosition4{ top:547px; left:1241px;}
+.kdQiangOCPosition5{ top:409px; left:1182px;}
+.kdQiangOCPosition6{ top:312px; left:1140px;}
+
+
+
+
+.zhaoMingControl span{ float:left; color:#35bd77; font-size:18px; font-family:"SimHei"; line-height:25px;}
+.zhaoMingControl .zhaoMingOC{
+    float:left;
+	width:50px; 
+	height:24px; 
+	font-size:14px; 
+	color:#FFF; 
+	text-align:center;
+	border:1px solid #FFF;
+	border-radius:5px; 
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	 margin-right:20px;
+	 background:#01060d;
+	 cursor:pointer;
+	}
+.zhaoMingOC.active{ background:#35bd77;}
+.zhaoMingControl{position:absolute;top:694px; left:50px; }
+.light{margin-top:30px;}
+.light li{ display:none;}
+.light li.lightActive{ display:block;}
+

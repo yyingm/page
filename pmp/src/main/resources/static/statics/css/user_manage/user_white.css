@@ -1,0 +1,54 @@
+/*-----------------  全局变量 begin  ------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;font:14px  Helvetica, Arial, sans-serif;border:none;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+
+/*-----------------  全局变量 end  ------------------*/
+
+.rightCon{width:91.14%;}
+#nav{background: #25292e;}
+.containerBox h1{height:50px;line-height: 50px;text-align: center;font-size: 22px;background:#e5e1e1;margin-bottom:25px;}
+.itemName{padding:0 10px;text-align:right;float: left;height:35px;line-height: 35px;margin-bottom:10px;}
+.itemValue{width:100px;height:30px;line-height:30px;background:#e5e1e1;border:1px solid #535960;border-radius: 5px;padding-left:10px;margin-bottom:10px;}
+.itemsWap{background:#e5e1e1;padding-top: 15px;}
+.containerBox{width:95%;margin:0 auto;}
+.containerBox .ui-button{color:black;}
+.ui-selectmenu-button.ui-button{width: 11em;}
+.containerBox .ui-button{color:black;}
+
+
+
+/*角色管理*/
+
+.active dd{
+    cursor: pointer;
+}
+.clearfix dd{
+    cursor: pointer;
+}
+
+th, td { font-family: Arial, Verdana, sans-serif; font-size: 0.9em; }
+table.dataTable tr.marked { background-color: #FFD900; }
+.click_blur{width:91.14%;}
+a.tcdNumber:hover{ text-decoration:none;}
+.tcdPageCode{padding: 15px 20px;text-align: left;color: #ccc;}
+.tcdPageCode a{display: inline-block;color: #428bca;display: inline-block;height: 25px; line-height: 25px;  padding: 0 10px;border: 1px solid #ddd; margin: 0 2px;border-radius: 4px;vertical-align: middle;}
+.tcdPageCode a:hover{text-decoration: none;border: 1px solid #428bca;}
+.tcdPageCode span.current{display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;color: #fff;background-color: #428bca; border: 1px solid #428bca;border-radius: 4px;vertical-align: middle;}
+.tcdPageCode span.disabled{ display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px; color: #bfbfbf;background: #f2f2f2;border: 1px solid #bfbfbf;border-radius: 4px;vertical-align: middle;}
+.content-right{width:91.14%;}
+.roleConWrap{width:98%;margin:0 auto;}
+#role_msg_table{color:black;}
+.tableName{height:80px;}
+.tableName>th tr>td{height:40px;line-height:40px;}
+.borderR{border-right: 1px solid #fff!important;}
+.borderB{border-bottom: 1px solid #fff!important;}
+.roleBtnWrap .ui-button .ui-icon{border:none;}
+tr{width:100%;}
+table.dataTable th.dataTableHeader{background-color:#e5e1e1!important;padding:0;text-align: center;}
+.dataTable tr:nth-child(odd),.dataTable tr:nth-child(even){background-color:#e5e1e1!important;}
+#user_operation.ui-button, #group_operation.ui-button, #role_operation.ui-button,.roleBtnWrap span.ui-button{color:black;}
+#msg_content{color:#000}
+
+input.roleCheck{background:#2c323b;margin:5px;}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sl.pmp.dao.PowerMonitorDao">
+
+	<select id="queryTotal" resultType="int">
+		select count(*) from test01 
+	</select> 
+	<select id="getTags"  resultType="String">
+		select replace(tag,"ep","")tag from tag_collection where tg like "tg10%"
+	</select>
+	
+	<select id="getAlias" resultType="String">
+		select alias,t.* from meter t 
+	</select> 
+</mapper>

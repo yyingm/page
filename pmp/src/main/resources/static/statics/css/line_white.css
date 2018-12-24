@@ -1,0 +1,110 @@
+html{height:100%;}
+.power-Query-h1{
+	color:#ffffff;height:35px;line-height: 35px;padding-left:2%;width:97.5%;background:#303740;
+}
+.content-right-powermanage {
+	margin:0 auto;
+	margin-top:10px;
+	width: 99%;
+    margin-bottom: 30px;
+}
+
+.type_option>label{color:#ffffff;}
+.fieldset {
+	padding-left: 2%;width:97.5%;
+	border:none;
+	background:#303740;
+	margin-bottom:10px;
+}
+
+.line_option {
+	width:800px;
+	margin-bottom:10px;
+}
+
+.line_div {
+	float:left;
+	width:850px;
+	height:366px;
+	/*background:#FFF;*/
+}
+
+/*月电压曲线*/
+.type_option, .period_option, .tag_option {
+	margin-bottom:10px;
+}
+.u_month_div, .u_day_div {
+	float:left;
+	width:100%;
+	margin:0 50px 30px 0;
+}
+
+/**
+ * 实时电压曲线
+ */
+.type_option, .period_option, .bar_option, .tag_option {
+	height:30px;
+	margin-bottom:15px;
+}
+.type_option {
+	width:550px;
+	height:70px;
+}
+.type_option > label, .period_option > label, .bar_option > label, .tag_option > label ,.type_option_thd > label{
+	float:left;
+	color:#7c838e;
+	height:30px;
+	line-height: 30px;
+}
+.type_option_i {
+	width:280px;
+	float:left;
+	margin:10px 0 0 85px;
+}
+.radio_group, .radio_group_thd {
+	margin-left:100px;
+}
+.radio_group > span, .radio_group_thd > span{
+	display:block;
+	margin-bottom:10px;
+	/*width:100%;*/
+}
+.content-right{width:91.14%;float:left;background:#fff;}
+.content-right-thd{width:91.14%;float:left}
+.type_option{width:40%;color:#a0a9b4;height:35px;line-height:35px;float:left;}
+.tag_option,.line_option,.times_option{width:38.5%;color:#a0a9b4;height:35px;line-height:35px;float:left;}
+.period_option,.bar_option{width:56.78%;height:35px;line-height:35px;color:#a0a9b4;float:left;}
+.hasDatepicker{height:30px;width:35%;border:1px solid #535960;color:#a0a9b4;background:#303740;border-radius: 3px;-moz-border-radius:3px;-webkit-border-radius:3px;behavior:url(../ie-css3.htc);}
+.times_select {
+	/*margin-left: 130px;*/
+	margin-top: -15px;
+}
+
+.times_select1 {
+	margin-left: 130px;
+	margin-top: -15px;
+}
+
+
+.line_table{width:50%;/*border-bottom:1px solid black;position:relative;top:725px;*/margin-bottom:50px;margin-left:15px;}
+
+.line_table_title td{width:100%;}
+.line_table table{width:100%;border-collapse: collapse;}
+.line_table table td{height:35px;line-height:35px;border: 1px solid black;}
+.line_table table td span{color:red;}
+.line_table table{border-bottom:#a0a0a0;}
+.line_table_title td{font-weight:bold;width:100%;color:#3a76cb!important;font-size:20px;text-align:center;}
+
+
+body{background:white;}
+.content{background:#212429;}
+.highcharts-legend-box text{fill:black!important;color:black!important;}
+.highcharts-legend-item text, .highcharts-area-series text, .highcharts-color-undefined text, .highcharts-series-0 text {color: black!important;fill: black!important;}
+#conRight{background:white;}
+.tag_option .ui-button .ui-icon{background-image: url(../images/ui-images/ui-icons_666666_256x240.png);border:none;}
+.type_option .ui-state-active.ui-button .ui-icon,.period_option .ui-state-active.ui-button .ui-icon, .bar_option .ui-state-active.ui-button .ui-icon{border-color:#dddddd;}
+
+.ui-button .ui-icon{border:none;}
+.ui-widget.ui-widget-content .ui-button{background:none;}
+.ui-widget.ui-widget-content .confirm_button{background: #0073ea;color: white!important;border: 1px solid #0073ea;}
+.ui-draggable .ui-dialog-titlebar .ui-button .ui-icon{background-image: url(../images/ui-images/ui-icons_666666_256x240.png);border:none;}

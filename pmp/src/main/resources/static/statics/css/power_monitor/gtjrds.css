@@ -1,0 +1,288 @@
+/*-------------------header  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;font:14px  Helvetica, Arial, sans-serif;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#212429;}
+/*-----------------  header  end ---------------------*/
+
+/*-----------------  媒体查询  begin ---------------------*/
+@media all and ( max-width:1300px ){
+    .bulb,.bulb-off,.wind,.wind-off{height:15px!important;width:15px!important;line-height:15px!important;}
+}
+@media all and ( max-width:800px ){
+    .header-box{width:800px!important;}
+    .wrap{width:800px!important;}
+}
+/*媒体查询 end*/
+
+
+/*-----------------  content  begin ---------------------*/
+.top_data li{margin-bottom:5px;}
+.img_box_wrap{
+	width: 312px;
+}
+.img_box_wrap_sin{
+	width: 275px;
+}
+.img_box_wrap_mini{
+	width: 226px;
+}
+.img_box{
+	position: relative;
+}
+.ipanel_line_horizon{
+	height: 2px;
+    background: #ffff00;
+    position: absolute;
+	width:1800px;
+	top:30px;
+	left:-7px;
+}
+.box_left_line{
+    background: #ffff00;
+	width:2px;
+	height: 700px;
+}
+.route_num{
+	color: white;
+	height: 65px;
+	line-height: 65px;
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+}
+.route_num_sin{
+	color: white;
+	height: 65px;
+	line-height: 65px;
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+}
+.route_name{
+	color: white;
+	padding-left:20px;
+	height: 25px;
+	line-height: 25px;
+}
+.switch_btn{
+	position: absolute;
+    width: 24px;
+    height: 12px;
+    cursor: pointer;
+    left: 50px;
+    top: 30px;
+    background: red;
+}
+.switch_btn_sin{
+	position: absolute;
+    width: 24px;
+    height: 12px;
+    cursor: pointer;
+    left: 35px;
+    top: 28px;
+    background: red;
+}
+.on{
+	background: #00ff00;
+}
+.off{
+	background: red;
+}
+.squre_wrap{
+	width:50%;
+	text-align: center;
+}
+.squre_num{
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+.squre_status{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border:1px solid #ddd;
+}
+.squre_status_wrap{
+	width: 80%;
+	margin:0 auto;
+}
+.jxg_wrap{
+	position: relative;
+}
+.switch_jxg{
+	left: 102px;
+	top:78px;
+	position: absolute;
+	width: 12px;
+	height: 24px;
+	background: red;
+}
+.con_div,.con_name,.con_val{
+	height: 30px;
+	line-height: 30px;
+	color: white;
+}
+.con_div{
+	margin-bottom: 10px;
+}
+.con_name{
+	width: 35px;
+	text-align: right;
+	padding-right: 5px;
+}
+.con_val{
+	text-align: center;
+	width: 80px;
+	border:1px solid #484747;
+	margin-right: 5px;
+}
+.con_val_sin{
+	width: 68px !important;
+}
+.box_wrap{
+	position: relative;
+}
+.box_wrap .con_val{
+	margin-left: 10px;
+}
+.vertical_img{
+	margin-bottom: 75px;
+}
+.jxg_img{
+	margin-bottom: 19px;
+}
+.mlg_wrap{
+	position: relative;
+}
+.box_name{
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: white;
+	margin:10px auto;
+}
+.bot_line{
+	border-left: 1px dashed #0c20b7;
+	height:700px;
+}
+.ipanel-con-box{width:1800px;}
+.top_val{
+	position: absolute;
+	top: -245px;
+	left: -65px;
+}
+.top_val li{
+	margin-bottom: 5px;
+	color:white;
+	height: 30px;
+	line-height: 30px;
+}
+.top_val .con_name{width: 60px;}
+body,.wrap{background: #212429;}
+#nav{background: #25292e;}
+
+
+/*直流屏*/
+.div_wrap{width:1300px;position: relative;padding:20px 0;margin-left:150px;}
+.pds_title,.pds_sub_title{color:white;width:100%;text-align: center;}
+.pds_title{font-size: 26px;letter-spacing: 2px;height: 50px;line-height: 50px;}
+.pds_sub_title{font-size:18px;letter-spacing: 2px;height:25px;line-height:25px;}
+.top_data{
+	position: absolute;
+	top:50px;
+	left:555px;
+}
+/*li{margin-bottom:5px;}*/
+.data_name{float:left;width: 68px;height: 18px;line-height: 18px;font-size: 14px;color: #FFF;text-align: right;margin-right: 10px;}
+.data_num{float:left;width: 80px;border: 1px solid #404e83;height: 18px;line-height: 18px;font-size: 12px;color: #01ff5b;text-align: center;}
+.sec_data{position: absolute;top:389px;left:174px;}
+.middle_data>li>.data_name,.sec_data>li>.data_name{width:120px;}
+.middle_data{position: absolute;top:454px;left:0;}
+.left_data,.right_data{position: absolute;top:673px;color:white;}
+.left_data>li,.right_data>li{width:20px;margin-right:51px;font-size: 16px;}
+.left_data{left:74px;}
+.right_data{left:450px;}
+.bottom_data{border:1px solid red;width:400px;position: absolute;top: 439px;left:685px;padding:10px 20px;}
+.b_title{color: white;font-size: 18px;letter-spacing: 2px;text-align: center;height:45px;line-height:45px;}
+.b_data_wrap{width:121px;margin: 5px;}
+.b_data_name{width: 48%;height: 35px;color:white;line-height: 35px;}
+.b_data_num{height: 35px;line-height: 35px;width:50%;border:1px solid #1f8c06;text-align: center;color:white;}
+.b_data_t{width:100%;text-align: center;color:white;height:20px;line-height: 20px;}
+.data_num{color:#31da0a;}
+#nav{width:170px!important;}
+.middle_data .data_num{width:70px;margin-right:3px;}
+.middle_data li{color:white;}
+.content{width: 1903px;}
+.dianlu1{width: 1720px;height: auto;}
+.status_box{
+	position: absolute;
+	right: -20px;
+	bottom: 200px;
+}
+.status_wrap,.status_name{
+	margin-bottom: 10px;
+	height:30px;
+	line-height: 30px;
+	color: white;
+}
+.status_icon{
+	margin-top: 5px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border:1px solid #666666;
+	margin-right: 5px;
+	display: inline-block;
+	background: #c7c7c7;
+}
+.status1,.normal{
+	background: #3fa913;
+}
+.status2{
+	background: #c7c7c7;
+}
+.alert_status{
+	background: red;
+}
+
+.bottom_data table{
+	width: 100%;
+	text-align: center;
+	border:1px solid #248205;
+	color: white;
+	border-collapse: collapse;
+}
+.bottom_data td{
+	border-right: 1px solid #248205;
+	border-bottom: 1px solid #248205;
+	height: 40px;
+    line-height: 40px;
+}
+.td_name{
+	width: 35%;
+}
+.td_status{
+	width: 15%;
+}
+.bottom_data table .status_icon{
+	margin-top:0;
+	vertical-align: middle;
+}
+.vertical_route_name{
+	width: 100%;
+	text-align:center;
+	height: 45px;
+	line-height: 45px;
+	color: white;
+}
+.vertical_img_name{
+	width: 100%;
+	text-align: center;
+	color: white;
+	position: relative;
+	top: -50px;
+}
+/*-----------------  content  end ---------------------*/

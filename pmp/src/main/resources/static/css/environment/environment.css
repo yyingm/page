@@ -1,0 +1,193 @@
+-------------------ȫ����ʽ  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;font:14px  Helvetica, Arial, sans-serif;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#25292e!important;}
+
+/*-----------------  ȫ����ʽ  end ---------------------*/
+
+/*-----------------  ý���ѯ  begin ---------------------*/
+@media all and ( max-width:1800px ){
+    .environment-conditioner-list>li{height:30px!important;}
+}
+@media all and ( max-width:1550px ){
+    .environment-title{font-size:16px!important;}
+    .environment-item-value{font-size:16px!important;}
+    .environment-conditioner-list{top:20%!important;}
+    .environment-conditioner-list>li,.environment-conditioner-title,.environment-conditioner-value{height:24px!important;line-height:25px!important;}
+}
+@media all and ( max-width:1450px ){
+    *{font-size:11px!important;}
+    .environment-title{font-size:14px!important;}
+    .environment-item-value{font-size:16px!important;}
+    .environment-conditioner-list{top:20%!important;}
+    .environment-conditioner-list>li,.environment-conditioner-title,.environment-conditioner-value{height:22px!important;line-height:22px!important;}
+    .environment-pencil{margin-top:3%;}
+}
+@media all and ( max-width:1350px ){
+    *{font-size:10px!important;}
+    .environment-title{font-size:14px!important;}
+    .environment-item-value{font-size:16px!important;}
+    .environment-conditioner-list{top:20%!important;}
+    .environment-conditioner-list>li,.environment-conditioner-title,.environment-conditioner-value{height:22px!important;line-height:22px!important;}
+    .environment-pencil{margin-top:3%;}
+}
+
+@media all and ( max-width:1330px ){
+    .header-box{width:1330px!important;}
+    .wrap{width:1330px!important;}
+}
+/*-----------------  ý���ѯ  end ---------------------*/
+
+
+/*-----------------  �Ҳ�����  begin ---------------------*/
+.environment-con{width:91.14%;background:#212429;padding-bottom:85px;}
+.enviroment-num{position: absolute;top:2.3%;;left:8%;color: white;font-size: 14px;}
+.environment-img-wrap{width:48%;}
+.environment-img-box{position:relative;padding-top:80.85%;}
+.environment-con-img{position:absolute;top:0;left:0;width:100%;height:100%;}
+.environment-item-wrap{margin-left:2%;width:50%;padding-top:3%;}
+.environment-item-con-wrap{width:25.65%;margin-right:10%;margin-bottom:8%;}
+.environment-item-con-box{position:relative;padding-top:74.36%;}
+.environment-item-con{position:absolute;top:0;left:0;width:100%;height:100%;}
+.environment-title{color:#2a84f6;font-size:20px;position:absolute;top:1%;left:18%;}
+.environment-item{width:65%;height:33px;line-height:33px;color:white;position:absolute;font-size: 14px;}
+.environment-item-temperature{top:41%;left:22%;}
+.environment-item-humidity{top:66%;left:22%;}
+.environment-item-title{width:40%;text-align:center;height:33px;line-height:33px;}
+.environment-item-value{font-size:25px;width:46%;height:33px;line-height:33px;}
+.environment-item-value-temperature{color:#ff7e00;}
+.environment-item-value-humidity{color:#ff0000;}
+.environment-status{position:absolute;top:38%;left:23%;width:53.68%;height:44.14%;}
+.environment-conditioner-box{position:relative;padding-top:152.58%;}
+.environment-conditioner-list{position:absolute;top:20%;left:3.4%;width:92.78%;height:70.95%;}
+.environment-conditioner-list>li{height:35px;line-height:30px;color:white;}
+.environment-conditioner-title{color:white;text-align:center;height:30px;line-height:30px;margin-right:2%;margin-left:2%;}
+.environment-conditioner-status{width:30px;height:14px;margin-top:5%;}
+.environment-status-red{background:#ff0000;}
+.environment-status-green{background:#00ff00;}
+.environment-conditioner-btn{cursor:pointer;border:1px solid #acacac;outline:none;background:#171717;margin-top:5%;color:#acacac;width:38px;height:18px;line-height:18px;border-radius:3px;-moz-border-radius:3px;,-webkit-border-radius:3px;behavior:url(../ie-css3.htc)}
+.environment-conditioner-btn-on{cursor:pointer;border:1px solid #acacac;outline:none;background:#2a84f6;margin-top:5%;color:white;width:38px;height:18px;line-height:18px;border-radius:3px;-moz-border-radius:3px;,-webkit-border-radius:3px;behavior:url(../ie-css3.htc)}
+.environment-conditioner-value{margin-right:1%;text-align:center;color:white;height:30px;line-height:30px;}
+.environment-conditioner-input{border:1px solid #171717;width:33px;height:18px;background:#35383c;color:#ffff00;margin-top:3%;}
+.environment-pencil{cursor:pointer;position:absolute;top:0;left:0;width:100%;height:100%;}
+.environment-pencil-wrap{width:11.29%;}
+.environment-pencil-wrap{padding-top:12%;position:relative;}
+.environment-infrared{position: absolute;top: 38%;left: 27%;width:44.68%;height: 44.14%;}
+/*屏蔽报警*/
+.alerm_switch{float: right;padding:3px 5px;color:white;border-radius:3px;cursor:pointer;margin-left:5px;}
+.open{background:green;}
+.close{background:red;}
+
+#nav{background:#25292e;}
+
+/*红t空调控制*/
+.air_con .floor_num{
+    position: absolute;
+    top: 1.2%;
+    left: 4.2%;
+    color: white;
+    font-size: 16px;
+}
+.air_con .environment-title{
+    top: 0;
+    color:white;
+}
+.air_con .room_name{
+    color: white;
+    padding-left: 2%;
+}
+.air_con .environment-conditioner-list{
+    top: 15%;
+}
+.air_con .environment-conditioner-list>li{
+    height: 30px;
+    min-height: 30px;
+}
+.air_con .swicth_con{
+    height: 24px;
+    width: 60px;
+    margin-top: 3px;
+    border-radius: 30px;
+    background:#c1c1c1;
+    position: relative;
+    cursor: pointer;
+}
+.air_con .swicth_btn{
+    width: 35px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    color: white;
+}
+.air_con .switch_close{
+    background: #0071ff;
+}
+.air_con .switch_open{
+    background: #2fd32f;
+}
+.air_con .swicth_con .switch_close{
+    right: 0;
+}
+.air_con .swicth_con .switch_open{
+    left:0;
+}
+.air_con .swicth_con>span{
+    width: 30px;
+   display: inline-block; 
+   color: black;
+   height: 24px;
+   line-height: 24px;
+   text-align: center;
+}
+.air_con .environment-conditioner-input{
+    border:1px solid #c1c1c1;
+}
+.building_option{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #605d5d;
+    width: 90%;
+    margin:30px auto 0;
+    color: #ddd;
+}
+.building_option_span{
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.building_selected{
+    color: white;
+    border-bottom: 2px solid #2a84f6;
+}
+.air_status_con{
+    width: 30px;
+    height: 14px;
+    margin-top: 5%;
+}
+.air_con{
+    width: 223px;
+    margin-right: 75px;
+    margin-bottom: 30px;
+}
+.air_wrap{
+    width: 91.14%;
+    padding-left: 100px;
+}
+.air_con .environment-conditioner-title{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#conRight{padding-bottom: 0;}
+.air_con .environment-conditioner-list{
+    height: 83.95%;
+}
+/*-----------------  �Ҳ�����  end ---------------------

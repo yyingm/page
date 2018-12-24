@@ -1,0 +1,67 @@
+/*-------------------header  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;font:14px  Helvetica, Arial, sans-serif;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#212429;}
+/*-----------------  header  end ---------------------*/
+
+/*-----------------  媒体查询  begin ---------------------*/
+@media all and ( max-width:1300px ){
+    .bulb,.bulb-off,.wind,.wind-off{height:15px!important;width:15px!important;line-height:15px!important;}
+}
+@media all and ( max-width:800px ){
+    .header-box{width:800px!important;}
+    .wrap{width:800px!important;}
+}
+/*媒体查询 end*/
+
+
+/*-----------------  content  begin ---------------------*/
+.ipanel-con-wrap{width:1725px;height:300px;padding-top:20px;}
+.ipanel-con-box{width:1725px;margin:0 auto;position:relative;padding-bottom:100px;}
+.ipanel-con-title{height:35px;line-height:35px;width:100%;border-bottom:2px solid #25292e;}
+.ipanel-con-title span{height:35px;line-height:35px;padding:0 4px;color:#ffffff;cursor:pointer;}
+.ipanel-con-title-selected{border-bottom:2px solid #2a84f6}
+.ipanel-con{width:100%;}
+.ipanel-relative{position:relative;}
+.ipanel-switch{position:absolute;background:#ff0000;width:12px;height:24px;cursor:pointer;}
+.ipanel-switch-on{position:absolute;background:#00ff00;width:12px;height:24px;cursor:pointer;}
+.ipanel-line-horizon{height:2px;background:#ffff00;position:absolute;}
+.ipanel-con-drbcg{width:160px;}
+.ipanel-line-vertical{width:2px;background:#ffff00;position:absolute;}
+.ipanel-item-name{margin:5px 0;color:#04cae2;font-size:12px;text-align:center;}
+.ipanel-hl{width:80px;height:15px;line-height:15px;text-align:center;font-size:12px;color:white;}
+.ipanel-hl-status{display:inline-block;width:10px;height:10px;border:1px solid #a9b2be;background:#00ff00;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;behavior:url(../ie-css3.htc);margin-right:3px;}
+.ipanel-ct{color:#00ff5a;font-size: 12px;position:absolute;top:25px;left:3px;}
+.ipanel-item-vertical-name{color:#04cae2;font-size:12px;position:absolute;top:27px;left:125px;}
+.ipanel-vertical-switch{position:absolute;background:#ff0000;width:24px;height:12px;cursor:pointer;left:49px;top:41px;}
+.ipanel-vertical-switch-on{position:absolute;background:#00ff00;width:24px;height:12px;cursor:pointer;left:49px;top:41px;}
+.ipanel-vertical-con-box-1{width:270px;}
+.ipanel-vertical-con-box-2{width:480px;}
+.ipanel-vertical-con{height:145px;width:100%;}
+.ipanel-vertical-con-2{height:80px;width:100%;}
+.ipanel-vertical-value-box{width:270px;padding-left:10px;position:absolute;top:65px;}
+.ipanel-vertical-value-box-2{width:265px;padding-left:10px;position:absolute;top:21px;right:0;}
+.ipanel-vertical-value{font-size: 12px;color:white;width:85px;height:20px;line-height:20px;}
+.ipanel-vertical-img{z-index:-10;}
+.ipanel-bottom-con{width:95%;margin-top:15px;}
+.ipanel-bottom-con-name{color:#04cae2;width:63%;height:25px;line-height:25px;font-size:12px;}
+.ipanel-bottom-con-value{color:white;width:37%;height:25px;line-height:25px;}
+.ipanel-last-con .ipanel-bottom-con-name{color:white;font-size:12px;}
+.ipanel-last-con{margin-top:47px;}
+.ipanel-bottom-con-b .ipanel-bottom-con-name{width:35%;color:white;margin-left:20%;}
+.ipanel-bottom-con-name>span{color:white;}
+.ipanel-top-title{color:white;width:100%;height:30px;line-height:30px;margin-top:20px;}
+.ipanel-top-title>span{height:30px;line-height:30px;float:left;color:#04cae2;}
+.ipanel-bottom-wrap{border:1px dashed #d8dade;margin-right:10px;margin-top:23px;padding:0 10px;}
+.ipanel-item-subname{color:red;text-align:center;width:100%;}
+
+
+
+
+
+
+
+
+/*-----------------  content  end ---------------------*/

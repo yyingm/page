@@ -1,0 +1,21 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1535515024066'); /* IE9*/
+  src: url('iconfont.eot?t=1535515024066#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAARUAAsAAAAABpgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFY8uUj8Y21hcAAAAYAAAABLAAABcOdrtnNnbHlmAAABzAAAAJ8AAACg0fstcGhlYWQAAAJsAAAALwAAADYUBrkdaGhlYQAAApwAAAAgAAAAJAluBRBobXR4AAACvAAAAAgAAAAICY4AAGxvY2EAAALEAAAABgAAAAYAUAAAbWF4cAAAAswAAAAgAAAAIAEPADluYW1lAAAC7AAAAUUAAAJtPlT+fXBvc3QAAAQ0AAAAIAAAADHd79B3eJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2BkOc44gYGVgYOpk+kMAwNDP4RmfM1gxMjBwMDEwMrMgBUEpLmmMDg8c37mzNzwv4EhhrmBoQEozAiSAwAoMQ0weJxjYGBgZWBgYAZiHSBmYWBgDGFgZAABP6AoI1icmYELLM7CoARWwwISf+b8/z+MBPJZwCQDIxvDKOABkzJQHjisIJiBEQDMwAp1AHicJYtBCoJAFED//6OYm2LInMGFqJs24cJC0YVgRyjmGIp4Ak9gc4/u0NZLqTXQ6sHjPWAA39F+sREOIOECgPEeHR6iiGsseIpO5gsXa7yi8XGKZ37LC/SzAkM8WdMytJox3bKp00S6iyq5zussq8hS1KtlUD0Jjx4u39HzKNho2g3+DxnmHt8Uvrm3lqY0B0HSBNvdtvETNMkPviYkVAB4nGNgZGBgAOK2ncHy8fw2Xxm4WRhA4PoaqwkI+n8Daz9zA5DLwcAEEgUAJncKnAB4nGNgZGBgbvjfwBDD2sfA8P8/az8DUAQFMAEAioYFiAQAAAAFjgAAAAAAAABQAAAAAQAAAAIALQADAAAAAAACAAAACgAKAAAA/wAAAAAAAHicZY9NTsMwEIVf+gekEqqoYIfkBWIBKP0Rq25YVGr3XXTfpk6bKokjx63UA3AejsAJOALcgDvwSCebNpbH37x5Y08A3OAHHo7fLfeRPVwyO3INF7gXrlN/EG6QX4SbaONVuEX9TdjHM6bCbXRheYPXuGL2hHdhDx18CNdwjU/hOvUv4Qb5W7iJO/wKt9Dx6sI+5l5XuI1HL/bHVi+cXqnlQcWhySKTOb+CmV7vkoWt0uqca1vEJlODoF9JU51pW91T7NdD5yIVWZOqCas6SYzKrdnq0AUb5/JRrxeJHoQm5Vhj/rbGAo5xBYUlDowxQhhkiMro6DtVZvSvsUPCXntWPc3ndFsU1P9zhQEC9M9cU7qy0nk6T4E9XxtSdXQrbsuelDSRXs1JErJCXta2VELqATZlV44RelzRiT8oZ0j/AAlabsgAAAB4nGNgYoAALgbsgImRiZGZgT2lNDGvIjOPgQEAFJADFA==') format('woff'),
+  url('iconfont.ttf?t=1535515024066') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1535515024066#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.icon-sms_logs,.icon-sms_logs_white{
+  font-family:"iconfont" !important;
+  font-size:14px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 8px;
+}
+
+.icon-sms_logs:before { content: "\e643";color: #2a84f6; }
+.icon-sms_logs_white:before { content: "\e643";color:white; }
+

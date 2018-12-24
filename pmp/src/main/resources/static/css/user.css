@@ -1,0 +1,132 @@
+
+body{
+	background: #25292e;
+	color:white;
+}
+/*修改用户*/
+.con_wrap{
+	width: 91%;
+	background: #212429;
+}
+.con_box{
+	width: 90%;
+	margin:50px auto;
+	border:2px solid #454444;
+	padding:50px 0 100px;
+}
+.con_title{
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+.item_box{
+	margin-bottom: 10px;
+}
+.item_box .item_box_name{
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	width: 13%;
+	text-align: right;
+	margin-right: 2%;
+}
+.item_box input[type="text"],.item_box .ui-selectmenu-button.ui-button{
+	border: 1px solid #535960;
+	background: none;
+	height: 30px;
+	line-height: 30px;
+	width: 300px;
+	color: white;
+	padding:0;
+	padding-left: 10px;
+}
+.item_box  .ui-button .ui-icon{
+	border:none;
+	width: 10px;
+	height: 10px;
+	margin-top: 7px;
+	margin-right: 10px;
+}
+.item_box span.ui-selectmenu-text{
+	width: 280px;
+	text-align: left;
+	height: 30px;
+	line-height: 30px;
+}
+.item_checkbox_wrap{
+	width: 85%;
+}
+.item_checkbox{
+	width: 20%;
+	height: 30px;
+	line-height: 30px;
+}
+.item_checkbox input[type="checkbox"]{
+	margin-right: 5px;
+}
+.item_box input[type="button"].submit_btn{
+	background: #297adc;
+	color: white;
+	margin-right: 10%;
+	margin-top: 20px;
+}
+/*组管理*/
+.group_table{
+	width: 97%;
+	margin:0 auto;
+	border-collapse: separate;
+	border-spacing: 0 5px;
+}
+.group_table th,.group_table td{
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	cursor: default;
+}
+.group_id{
+	width: 25%;
+}
+.group_name{
+	width: 35%;
+}
+.group_operation{
+	width: 40%;
+}
+.group_operation span{
+	cursor: pointer;
+}
+.group_table .alert-table-name th{
+	height: 45px;
+	line-height: 45px;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+#dialog_form input{
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #dddddd;
+	padding-left: 5px;
+}
+#dialog_form input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+ 
+}
+#dialog_form label{
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+}
+.add_btn{
+	background: #0073ff;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}

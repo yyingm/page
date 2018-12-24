@@ -1,0 +1,457 @@
+/*-------------------全局样式  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;font:14px  Helvetica, Arial, sans-serif;border:none;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+
+@media all and ( max-width: 1920px ){
+    .date{margin-top: 8%!important;}
+    .basic-icon-wrap{margin-bottom:4.89%!important;}
+    .basic-title{margin-bottom:5%!important;}
+    .run-icon-box{margin-bottom:6%!important;}
+    .run-title{margin-bottom:50%!important;}
+    .search-box{margin-top:40%!important;}
+}
+
+
+
+@media all and ( max-width:1750px ){
+    .monitor-box{width: 65.39%!important;}
+    .general-turn-box-1 p{line-height: 27px!important;}
+}
+@media all and ( max-width:1720px ){
+    .general-turn-box-1 p{font-size: 0.9em!important;}
+}
+@media all and ( max-width:1700px ){
+    .ui-datepicker-calendar th span{font-size:12px!important;}
+    .ui-datepicker-calendar .ui-state-default{font-size:12px!important;}
+
+}
+@media all and ( max-width: 1600px ){
+    .ele-num{margin-top:13%!important;}
+    .ele-name{margin-top:3%!important;margin-bottom:13%!important;}
+    .monitor-item,.monitor-item-selected{width:9.5%!important;height:53%!important;margin-right:2.5%!important;}
+    .monitor-lengend{width:9.5%!important;padding-left:3%!important;}
+    .general-wrap{padding-top: 90.8%!important;}
+    .basic-title{width:145%!important;margin-left:-20%!important;}
+}
+@media all and ( max-width:1560px ){
+    .general-turn-box-1 p{font-size:0.8em!important;line-height:26px!important;}
+}
+@media all and ( max-width:1510px ){
+    .general-turn-box-1 p{line-height:25px!important;}
+}
+@media all and ( max-width:1485px ){
+    .general-turn-box-1 p{line-height:20px!important;}
+}
+@media all and ( max-width:1400px ){
+    .general-turn-box-1 p{line-height:18px!important;font-size:0.85em!important;}
+    .run-title{width:103%!important;}
+    .event-line{height:55px!important;}
+    .div3 li span{margin:10px 4% auto 12%!important;}
+    .run-title img{margin-left:0!important;}
+    .run-progress>div>span{font-size:18px!important;}
+    .eventIcon-box{margin-top: 7%!important;}
+}
+@media all and ( max-width: 1300px ){
+    *{font-size:12px!important;}
+    .date{margin-top:3%!important;}
+    .days{margin-top:6%!important;}
+    .users{margin-top:0!important;}
+    .alertNum{margin-left: 11%;margin-top: 6%;}
+    .alert{margin-top:10%!important;}
+    .monitor-item,.monitor-item-selected{width:8.5%!important;}
+    .monitor-lengend{width:9.5%!important;padding-left: 3%!important;}
+    .ui-datepicker-calendar th span{float:left;width:120%;}
+    .run-progress>div>span{font-weight:bold;font-size:20px!important;}
+    .general-turn-box-1 p{width:95%!important;line-height:16.5px!important;font-size:0.85em!important;}
+    .monitor-top{height:30px!important;}
+    .line-monitor{height:130%!important;}
+    .monitor-box{width: 65.4%!important;}
+    .line-monitor{margin-left: 0.8%!important;}
+    .general-box4{margin-left:1.15%!important;}
+    .run-icon-text-white,.run-icon-text-grey{width:200%!important;margin-left:-60%!important;}
+}
+@media all and ( max-width: 1225px ){
+    .run-progress>div>span{font-size:14px!important;}
+}
+@media all and ( max-width: 1200px ){
+    .general-wrap{padding-top:101%!important;}
+    .eventIcon-box{margin-top:10%!important;}
+    .run-icon-box{margin-top:3%!important;}
+    .ele-name {margin-top: 6%!important;margin-bottom: 17%!important;}
+    .ele-num {margin-top: 15%!important;}
+    .line-monitor{height:141%!important;}
+    .run-icon-box{margin-top:0!important;margin-bottom: 2%!important;}
+}
+@media all and ( max-width: 1150px ){
+    .monitor-item,.monitor-item-selected{width:9.5%!important;height:53%!important;}
+    .div3 li img{margin:14% 5% auto 10%!important;}
+}
+@media all and ( max-width: 1120px ){
+    .search-box{margin-top:14%!important;}
+    .div2 span{margin:7px 6%!important;}
+    .div2{text-align:center!important;}
+    .ele-num {margin-top: 16%!important;}
+    .general-wrap{padding-top: 103%!important;}
+    .eventIcon-box {margin-top: 13%!important;}
+}
+@media all and ( max-width: 1065px ){
+    .tpu{height:68px!important;}
+}
+@media all and ( max-width: 1045px ){
+    .tpu{height:68px!important;}
+    .div2 img{margin: 6px 7%!important;}
+    .div3 li{height:30px!important;line-height:30px!important;}
+    .div3 li img{margin: 8% 5% auto 10%!important;}
+    .run-icon-text-white,.run-icon-text-grey{width:200%!important;margin-left:-60%!important;}
+}
+@media all and ( max-width: 1005px ){
+    .monitor-item,.monitor-item-selected{width:10.5%!important;height:53%!important;margin-right:2.5%!important;}
+    .monitor-lengend{width:10.5%!important;padding-left:4%!important;}
+    .general-wrap {padding-top: 108%!important;}
+    .eventIcon-box{margin-top: 13%!important;}
+    .run-progress>div>span{font-size:12px!important;}
+    .line-monitor{height:140%!important;}
+	.run-icon-text-white,.run-icon-text-grey{width:150%!important;margin-left:-33%!important;}
+	.run-title {margin-bottom:35%!important;}
+	.run-icon-box{margin-bottom: 10%!important;}
+}
+@media all and ( max-width: 1000px ){
+    *{font-size:10px!important;}
+    .general-wrap{padding-top:117%!important;}
+    .run-progress>div>{font-weight:bold;font-size:12px!important;}
+    .ele-name-new{height:30px!important;}
+}
+@media all and ( max-width: 992px ){
+    .ydgk{height:89%!important;}
+    .ele-num {margin-top:10%!important;}
+    .ele-name{margin-bottom:13%!important;}
+    .line-monitor{margin-left:1%!important;}
+    .general-box4{margin-left:1.39%!important;}
+}
+@media all and ( max-width:967px ){
+    .general-wrap{padding-top:123%!important;}
+    .line-monitor{height:157%!important;}
+}
+@media all and ( max-width: 961px ){
+    .monitor-item,.monitor-item-selected{width:11.5%!important;height:53%!important;margin-right:2.5%!important;}
+    .monitor-lengend{width:11.5%!important;padding-left:4%!important;}
+    .eventIcon-box {margin-top: 19%!important;}
+    .search-box{margin-top:14%!important;}
+    .run-title img{margin-left:0!important;}
+    .ele-name {margin-top: 0!important;margin-bottom:15%!important;}
+    .ele-num {margin-top: 15%!important;}
+
+}
+@media all and ( max-width: 915px ){
+    .div2 img {margin:4px 0%!important;}
+}
+
+@media all and ( max-width:1150px ){
+    .flip-box-wrap{top:0!important;}
+    .general-turn-box-1 p{width:98%!important;line-height:16px!important;font-size:0.8em!important;}
+}
+@media all and ( max-width:1100px ){
+    .general-turn-box-1 p{width:98%!important;line-height:13.5px!important;font-size:0.7em!important;}
+    .div3 li>a{margin-left:24%!important;}
+}
+@media all and ( max-width:1030px ){
+    .general-turn-box-1 p{width:100%!important;line-height:14px!important;font-size:0.6em!important;}
+}
+@media all and ( max-width:945px ){
+    .div3 li>a{margin-left:10%!important;}
+}
+@media all and ( max-width:920px ){
+    .general-turn-box-1 p{width:100%!important;line-height:11px!important;font-size:0.4em!important;}
+}
+
+@media all and ( max-width: 889px ){
+    .tpu{height:50px!important;line-height:25px!important;}
+    .div2 span{margin:7px 4%!important;}
+    .div3 li span{margin:10px 4% auto 10%!important;}
+    .div2 image {margin: 2px 3%!important;}
+    .div2 {height: 35px!important;line-height: 25px!important;}
+    .tpu{height:50px!important;line-height:25px!important;}
+    .div3 li img {margin: 8% 5% auto 8%!important;}
+    .general-wrap{padding-top:128%!important;}
+    .div3 li>a{font-size:0.75em!important;width:103%!important;margin-left: 0!important;}
+}
+@media all and ( max-width: 880px ){
+    .monitor-item,.monitor-item-selected{width:13%!important;height:53%!important;margin-right:2.5%!important;}
+    .monitor-lengend{width:13%!important;padding-left:4%!important;}
+    .eventIcon-box{margin-top:27%;}
+}
+@media all and ( max-width: 830px ){
+    .general-wrap{padding-top:130%!important;}
+    .line-monitor{height:166%!important;}
+}
+@media all and ( max-width:800px ){
+    .header-box{width:800px!important;}
+    .wrap{width:800px!important;}
+    .general-wrap{padding-top: 131%!important;}
+    .eventIcon-box {margin-top: 21%!important;}
+    .ele-name {margin-top: 0!important;margin-bottom: 20%!important;}
+    .ele-num {margin-top: 17%!important;}
+    .div2 img {margin:2px 1%!important;}
+    .run-title img{margin-left:0!important;}
+    .run-progress>div>{font-weight:bold;font-size:10px!important;}
+    .run-progress>div>span{font-weight:bold;font-size:12px!important;}
+}
+
+/*-------------------全局样式  end------------------------*/
+
+/*=======================  右侧内容  ===============================*/
+.con{width:90.683%;height:100%;padding-top:20px;padding-left:0.457%;}
+/*=======================  所有栏目的样式  ===============================*/
+.general-box{width:32.34%;margin-left:0.631%;margin-bottom:0.65%;}
+.general-wrap{position: relative;padding-top:84.8%;}
+.general{position:absolute;top:0;left:0;height:100%;width:100%;background:#fff;border:2px solid #e9e9e9;}
+.general-top{padding-left:5.65%;width:94.35%;background:#4289e4;color:#fff;height:40px;line-height:40px;font-weight:bold;}
+
+
+/*=======================  变电所概况  ===============================*/
+.item-choice{margin-top:0.5%;}
+.item-choice span{width:56px;text-align: right;height:25px;line-height:25px;color:#333333;margin-bottom:2.5%;}
+/*选择框的样式*/
+.items-box{width:40%;height:25px;overflow: hidden;}
+.items-box select{color:#333333;outline:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;background:transparent;border:none;padding-left:10px;width:100%;height:100%;}
+.items-box select option{color:#333333;}
+/*圆形图标*/
+.basic-wrap{margin-left:19.54%;width:67.49%;}
+.basic-box{width:30.11%;}
+.basic-icon-wrap{z-index:3;position:relative;width:100%;padding-top:100%;margin-bottom:5.89%;}
+.basic-icon{position:absolute;top:0;left:0;width:100%;height:100%;}
+.basic-title{text-align:center;color:#000;margin-bottom:2%;font-size:12px;}
+.basic-value{text-align:center;color:#000;margin-bottom:5%;}
+.basic-box:nth-child(1),.basic-box:nth-child(3){margin-right:27.39%;}
+.run-progress>div>{font-weight:bold;font-size:14px;}
+.run-progress>div>span{font-weight:bold;font-size:22px;}
+
+
+.general-turn-wrap{position: relative;padding-top:77.98%;}
+.general-turn-box-1{width:100%;background:#fff;color:white;position:absolute;top:0;left:0;display:none;padding-top:73%;text-indent:2em;margin-top:-10px;}
+.general-turn-box-1 p{width:92%;color:#333333;line-height:30px;margin:0 auto;}
+.general-turn-box-2{width:100%;position:absolute;top:0;left:0;}
+.flip-box-wrap{position:absolute;top:0;left:0;width:100%;height:100%;}
+
+
+/*=======================  运行状态  ===============================*/
+.run-box{width:100%;margin-top:7.77%;}
+
+.progress-box{width:19.43%;margin-left:4.94%;}
+.progress-box>div{width:100%;margin-bottom:21%;}
+.run-progress-wrap{position:relative;padding-top:100%;}
+.run-progress{text-align:center;color:white;position:absolute;top:0;left:0;width:100%;height:100%;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;behavior:url(../ie-css3.htc)}
+.run-progress>div{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%); }
+
+.run-title{width:100%;text-align:center;color:#333333;margin-bottom:30%;}
+.run-title img{width:18px;height:18px;margin-top:1px;margin-left:10px;float:left;}
+.run-icon-box{width:9.89%;float:left;margin-bottom:22px;margin-left:9.42%;}
+.run-icon-wrap{position:relative;padding-top:100%;cursor:pointer;}
+.run-icon{position:absolute;top:0;left:0;width:100%;height:100%;float:left;}
+.run-icon-box:nth-child(1),.run-icon-box:nth-child(6){margin-left:5.65%;}
+.run-icon-text-white{margin-left:-15%;font-size:0.9em;width:130%;height:100%;margin-top:10%;color:#000;text-align:center;}
+.run-icon-text-grey{margin-left:-15%;font-size:0.9em;width:130%;height:100%;margin-top:10%;color:#888;text-align:center;}
+
+/*=======================  事件记录  ===============================*/
+.event-box{width:100%;position:relative;}
+.calender-box{width:87.45%;margin:1.77% auto 3%;}
+.calender-wrap{padding-top:50.5%;position:relative;}
+.calender{position:absolute;width:100%;height:100%;left:0;top:0;}
+.eventIcon-box{width:33.21%;margin-top:3%;cursor:pointer;}
+.eventIcon-box>div{width:42.55%;}
+.event-icon-wrap{position:relative;padding-top:100%;}
+.event-icon{position:absolute;top:0;left:0;width:100%;height:100%;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;behavior:url(../ie-css3.htc)background:white;margin-left:65%;}
+.event-name,.event-num{color:#333333;text-align:center;cursor:pointer;width:100%;}
+.event-name{font-size:12px;margin-top:3%;}
+.event-num{margin-top:1%;}
+.event-line{position:absolute;width:1px;height:74px;background:#353a3f;top:74.85%;}
+
+
+/*------------------  二级菜单  -------------------*/
+
+
+
+
+
+/*=======================  曲线监控  ===============================*/
+.monitor-box{width:65.3%;}
+.monitor-wrap{padding-top:34.7%;position:relative;}
+.line-monitor{position:absolute;left:0;top:0;width:100%;height:122%;background:#25292e;margin-left:0.631%;background:#fff;border:2px solid #e9e9e9;}
+.monitor-top{height:40px;width:90%;margin:0 auto;}
+#monitor{width:90%;height:80%;margin:0 auto;}
+.monitor-item-selected{width:7.5%;height:73%;padding-top:1%;color:white;cursor: pointer;border-bottom:2px solid #308bff;margin-right:5%;text-align:center;}
+.monitor-item{width:7.5%;height:73%;padding-top:1%;color:#9aa2ad;cursor: pointer;margin-right:5%;text-align:center;}
+.danwei{color:#9aa2ad;padding-top:1.45%;margin-right:1%;}
+.monitor-lengend{display:none;color:#9aa2ad;width:8.5%;padding-top:1.45%;padding-left:2%;}
+
+
+/*=======================  用电概况  ===============================*/
+.elect-box{width:100%;}
+.ydgk{background:#eaeaea;}
+.elect-item{width:50%;height:62.4%;text-align:center;float:left;}
+.elect-item:nth-child(1),.elect-item:nth-child(4){background:#fff;}
+.elect-item:nth-child(2),.elect-item:nth-child(3){background:#e5e5e5;}
+.ele-num{font-size:24px;color:#333333;margin-top:15%;height:15.55%;line-height:138.55%;position:relative;}
+.ele-name{color:#333333;margin-bottom:14%;margin-top:5%;}
+.ele-maxNum{color:#333333;}
+.ele-num-icon{margin-bottom:10%;float:right;width:10px;height:24px;position:absolute;top:10px;right:20%;}
+
+
+
+/*曲线颜色*/
+.highcharts-legend-box text,.highcharts-series-group {color:black!important;fill:black!important;}
+.highcharts-legend-item text,.highcharts-area-series text,.highcharts-color-undefined text,.highcharts-series-0 text{color:black!important;fill:black!important;}
+.monitor-lengend,.danwei{color:black!important;}
+
+
+.con,.top,.monitor-wrap{background:#ffffff;}
+/*-------------------content end-------------------------*/
+
+
+/*------------------  日历  -------------------*/
+        /* Reset */
+        .ui-datepicker,
+        .ui-datepicker table,
+        .ui-datepicker tr,
+        .ui-datepicker td,
+        .ui-datepicker th {
+            margin: 0;
+            padding: 0;
+            border: none;
+            border-spacing: 0;
+        }
+
+        /* Calendar Wrapper */
+        .ui-datepicker {
+            display: none;
+            width:100%;
+            /*padding: 35px;*/
+            cursor: default;
+            text-transform: uppercase;
+            font-family: Tahoma;
+            font-size: 12px;
+
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+
+        }
+
+        /* Calendar Header */
+        .ui-datepicker-header {
+            position: relative;
+            padding-bottom: 2.3%;
+            border-bottom: 1px solid #373c42;
+        }
+
+        .ui-datepicker-title { text-align: center; }
+
+        /* Month */
+        .ui-datepicker-month {
+            position: relative;
+            padding-right: 15px;
+            color: #adb6c2;
+        }
+
+        .ui-datepicker-month:before {
+            display: block;
+            position: absolute;
+            top: 1.15%;
+            right: 0;
+            width: 1.15%;
+            height: 1.15%;
+            content: '';
+
+            background: #a5cd4e;
+            background: -moz-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a));
+            background: -webkit-linear-gradient(top, #a5cd4e 0%,#6b8f1a 100%);
+            background: -o-linear-gradient(top, #a5cd4e 0%,#6b8f1a 100%);
+            background: -ms-linear-gradient(top, #a5cd4e 0%,#6b8f1a 100%);
+            background: linear-gradient(top, #a5cd4e 0%,#6b8f1a 100%);
+
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        /* Year */
+        .ui-datepicker-year {
+            padding-left:1.85%;
+            color: #adb6c2;
+        }
+
+        /* Prev Next Month */
+        .ui-datepicker-prev,
+        .ui-datepicker-next {
+            position: absolute;
+            top: -0.46%;
+            padding: 1.15%;
+            cursor: pointer;
+        }
+
+        .ui-datepicker-prev {
+            left: 0;
+            padding-left: 0;
+        }
+
+        .ui-datepicker-next {
+            right: 0;
+            padding-right: 0;
+        }
+
+        /* Calendar "Days" */
+        .ui-datepicker-calendar th {
+            padding-top:2.46%;
+            padding-bottom:1.3%;
+
+            text-align: center;
+            font-weight: normal;
+            color: #5c5e69;
+        }
+
+        .ui-datepicker-calendar td {
+            padding: 0 1.6%;
+
+            text-align: center;
+            line-height: 26px;
+        }
+
+        .ui-datepicker-calendar .ui-state-default {
+            display: block;
+            width:71%;
+            height:35%;
+            outline: none;
+            padding: 11% 0;
+            text-decoration: none;
+            color: #b2b2b2;
+            text-align:center;
+            border: 1px solid transparent;
+            border-radius:50%;
+            margin-left:12%;
+        }
+
+        /* Day Active State*/
+        .ui-datepicker-calendar .ui-state-active {
+            color: #ffffff;
+            border-color: #2a7ce5;
+            background: #25292e;
+        }
+        .ui-datepicker-calendar{
+            width:100%;
+        }
+
+        /* Other Months Days*/
+        
+        .ui-datepicker-month{float:none;}
+        .ui-widget-header{background:none;border:none;}
+        .ui-widget.ui-widget-content{border:none;}
+        .ui-datepicker-calendar .ui-state-default{color:#b2b2b2;background:none;}
+        .ui-datepicker-other-month .ui-state-default { color: #5c5e69; }
+        .ui-datepicker-calendar .ui-state-active{color:#1a1a1a;border:1px solid #1a1a1a;}
+        .ui-state-active{background:none!important;}
+        .ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled{color:#5c5e69;opacity:1;}
+        
+

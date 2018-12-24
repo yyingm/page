@@ -1,0 +1,161 @@
+/*-----------------  全局样式  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#25292e!important;}
+/*-----------------  全局样式  end ---------------------*/
+
+/*-----------------  媒体查询  begin ---------------------*/
+@media all and ( max-width:1300px ){
+    .bulb,.bulb-off,.wind,.wind-off{height:15px!important;width:15px!important;line-height:15px!important;}
+}
+@media all and ( max-width:800px ){
+    .header-box{width:800px!important;}
+    .wrap{width:800px!important;}
+}
+/*-----------------  媒体查询  end ---------------------*/
+
+
+/*-----------------  content begin ---------------------*/
+.proportion-con-wrap{width:91.14%;background:#212429;padding-top:20px;padding-bottom:100px;}
+.proportion-con-box{width:97.71%;margin:0 auto;}
+.proportion-con-title{width:99%;height:60px;line-height:60px;color:#929ba6;margin-bottom:10px;}
+.proportion-item-name{width:90px;height:60px;line-height:60px;font-size:14px;}
+.proportion-item-con{margin-top: 1.2%;outline:none;width:200px;height:24px;color:#929ba6;border:1px solid #929ba6;background:#212429;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;behavior:url(../ie-css3.htc);}
+.proportion-con{width:100%;}
+
+.proportion-pie-wrap{width:57.02%;margin-right:0.58%;margin-bottom:10px;}
+.proportion-pie-box{position:relative;padding-top:57.95%;}
+.proportion-pie-con{width:100%;height:100%;position:absolute;left:0;top:0;background:#25292e;}
+
+.proportion-value-wrap{width:42.11%;margin-bottom:10px;}
+.proportion-value-box{position:relative;padding-top:78.47%;border-collapse: collapse;overflow: auto;}
+.proportion-value-con{width:100%;height:100%;position:absolute;left:0;top:0;border-collapse: separate;border-spacing: 0 2px;}
+/*.proportion-value-con tr{display:block;margin:2px 0;}*/
+.proportion-value-con-title{width:96.39%;height:40px;color:#2a84f6;text-align:left;background:#252a31;margin-top:0!important;font-size:14px;line-height:40px;}
+.proportion-cate{width:33%;padding-left:2%;}
+.proportion-num{width:20%;}
+.proportion-percent{width:15%;}
+.proportion-yesterday{width:20%;}
+.proportion-circle{width:10%;}
+.proportion-value-tr-odd{height:24px;background:#2c323b;width:100%;}
+.proportion-value-tr-even{height:24px;background:#252a31;width:100%;}
+.proportion-value-tr-odd>td,.proportion-value-tr-even>td{height:24px;line-height:24px;color:#adb6c2;font-size:14px;}
+
+.proportion-bar-wrap{width:49.71%;margin-right:0.58%;margin-bottom:10px;}
+.proportion-bar-box{position:relative;padding-top:56.47%;}
+.proportion-bar-con{width:100%;height:100%;position:absolute;left:0;top:0;background:#25292e;}
+
+.proportion-area-wrap{width:49.71%;margin-bottom:10px;}
+.proportion-area-box{position:relative;padding-top:56.47%;}
+.proportion-area-con{width:100%;height:100%;position:absolute;left:0;top:0;background:#25292e;}
+
+.proportion-mountain-wrap{width:100%;}
+.proportion-mountain-box{position:relative;padding-top:28.1%;}
+.proportion-mountain-con{width:100%;height:100%;position:absolute;left:0;top:0;background:#25292e;}
+
+.ele-cycle-btn{cursor:pointer;margin-right:10px;border:1px solid #a0a9b4;background:#212429;margin-top:1.2%;width:60px;height:22px;text-align: center;line-height:22px;border-radius: 3px;-moz-border-radius:3px;-webkit-border-radius:3px;behavior:url(../ie-css3.htc);}
+.ele-cycle-btnCircle{margin:6% 5% auto;background:#7c838e;width:14px;height:14px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;behavior:url(../ie-css3.htc)}
+.ele-quantity-btn{margin-right:10px;width:46px;cursor:pointer;border:1px solid #a0a9b4;background:#212429;margin-top:0.6%;height:22px;text-align: center;line-height:22px;border-radius: 3px;-moz-border-radius:3px;-webkit-border-radius:3px;behavior:url(../ie-css3.htc);}
+.ele-quantity-btnBig{width:60px;margin-right:10px;cursor:pointer;border:1px solid #a0a9b4;background:#212429;margin-top:0.6%;height:22px;text-align: center;line-height:22px;border-radius: 3px;-moz-border-radius:3px;-webkit-border-radius:3px;behavior:url(../ie-css3.htc);}
+.ele-btnCircle-active{width: 13px;height: 13px;background:#303740;border:1px solid #ffffff;}
+.ele-btn-active{background:#2a84f6;border:1px solid black;color:#ffffff;}
+.ele-data-date{margin-top:19px;height:22px;width:200px;border:1px solid #a0a9b4;color:#a0a9b4;background:#212429;border-radius: 3px;-moz-border-radius:3px;-webkit-border-radius:3px;behavior:url(../ie-css3.htc);}
+.route_name_label{color: #bfbbbb;height: 30px;line-height: 30px;margin-left: 100px;}
+.route_name_select{width:200px;height: 30px;line-height: 30px;color: white; border:1px solid #38393a;background: #212429;padding-left: 1%;border-radius: 3px;}
+.route_name_wrap{margin-bottom: 50px;}
+/*-----------------  content end ---------------------*/
+
+
+/*UI*/
+ label.ui-button .ui-icon{background-image:none;}
+
+.ui-button:hover,
+.ui-button:focus {
+    border: 1px solid #0073ea;
+    font-weight: bold;
+    color: #ffffff;
+}
+.ui-state-active,.ui-button .ui-icon:hover{background-image:none;}
+.ui-icon,
+.ui-widget-content .ui-icon {
+    background-image:none;
+}
+.ui-widget-header .ui-icon {
+    background-image:none;
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon,
+.ui-button:hover .ui-icon,
+.ui-button:focus .ui-icon {
+    background-image:none;
+}
+.ele-data-date{padding-left:1%;}
+.proportion-con-title .ui-state-active.ui-button .ui-icon{border-color:#dddddd;}
+
+
+#day_datepicker{background: #212429;}
+
+
+/*玛氏食品 能耗管理监控*/
+.manage_alerm_wrap{
+	width:91.14%;
+	background:#212429;
+}
+.manage_alerm_title{
+	height:60px;
+	line-height: 60px;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	color: white;
+	font-size: 20px;
+	letter-spacing: 2px;
+	border-bottom: 2px solid #38393a;
+}
+.manage_alerm_box{
+	border:1px solid #38393a;
+	width: 80%;
+	margin: 20px auto;
+	padding:30px 0 70px;
+}
+.value_line,.month_name{
+	height:40px;
+	line-height: 40px;
+}
+.value_line{
+	margin:10px 0;
+}
+.month_name{
+	color: #bfbbbb;
+	width: 30%;
+	text-align: right; 
+	margin-right: 3%;
+}
+.value_con{
+	width: 35%;
+	height: 30px;
+	line-height: 30px;
+	background: #212429;
+	border:1px solid #38393a;
+	margin-top: 3px;
+	border-radius: 3px;
+	padding-left: 1%;
+	color: white;
+}
+.edit_icon{
+	margin-top: 10px;
+    margin-left: 1%;
+}
+.reset_btn,.submit_btn{
+	padding:5px 10px;
+	background: #6f6e6e;
+	letter-spacing: 2px;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-right: 10%;
+}
+.reset_btn{
+	margin-right: 10px;
+}

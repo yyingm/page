@@ -1,0 +1,7 @@
+.printing_content{color:white;width:85%;margin:0 auto;margin-top:15px;border:3px solid #2c323b;margin-bottom:100px;}
+.printing_title{height:50px;line-height:50px;border-bottom:3px solid #2c323b;width:96%;margin:0 auto;text-align:center;}
+.printing_title span{height:50px;line-height:50px;font-size:20px;}
+.printing_table{width:96%;margin:0 auto;text-align: center;border-collapse: separate;border-spacing: 0px 10px;margin-top:20px;}
+.printing_table tr{width: 100%;color: #adb6c2;cursor: pointer;background: #252a31;height: 35px;line-height: 35px;}
+.printing_table .tableTitle{height:45px;line-height:45px;background:#303740;color:#2a84f6;}
+.printing_table .tableTitle th{font-size:16px;}

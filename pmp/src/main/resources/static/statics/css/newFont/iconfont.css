@@ -1,0 +1,49 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1532662347308'); /* IE9*/
+  src: url('iconfont.eot?t=1532662347308#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+  url('iconfont.ttf?t=1532662347308') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1532662347308#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.icon-load_rate,.icon-load_rate_white,.icon-load_rate_gray,.icon-water_monitor,.icon-water_manage,.icon-water_manage_gray,.icon-water_manage_white,.icon-water_monitor_white,.icon-water_monitor_gray,.icon-power_quality_white,.icon-power_quality,.icon-power_quality_gray{
+   font-family:"iconfont" !important;
+  font-size:20px;
+  margin:5px 17px auto;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}*/
+
+.icon-load_rate_white:before { content: "\e612";color:#fff; }
+
+.icon-load_rate:before { content: "\e613"; color: #2a84fb;}
+
+.icon-load_rate_gray:before { content: "\e614"; }
+
+.icon-water_monitor:before { content: "\e615"; color: #2a84fb;}
+
+.icon-water_manage:before { content: "\e616";color: #2a84fb; }
+
+.icon-water_manage_gray:before { content: "\e617"; }
+
+.icon-water_manage_white:before { content: "\e618"; color:#fff; }
+
+.icon-water_monitor_white:before { content: "\e619";color:#fff;}
+
+.icon-water_monitor_gray:before { content: "\e61a"; }
+
+.icon-power_quality_white:before { content: "\e61b"; color:#fff; }
+
+.icon-power_quality:before { content: "\e61c"; color: #2a84fb;}
+
+.icon-power_quality_gray:before { content: "\e61d"; }
+

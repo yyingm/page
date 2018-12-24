@@ -1,0 +1,265 @@
+/*-------------------全局样式  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;font:14px  Helvetica, Arial, sans-serif;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#212429;}
+/*-----------------  全局样式  end ---------------------*/
+
+
+/*-----------------  媒体查询  begin ---------------------*/
+@media all and ( max-width:1750px ){
+    .wrong-detail{height:86%!important;;}
+
+}
+@media all and ( max-width:1400px ){
+    .div3 li span{margin:10px 4% auto 12%!important;}
+
+}
+@media all and ( max-width:1300px ){
+    *{font-size:12px!important;}
+    .top-title{font-size:20px!important;height:60px!important;line-height: 60px!important;}
+    .alert-table{margin-top:15px!important;}
+    .wrong-detail{height:90%!important;;}
+    /*.wrong-cbzd{height:92%!important;}*/
+    .charts-box{height:96.5%!important;}
+}
+@media all and ( max-width:1150px ){
+    .con-top{height:55px!important;line-height:55px!important;}
+    .div3 li img{margin:14% 5% auto 10%!important;}
+}
+@media all and ( max-width:1100px ){
+    .wrong-detail{height:92%!important;}
+    .charts-box{height:98.5%!important;}
+}
+@media all and ( max-width: 1045px ){
+    .tpu{height:68px!important;}
+    .div2 img{margin: 6px 7%!important;}
+    .div3 li{height:30px!important;line-height:30px!important;}
+    .div3 li img{margin: 8% 5% auto 10%!important;}
+}
+@media all and ( max-width:1000px ){
+    .alert{margin-top: 12%!important;}
+    .search-box{margin-top: 17%!important;}
+}
+@media all and ( max-width: 915px ){
+    .div2 img {margin:4px 0!important;}
+}
+@media all and ( max-width:900px ){
+    .con-top{height:45px!important;line-height:45px!important;}
+    .alert-table{margin-top:10px!important;}
+    .top-title{font-size: 20px!important;height: 50px!important;line-height: 50px!important;}
+    .con-select-box{height:20px!important;}
+    .alert-table tr{height:40px!important;line-height:40px!important;margin-bottom: 2px!important;}
+    .alert-select-tr{height:40px!important;line-height:40px!important;}
+    .wrong-detail,.result-box{height:93%!important;}
+    /*.wrong-cbzd{height:87%!important;}*/
+    .charts-box{height:98%!important;}
+    .tpu{height:50px!important;line-height:25px!important;}
+    .div2 span{margin:7px 4%!important;}
+    .div3 li img {margin: 8% 5% auto 8%!important;}
+    .users{margin-top:0!important;}
+    .days{margin-top:4%!important;}
+}
+@media all and ( max-width: 850px ){
+    .div3 li{font-size:10px!important;}
+    .div3 li img {margin: 8% 0% auto 8%!important;}
+    .date{margin-top:2%!important;}
+    .search-box{margin-top:11%!important;}
+    .alert{margin-top:12%!important;}
+}
+@media all and ( max-width: 800px ){
+    .header-box{width:800px!important;}
+    .wrap{width:800px!important;}
+    .div2 img {margin:5px 1%!important;}
+    .alert-select-box{width:713px!important;}
+}
+/*-----------------  媒体查询  end ---------------------*/
+
+
+
+/*-----------------  右侧内容  begin ---------------------*/
+.alert-con{width:91.14%;background:white;}
+
+.top-title{width:100%;text-align:center;color:black;font-size:24px;height:66px;line-height:66px;}
+.alert-con-box{width:97.54%;margin:0 auto;padding-top:12px;}
+/**/
+.con-top{width:100%;height:60px;border:2px solid #dfdfdf;}
+.local-name{margin:1.1% 0 auto 1.17%;color:black;}
+.con-select-box{color:black;margin:1% 0 auto 1%;width:12.19%;height:25px;overflow: hidden;background:#e5e1e1;border-radius:3px;}
+.con-select-box select{color:#000;outline:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;background:transparent;border:none;padding-left:10px;width:100%;height:100%;}
+.con-selct-name{margin:1.3% 0 auto 2.92%;}
+.con-select-box select option{color:black;}
+
+.alert-table{width:100%;text-align:center;margin-top:26px;/*border-collapse:collapse;*/border-collapse:separate; border-spacing:0px 10px;}
+.alert-table .alert-table-tr{height:50px;}
+
+
+.runselect{width:100%;color:#7b7b7b;cursor:pointer;background:#fff;border:1px solid #e3e3e3;}
+tbody tr{border:1px solid #e3e3e3;}
+.runselect .alert-id{border:1px solid #e3e3e3;border-right:none;}
+.runselect .alert-operate{border:1px solid #e3e3e3;border-left:none;}
+.runselect .alert-grade,.runselect .alert-room,.runselect .alert-station,.runselect .alert-time,.runselect .alert-cate,.runselect .alert-sz,.runselect .alert-yz,.runselect .alert-qrr,.runselect .alert-qrsjconfirm_time,.runselect .alert-status{border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;}
+/*tbody tr:nth-child td{background:#fff;border:1px solid red;}
+.runselect:nth-child(3n-2) td{border:1px solid red;}
+.runselect:nth-child(3n-1) td{background:#fff;border:1px solid blue;}
+.runselect:nth-child(5n-2) td{background:#fff;border:1px solid green;}
+.runselect:nth-child(2n-1) td{background:yellow; }*/
+.alert-table-name{width:100%;background:#929394!important;color:white;}
+.trValueSelect{background:#ddd;color:#7b7b7b;}
+.trValueSelectNow{background:blue;}
+
+.alert-id{width:4%;}
+.alert-grade{width:3.5%;}
+.alert-room{width:8%;}
+.alert-station{width:20%;}
+.alert-time{width:12%;}
+.alert-cate{width:8%;}
+.alert-sz{width:3.5%;}
+.alert-yz{width:3.5%;}
+.alert-qrr{width:4%;}
+.alert-qrsj{width:12%;}
+.alert-status{width:6%}
+.alert-operate{width:14.5%;padding-left:1%}
+.alert-operate span{float:left;cursor:pointer;}
+.alert-line{float:left;margin:0 3px;}
+
+.alert-operate>a{color:#7b7b7b;display:block;text-align:center;float:left;}
+.alert-box-item-title{width:35%;text-align:center;float:left;}
+.alert-table-title{margin:15px 0;height:175px;width:10%;border-right:3px solid black;float:left;padding-top:40px;font-size:24px;}
+.alert-table-title>span{font-size:24px;}
+.split{float:left;}
+
+/*-----------------  分页  -------------------*/
+.pages{width:98%;margin:0 auto;color:#666666;text-align:right;}
+
+
+
+
+
+/*------------  弹出框  --------------*/
+.alert-select-box{border-collapse:collapse;text-align:center;height:268px;}
+.alert-select-box table{width:100%;border-collapse:collapse;text-align:center;}
+.alert-select-tr{width:100%;height:50px;background:#1d549b;color:#ffffff;}
+.alert-select-con{width:100%;height:218px;background: #ffffff;}
+/*.alert-con-wrap{width:97.36%;border:1px solid red;margin:0 auto;}*/
+.wrong-detail{width:21.23%;height:85%;background:#e6e9ed;padding:1% 1.35%;}
+/*.wrong-wrap{width:87.25%;margin:0 auto;margin-top:19px;}*/
+.wrong-title{width:100%;border-bottom:2px solid #666666;height:13.99%;}
+.detail-items{height:12%;line-height:12%;}
+.detail-items-name{width:45%;text-align:left;}
+.detail-items-con{width:55%;text-align:left;}
+/*初步诊断*/
+.wrong-cbzd{width:49%;height:85%;padding:1% 1.35% 0;}
+.charts-box{width:70%;height:94%;}
+#current,#voltage{width:49%;height:99.5%;font-size:10px;}
+/*-----------------  总报警数  -------------*/
+.wrong-nums{width:30%;height:94%;}
+.num-p{width:100%;color:#666666;height:33px;line-height:33px;}
+/*-----------------  处理结果  --------------*/
+.result-box{width:20.76%;height:85%;padding:1% 1.35% 0;}
+.result-con{margin-top:1%;color:#666666;text-align:left;}
+
+
+/*UI*/
+.ui-button{color:black;background:#e5e1e1;border:none;line-height:25px;}
+.ui-selectmenu-text{margin-top: -5px;}
+
+/*翻页*/
+.tcdPageCode span.disabled {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    margin: 0 2px;
+    color: #7b7b7b;
+    /*background: #f2f2f2;
+    border: 1px solid #bfbfbf;*/
+    border-radius: 4px;
+    vertical-align: middle;}
+.tcdPageCode span.current {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    margin: 0 2px;
+    color: #000;
+   /* background-color: #428bca;
+    border: 1px solid #428bca;
+    border-radius: 4px;*/
+    vertical-align: middle;
+    }
+    .tcdPageCode a {
+    display: inline-block;
+    color: #7b7b7b;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    margin: 0 2px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.alert-table-name td{color:#fff;}
+.alert-pds,.alert-ejfl,.alert-wz,.alert-fgpdj,.alert-zfy{color:#7b7d7f;text-align: center;height:50px;}
+.alert-yjfl,.alert-tag,.alert-fgpdd,.alert-zdd,.alert-rq{color:#000;text-align: center;height:50px;}
+
+.alert-pds{width:15%;}
+.alert-yjfl{width:7%;}
+.alert-ejfl{width:7%;} 
+.alert-tag{width:10%;}
+.alert-wz{width:25%;text-align: left;}
+.alert-fgpdd{width:8%;}
+.alert-fgpdj{width:15%;}
+.alert-zdd{width:3%;}
+.alert-zfy{width:3%;}
+.alert-rq{width:7%;}
+
+
+
+
+#elec_query{
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 3px;
+    background: #c9c9c9;
+    color: #000;
+    margin: 1%;
+    border: 1px solid #aeaeaf;
+    cursor: pointer;
+}
+
+#printing_button{
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 3px;
+    background: #c9c9c9;
+    color: #000;
+    margin: 0%;
+    border: 1px solid #aeaeaf;
+    cursor: pointer;
+}
+
+#printing_all_button{
+    width: 75px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 3px;
+    background: #c9c9c9;
+    color: #000;
+    margin: 1%;
+    border: 1px solid #aeaeaf;
+    cursor: pointer;
+}
+/*.trValueSelect{background: #619edc;}*/
+
+/*.trValueSelect td{color:white;}*/
+
+
+
+
+
+

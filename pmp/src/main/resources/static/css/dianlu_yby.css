@@ -1,0 +1,60 @@
+.dianlu1, .dianlu2{
+	margin-left:0px;
+}
+.dianlu1{
+	padding-left:110px;
+	width:1803px;
+}
+.newDianLu1,.newDianLu2,.newDianLu3,.newDianLu4,.newDianLu5{ position:relative;}
+.newDianLu1O{ background:#00ff00;}
+.newDianLu1C{ background:#FF0000;}
+.newDianLu1N{ background:#a0a0a0;}
+.OC1{width:11px; height:24px; position:absolute; top:152px; left:202px;}
+.OC2{width:24px; height:11px; position:absolute; top:44px; left:60px;}
+.newDL1{ padding-left:90px;}
+
+
+/*line5 style*/
+.lin5{position:relative;}
+.line5OC1{position:absolute;left:35px; top:119px;}
+.line5OC2{position:absolute;left:48px; top:69px;}
+.line5OC3{position:absolute;left:38px; top:12px;}
+.line5OC5{position:absolute;left:59px; top:122px;}
+.P1Data{color:#FFF;margin:10px auto; line-height:20px;}
+.P2Data{color:#FFF;margin:10px auto; line-height:20px;}
+
+.line5OneRow3-1{position:relative;}
+.line5OneRow3Data{ position:absolute; top:5px; left:0;}
+.line5DataItems{position:relative; top:-9px; left:0; color:#FFF;}
+.line5DataItems span{width:30px;}
+.line5DataDetail{position:relative; top:24px; left:0;color:#FFF; line-height:17px;}
+.line5DataDetail h6{ font-weight:normal; float:left;width:35px;}
+.line5DataDetail p{ float:left;width:49px;}
+.secondData p{width:92px; text-align:center;}
+
+.line5OC4{position:absolute;left:38px; top:16px;z-index: 9}
+.lin5Tits{ position:absolute;top:0;left:-5px;}
+.lin5Tits li{ float:left;width:184px; text-align:center; font-size:12px; color:#FFF;}
+.lin5Row2Tits{ position:absolute;top:0;left:20px;}
+.lin5Row2Tits li{ float:left;width:184px; text-align:center; font-size:12px; color:#FFF;}
+
+.lin5Tits{position:absolute;top:0;left:298px;}
+.line6OC1{position:absolute;left:34px; top:122px;}
+.line6OC2{position:absolute;left:75px; top:14px;}
+.line6OC3{position:absolute;left:38px; top:14px;}
+
+.line7OC1{position:absolute;left:82px; top:103px;}
+.line7OC2{position:absolute;left:141px; top:105px;}
+.line7OC3{position:absolute;left:135px; top:105px;}
+.OC7{width:12px; height:49px;}
+
+
+
+
+.data_left{width:89px;text-align: left;}
+.data_title{display: inline-block;width: 36px;}
+.cursor_pointer{cursor: pointer;}
+
+
+
+

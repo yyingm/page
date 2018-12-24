@@ -1,0 +1,50 @@
+/*-------------------header  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;font:14px  Helvetica, Arial, sans-serif;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#212429;}
+/*-----------------  header  end ---------------------*/
+
+
+/*-----------------  content  begin ---------------------*/
+
+.first_title{
+	width:100%;
+	text-align: center;
+	color:white;
+	font-size: 20px;
+	height:45px;
+	line-height:45px;
+}
+.first_title span{font-size: 20px;
+	margin-left:97px;
+}
+.minHaiDT{
+	float: left;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    width: 68px;
+    font-size: 14px;
+    color: #FFF;
+    text-align: right;
+    margin-right: 10px;
+}
+.g_img{
+	margin-top:-15px;
+}
+ul{float:left;}
+ul li{
+	margin-bottom:18px;
+	height: 25px;
+	line-height: 25px;
+}
+.right_line{
+	width: 2px;
+	height: 635px;
+	background: #e0ff00;
+	margin-top: 31px;
+}
+
+/*-----------------  content  end ---------------------*/

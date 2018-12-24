@@ -1,0 +1,258 @@
+/*-----------------  全局样式  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#25292e!important;}
+/*-----------------  全局样式  end ---------------------*/
+
+/*-----------------  媒体查询  end ---------------------*/
+
+
+/*-----------------  content begin ---------------------*/
+.line_wrap_name li,.line_name li{
+	color: white;
+}
+.content{background:#212429;width: 1903px;}
+.right_wrap{
+	width: 91%;
+}
+/*导航按钮*/
+.guide_wrap{
+	padding-top: 30px;
+	margin-bottom: 20px;
+	margin-left: 50px;
+}
+.guide_btn{
+	outline: none;;
+	border:none;
+	cursor:pointer;
+	padding:4px 4px;
+	border-radius:5px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	background: #efea3a;
+	color: #000;
+}
+.guide_btn_selected{
+	background: red;
+}
+/*电路图*/
+/*单位*/
+.data_unit_wrap li{
+	width: 60px;
+	text-align: right;
+	color: white;
+	margin-bottom: 5px;
+}
+.data_unit_wrap ul{
+	margin-top: 320px;
+}
+.line_wrap{
+	padding-left: 20px;
+	position: relative;
+}
+.data_unit_wrap ul li{
+	height: 22px;
+	line-height: 22px;
+	margin-bottom: 5px;
+}
+.line_box{
+	position: relative;
+    margin-bottom: 12px;
+}
+.line_box li{
+	margin-bottom: 5px;
+}
+.line_name{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	height: 75px;
+}
+.line_name li{
+	height: 20px;
+	line-height:20px;
+}
+/*进线柜 图片*/
+.byq_jx_img{
+	position: absolute;
+	left: 24px;
+	top: 138px;
+}
+/*开关位置及状态*/
+.switch_span{
+	width: 11px;
+	height: 24px;
+	position: absolute;
+	top: 64px;
+    left: 44px; 
+}
+
+.switch_open{background: #00ff00;}
+.switch_close{background: #ff0000;}
+.switch_drop{background: #a0a0a0;}
+/*回路数据*/
+.line_data li{
+	width: 80px;
+    border: 1px solid #404e83;
+	text-align: center;
+	color: #01ff5b;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	height: 20px;
+	line-height: 20px;
+	color: #01ff5b;
+}
+.line_data li span{
+	color: #01ff5b;
+}
+.line_wrap_name{
+	color: white;
+	height: 25px;
+	line-height: 25px;
+	position: relative;
+}
+.line_wrap_name li{
+	height: 25px;
+	line-height: 25px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+.borderR{
+	border-right: 1px dotted #404e83;
+}
+.data_con_wrap{
+	padding-bottom: 15px;
+	border-bottom: 1px dotted #404e83;
+}
+/*温度*/
+.data_tempeture{
+	position: absolute;
+	top: 29px;
+	left: 89px;
+}
+.data_tempeture .line_data{
+	width: 80px;
+    border: 1px solid #404e83;
+    text-align: center;
+    color: #01ff5b;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.data_tempeture .unit_wrap{
+	width: 50px;
+	padding-right: 5px;
+	text-align: right;
+	height: 20px;
+}
+.data_tempeture .line_data_title{
+	text-align: center;
+	width: 80px;
+}
+/*水科院特殊要求，EP格很大*/
+.line_data li:last-child{
+	width: 92px;
+}
+/*横着的黄线*/
+.transverse_line{
+	height: 2px;
+    width: 2070px;
+    background: #ffff00;
+    margin-top: 25px;
+    margin-left: 91px;
+    margin-bottom: 20px;
+	
+}
+/*竖着的线*/
+.left_vertocal_line{
+	height: 47px;
+    width: 2px;
+    background: #ffff00;
+    position: absolute;
+    margin-top: -21px;
+}
+.data_unit_wrap .sky_ul{
+	margin-top: 345px;
+}
+
+.line_box>span.switch_span{
+	top:40px;
+}
+.powerManagesContent {
+	color:white;
+}
+/* 温度 进线柜字体 */
+.data_tempeture li,.line_box li{
+	color:white;
+}
+
+/* 水科院特殊的横竖线 */
+.transverse_line_sky{
+	height: 2px;
+    width: 1917px;
+    background: #ffff00;
+    margin-top: 25px;
+    margin-left: 207px;
+    margin-bottom: 20px;
+	
+}
+/*双电源图片*/
+.sdy_img{
+	margin-top: -43px;
+}
+.sdy_des{
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	color: white;
+}
+.sdy_fx_des{
+	position: absolute;
+    top: -15px;
+    left: 135px;
+    color: white;
+}
+#pie_box{
+	width: 220px;
+	height: 220px;
+	float: left;
+}
+
+/*成都医学城直流屏*/
+.div_wrap{
+	margin-left: 100px;
+	margin-top: -30px;
+	padding:0;
+}
+.sec_data{top: 368px;}
+.data_num{color:white;}
+.top_data{
+	left: 800px;
+	top: 40px;
+}
+.sec_data{left: 250px;}
+.middle_data{
+	top: 430px;
+	left: 160px;
+}
+.left_data{
+	left: 20px;
+	top: 650px;
+}
+.left_data>li, .right_data>li{
+	width: 60px;
+	margin-right: 13px;
+}
+.bottom_data{
+	left: 855px;
+}
+.status_box{
+	right: -150px;
+}
+

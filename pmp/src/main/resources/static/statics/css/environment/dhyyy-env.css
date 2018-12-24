@@ -1,0 +1,38 @@
+/*-------------------ȫ����ʽ  begin------------------------*/
+*{margin:0;padding:0;text-decoration:none;list-style:none;font:14px  Helvetica, Arial, sans-serif;}
+.left{float:left;}
+.right{float:right;}
+.clear:after{content:'';clear:both;display:block;}
+body{background:#212429;}
+
+
+
+/*.wenShiDu{border:1px solid red;}*/
+.wenShiDuPosition1{top:301px;left:135px;}
+.wenShiDu dt{height:45px;line-height:45px;}
+.wenDuFont{margin-top:3px;}
+.wenShiDuPosition2 {top: 160px;left: 315px;}
+.wenShiDuPosition3 {top: 70px;left: 594px;}
+.wenShiDuPosition4 {
+    top: 30px;
+    left: 919px;
+}
+
+.wenShiDuPosition5 {
+    top: 70px;
+    left: 1205px;
+}
+.wenShiDuPosition6 {
+    top: 173px;
+    left: 1498px;
+}
+.wenShiDuPosition7 {
+    top: 387px;
+    left: 1591px;
+}
+.wenShiDuPosition8 {
+    top: 565px;
+    left: 1433px;
+}
+.door-switch{position: absolute;top:321px;left:1087px;}
+#nav{background:#25292e;}

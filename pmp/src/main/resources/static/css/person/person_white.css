@@ -1,0 +1,55 @@
+.content-right{
+	width:85%;
+}
+.userPowerContainer{
+	width: 500px;
+    height: 210px;
+    margin: 8% auto;
+    padding: 30px 30px 30px 110px;
+    vertical-align: middle;
+    color: #000;
+    font-size: 18px;
+    border: 3px solid #a6a9b3;
+    }
+    .userPower li{
+    	float:left;
+    	padding:3px 10px;
+    	border-radius: 3px;
+    	cursor: pointer;
+    	border:1px solid #a6a9b3;
+    	margin-right:15px;
+    }
+    .active{
+    	background: #2a84f6;
+    	color:white;
+    }
+    
+    .userPowerContainer li{
+    	margin-bottom: 10px;
+    }
+    .mb30{height:30px;line-height:30px;margin-bottom: 10px;}
+    .mb30 label{float: left;width:80px;height:30px;line-height:30px;}
+    .mb30 input{
+    	width:297px;
+    	height:25px;
+    	line-height: 25px;
+    	border:1px solid #a6a9b3;
+    	border-radius: 3px;
+    	background: #fff;
+    	padding-left:10px;
+    	}
+    	.personalInforModify{
+    		width:60px;
+    		text-align: center;
+    		height:30px;
+    		line-height: 30px;
+    		border-radius: 3px;
+    		float: right;
+    		margin-right:110px;
+    		margin-top:25px;
+    		background: #e5e1e1;
+    		color:#000;
+    		border:1px solid #a6a9b3;
+    		cursor: pointer;
+    	}
+    	#edit{margin-left:10px;cursor: pointer;}

@@ -1,0 +1,126 @@
+/* CSS Document */
+
+/*dianlu1*/
+.dianlu1{background:#1d2939; padding:20px 10px 0 30px;}
+.pic1 img{ display:inline-block;width:188px; height:340px;}
+.pic1{ position:relative;width:188px; height:340px; text-align:center;}
+.pic1 b{ position:absolute; left:38px; top:70px; width:8px; height:22px;}
+.pic1 b.dingwei2{left:78px;}
+.pic1 b.first{left:94px;}
+
+.pic1 b.last{left:88px;}
+/* 横向 */
+.pic2 img{ display:inline-block;width:188px; height:340px;}
+.pic2{ position:relative;width:188px; height:340px; text-align:center;}
+.pic2 b{ position:absolute; left:38px; top:70px; width:22px; height:8px;}
+.pic2 b.dingwei2{left:78px;}
+.pic2 b.first{left:94px;}
+.pic2 b.last{left:88px;}
+
+
+.backRed{ background:#fd0000;}
+.backGreen{ background:#0cfd00;}
+.data{width:128px; padding:0 30px;text-align:center; margin-bottom:30px;}
+
+.data_detail{width:230px;}
+.data li:nth-of-type(1){ padding:5px 0 0; color:#1B9B80;line-height:20px; height:40px;}
+
+.data li{ font-size:14px; color:#3b77b6;line-height:20px; margin-bottom:7px;}
+
+.data li span:nth-of-type(1){font-size:14px; display:inline-block; width:40px; text-align:left;  margin-right:3px; height:22px; line-height:20px;}
+.data li span:nth-of-type(2){ display:inline-block; width:72px; padding:0 5px; height:20px; line-height:20px; border:1px solid #cfe977; font-size:14px; color:#0cfd00;}
+
+.data li span.span1{font-size:14px; display:inline-block; width:40px; text-align:left;  margin-right:3px; height:22px; line-height:20px;}
+.dianlu_yilin_data li span.span1{width:100px;}
+
+.data_detail li span.span1{width:140px;}
+.data li span.span2{ display:inline-block; width:72px; padding:0 5px; height:20px; line-height:20px; border:1px solid #cfe977; font-size:14px; color:#0cfd00;}
+
+
+/* ybydata样式 */
+.data1{height: 150px;padding:0 10px;color: #fff;text-align: left}
+.data1 li{line-height: 20px;padding: 0 0 5px 0;}
+.data1 li span.span1{font-size:14px; display:inline-block; width: 100px; text-align:left;  margin-right:3px; height:22px; line-height:20px;}
+.data1 li span.span2{ display:inline-block; width:72px; padding:0 5px; height:20px; line-height:20px; border:1px solid #cfe977; font-size:14px; color:#0cfd00;}
+.data1 span.span3{margin-bottom: 5px;font-size:14px; display:inline-block; width: 14.5px; text-align:left;  margin-right:3px; height:22px; line-height:20px;}
+.data1 span.span4{ display:inline-block; width:46.5px; padding:0 5px; height:20px; line-height:20px; border:1px solid #cfe977; font-size:14px; color:#0cfd00;}
+.span3{margin-bottom: 5px;font-size:14px; display:inline-block; width: 14.5px; text-align:left;  margin-right:3px; height:22px; line-height:20px;}
+.span4{ display:inline-block; text-align: left; width:26.5px; padding:0 5px; height:14px; line-height:14px; border:1px solid #cfe977; font-size:14px; color:#0cfd00;}
+
+/*dianlu1*/
+
+
+/*dianlu2*/
+.dianlu1, .dianlu2{
+	width:1803px;
+	height:1054px;
+	/*position:absolute;*/
+	background:#1d2939;
+	text-align:center;
+	padding-left: 128px;
+}
+.dianluShort{width:1393px;}
+.pic1 b.dianlu2First{left:90px;}
+.huiluTit{width:376px; text-align:center; color:#FFF; font-size:14px; margin-bottom:15px;}
+/*dianlu2*/
+.dianlu3 .pic1{display:inline-block;width:150px;}
+.dianlu3 .pic1 img{width:150px;}
+.dianlu_yilin{width:136px; padding:0 7px;}
+.dianlu_yilin_data{width:200px;}
+
+.dianlu_yilin li span{padding:0;width:72px;text-align:center;line-height:20px;}
+.dianlu_yilin li span:nth-of-type(1){font-size:14px; display:inline-block; width:40px; text-align:left; height:22px; line-height:20px; margin-bottom:5px;}
+.dianlu_yilin li span:nth-of-type(2){ display:inline-block; width:72px; padding:0 5px; height:20px; line-height:20px; border:1px solid #cfe977; font-size:14px; color:#0cfd00;}
+
+.dianlu_yilin li span.span1{font-size:14px; display:inline-block; width:40px; text-align:left; height:22px;line-height:25px; margin-bottom:5px;}
+.dianlu_yilin li span.span2{ display:inline-block; width:72px; padding:0 5px; height:20px; line-height:20px; border:1px solid #cfe977; font-size:14px; color:#0cfd00;}
+
+.content{width:1920px;}
+.dianlu3Content{width:2419px;}
+.dianlu3{width:2250px;height:1054px;}
+.pic1 b.dianlu3First{
+	left: 67px;
+    top: 86px;
+    height: 37px;
+	}
+.pic1 b.dianlu3Last{
+    left: 76px;
+    top: 86px;
+    height: 38px;
+}
+.pic1 b.dianlu3Second{
+	left: 72px;
+    top: 86px;
+    height: 37px;
+	}
+
+.pic1 b.dianlu3Third{
+	left: 71px;
+    top: 86px;
+    height: 37px;
+	}
+
+/*分合闸*/	
+.switch_div span:hover {
+	cursor:pointer;
+}
+#password {
+	width:216px;
+    padding-left:35px;	
+}
+/*分合闸对话框*/
+#dialog-form, .ui-dialog-buttonpane {
+	background-color:#F5F5DC;
+}
+.ui-dialog .ui-dialog-buttonpane {
+	margin-top:0;
+}
+fieldset { padding:0; border:0; margin-top:25px; }
+h1 { font-size: 1.2em; margin: .6em 0; }
+div#users-contain { width: 350px; margin: 20px 0; }
+div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 100%; }
+div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+.ui-dialog .ui-state-error { padding: .3em; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; }
+
+

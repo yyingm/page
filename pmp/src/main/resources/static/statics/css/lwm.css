@@ -1,0 +1,107 @@
+/* CSS Document */
+.lwm{ width:1764px; height:1200px;/* padding-left:64px;*/}
+.lwmInfor{ margin-top:50px;margin-left:50px;}
+.lwmLeft{ margin-right:50px;}
+.lwmRight{ width:910px;}
+.roomNumber{ text-align:left; margin-bottom:20px; color:#35bd77; font-weight:600; font-size:16px;}
+
+.lwmGroup li{float:left; margin-right:15px; margin-bottom:8px;}
+.lwmGroup li span{float:left;text-align:left;}
+.lwmDT{ color:#FFF; width:92px; height:20px;  line-height:20px; }
+.lwmData{ color:#01ff5b; border:1px solid #404e83; width:88px; height:20px; line-height:20px;}
+.lwmRoomInfor{ width:420px; float:left; margin-right:30px; margin-bottom:50px;}
+
+
+
+/*lwm2*/
+.lwm2-left{width:765px; margin-right:70px;}
+.lwm2-right{width:810px;}
+.lwm2-img{width:383px; height:204px; margin:0 auto 20px;}
+.lwmGroupNumber{margin-bottom:20px; color:#35bd77; font-weight:600; font-size:16px; text-align:center;}
+.lwm2Group{margin-right:62px;}
+.lwm2Group li{ margin-bottom:6px;}
+.lwm2Group li span{float:left;text-align:left;}
+.lwm2Group li .lwmDT{ color:#FFF; width:92px; height:20px;  line-height:20px; }
+.lwm2Group li .lwmData{ color:#01ff5b; border:1px solid #404e83; width:88px; height:20px; line-height:20px;text-align:center;}
+.lwmDeviceGroup{ margin-bottom:12px; padding-bottom:10px;}
+
+/*lwm3*/
+.lwm3-left{width:510px; margin-right:70px;}
+.lwm3Infor{ margin-top:50px;margin-left:200px; width:1400px;}
+
+/*topo_lwm*/
+#topo_lwm{ margin-top:50px;}
+.lwmItemsInfor{ width:200px; margin-right:30px; margin-left:30px;}
+.lwmItemsTit{ color:#35bd77; font-size:16px; padding-left:20px; margin-bottom:10px;}
+.lwmItemsName li{ background:url(../images/power_monitor/mapIconSmall.png) no-repeat; padding-left:20px;}
+.lwmItemsName li a{ font-size:14px;}
+
+
+/*gt*/
+.gtPowerPhoto{padding-top:100px;}
+.powerPhotoAll{ float:left;}
+.powerPhoto1{margin-left:120px;}
+.gtIcon1{ width:16px; height:34px;top:105px;left:90px; }
+.photoTop{position:relative;}
+.powerPhoto1Name{ position:absolute; left:52px; top:86px; font-size:16px; color:#FFF; width:15px;}
+.gtIcon2{ top:122px;left:69px; }
+.gtIcon3{top:57px;left:80px; }
+
+.powerPhotoGroup2{position:relative; border-right:2px dashed #404e83;}
+
+.powerPhotoGroup3{position:relative;}
+
+
+.powerPhotoGroup2 h2{position:absolute; top:-30px; left:133px; color:#FFF; font-weight:normal;}
+.powerPhotoGroup3 h2{position:absolute; top:-30px; left:393px; color:#FFF; font-weight:normal;}
+.dlgSeation{ position:absolute; width:194px; top:210px;left:-153px;}
+.gtDataName{ float:left;font-size:16px; color:#FFF; margin-right:10px;height:32px; line-height:32px;}
+.gtDataName2{ text-align:right;font-size:16px; color:#FFF;height:32px; line-height:32px;margin-bottom:10px;}
+.gtDataName3{ text-align:center;font-size:16px; color:#FFF;height:32px; line-height:32px;margin-bottom:10px;}
+.gtDataNumber{float:left;width:102px; height:26px; line-height:26px; border:1px solid #00a0e9; font-size:14px; color:#01ff5b; text-align:center; padding:2px 5px;}
+.gtDataNumber2{width:124px; height:28px; line-height:28px; border:1px solid #00a0e9; font-size:14px; color:#01ff5b; text-align:center; padding:2px 5px; margin-bottom:10px;}
+.centerData{ margin:20px 15px;}
+.centerData2{ margin:8px 15px;}
+.centerData3{ margin:20px 11px;}
+/*.centerName2{margin:10px 55px;}*/
+
+
+/*gy_10*/
+.gy_10PowerPhoto{ position:relative; margin-left:300px;}
+.gy_10Location1{ top:70px; left:86px;}
+.gy_10Location2{ top:70px; left:399px;}
+.gy_10Location3{ top:70px; left:540px;}
+.gy_10Location4{ top:70px; left:680px;}
+.gy_10Location5{ top:70px; left:821px;}
+.gy_10Location6{ top:70px; left:962px;}
+/*dy_10*/
+.dy_10PowerPhoto{margin-left:150px;}
+.dy_10Location1{ top:118px; left:48px;}
+.dy_10Location2{ top:118px; left:130px;}
+.dy_10Location3{ top:118px; left:210px;}
+.dy_10Location4{ top:118px; left:290px;}
+.dy_10Location5{ top:118px; left:370px;}
+.dy_10Location6{ top:118px; left:452px;}
+
+.dy_10Location7{ top:113px; left:594px;}
+
+.dy_10Location8{ top:118px; left:687px;}
+.dy_10Location9{ top:118px; left:768px;}
+.dy_10Location10{ top:118px; left:847px;}
+.dy_10Location11{ top:118px; left:928px;}
+.dy_10Location12{ top:118px; left:1008px;}
+.dy_10Location13{ top:118px; left:1089px;}
+
+.dy_10Location15{ top:118px; left:1205px;}
+.dy_10Location16{ top:118px; left:1287px;}
+.dy_10Location17{ top:118px; left:1367px;}
+.dy_10Location18{ top:118px; left:1448px;}
+.dy_10Location19{ top:118px; left:1530px;}
+.dy_10Location20{ top:118px; left:1610px;}
+.dy_10Location21{ top:118px; left:1692px;}
+.dy_10Location22{ top:118px; left:1773px;}
+.dy_10Location23{ top:118px; left:1880px;}
+.dy_10Location24{ top:118px; left:2003px;}
+.dy_10Location25{ top:118px; left:2200px;}
+.dy_10Location26{ top:118px; left:2285px;}
+
