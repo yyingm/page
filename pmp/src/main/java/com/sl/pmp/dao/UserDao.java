@@ -11,5 +11,5 @@ import com.sl.pmp.entity.User;
 public interface UserDao {
 	User findUserByName(String username);
 
-	List<User> getList(@Param (value="pagesize")Integer pagesize,@Param (value="pagenum")Integer pagenum);
+	List<User> getList(@Param (value="pagesize")Integer pagesize,@Param (value="pageindex")Integer pageindex);
 }

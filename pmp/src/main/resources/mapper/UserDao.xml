@@ -8,6 +8,6 @@
 	</select> 
 	<select id="getList" resultType="com.sl.pmp.entity.User">
 	select id, username,password 
-	from User order by id limit #{pagenum},#{pagesize}
+	from User order by id limit #{pageindex},#{pagesize}
  	</select> 
 </mapper>

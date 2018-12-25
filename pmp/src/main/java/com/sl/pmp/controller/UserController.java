@@ -8,9 +8,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.catalina.servlet4preview.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.sl.pmp.entity.User;
@@ -64,24 +64,21 @@ public class UserController {
    	 }
 	 @RequestMapping("/list")
 	 @ResponseBody
-	 public void getlist(int pagesize,int pagenum,HttpServletResponse resp){
-	 	List<User> list= userServiceImpl.getList(pagesize,pagenum);
+	 public  void getlist(int pagesize,int pageindex,HttpServletResponse resp){
+	 	List<User> list= userServiceImpl.getList(pagesize,pageindex);
 	 	  JSONArray data = JSONArray.fromObject(list);
- 	 	 resp.setCharacterEncoding("utf-8");
+ 	   //resp.setCharacterEncoding("utf-8");
 		  PrintWriter respWritter;
 		try {
 			//得到输出流
 			respWritter = resp.getWriter();
-			 /*将JSON格式的对象toString()后发送*/
+			// 将JSON格式的对象toString()后发送
 			 respWritter.append(data.toString());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
-	 	          
-	 	              
-	 }
-}
+ 	      }
+ }
  
-	 
+} 
 	 
