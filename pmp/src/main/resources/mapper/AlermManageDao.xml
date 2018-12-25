@@ -3,8 +3,54 @@
 
 <mapper namespace="com.sl.pmp.dao.AlermManageDao">
 
-	<select id="getAlermData"  resultType="String">
-		select * from logs where project_id = "4"
+<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.sl.pmp.entity.AlermManage" id="alermManageMap">
+        <result property="id" column="id"/>
+        <result property="level" column="level"/>
+        <result property="tg_id" column="tg_id"/>
+        <result property="location" column="file_name"/>
+        <result property="project_id" column="project_id"/>
+        <result property="category" column="category"/>
+		<result property="th" column="th"/>
+		<result property="valu" column="value"/>
+		<result property="operater" column="operater"/>
+		<result property="confirm_time" column="confirm_time"/>
+		<result property="is_deal" column="is_deal"/>
+		<result property="log_time" column="log_time"/>
+		
+    </resultMap>
+	<select id="getAlermData"  resultType="com.sl.pmp.entity.AlermManage">
+		
+		 select * from logs order by id limit #{fromNum},#{pagSize}
+	</select>
+	<select id="getAlermDataByTerm"  resultType="com.sl.pmp.entity.AlermManage">
+		
+		select * from logs l
+				<if test="tgName != null and tgName != ''">
+					join tg_info t
+						on t.TG_NAME=#{tgName}
+						and l.tg_id=t.TG_RTDB
+				</if>
+				<if test="catName != null and catName != ''">
+					join alerm_cat c
+						on c.cat=#{catName}
+						and l.category=c.id
+				</if>
+			where 1=1
+				<if test="btime != null and btime != ''">
+					and l.log_time <![CDATA[>=]]> #{btime}
+				</if>
+				<if test="etime != null and etime != ''">
+					and l.log_time  <![CDATA[<=]]> #{etime}
+				</if>
+				<if test="isDeal != null and isDeal != ''">
+					and l.is_deal=#{isDeal}
+				</if>
+				 
+				
+
+		 
+		 
 	</select>
 	
 	

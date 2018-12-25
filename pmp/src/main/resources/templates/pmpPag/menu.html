@@ -19,6 +19,12 @@
 		
 		</tbody>
 	</table>
+	<div style="float:right">
+   	   <input id="first" type="button" value="首页" class="btn" onclick="getFirstPage(1)"/>
+	   <input type="button" value="上一页" class="btn" onclick="getPage()"/>
+	   <input type="button" value="下一页" class="btn" onclick="getPage()"/>
+	   <input type="button" value="末页" class="btn" onclick="getPage()"/>
+   </div>
   </body>
 <script type="text/javascript">
   $(function(){
@@ -28,10 +34,11 @@
 		 $.ajax({
 			 url:"http://localhost:8080/user/list",
 			 type:"post",
-			 contentType: "application/json;cherset=utf-8",
+			 data: { pagesize:3, pagenum:1},
 			 dataType:"json",
-			 success:function(data){
+ 			 success:function(data){
 				 showUserList(data);
+				 
 			 },
 			 error:function(){
 				 alert("请求异常")
@@ -49,6 +56,27 @@
 		              //追加到table中
 		              $("#tab").append(str);         }
 	}
+	$(function(){
+		  $("#first").click(function(){
+			  
+	 		 alert();
+			 $.ajax({
+				 url:"http://localhost:8080/user/list",
+				 type:"post",
+				 data: { pagesize:4, pagenum:1},
+				 
+	 			 dataType:"json",
+				 success:function(data){
+					 showUserList(data);
+					 
+				 },
+				 error:function(){
+					 alert("请求异常")
+				 }
+			 });
+		  });
+	  });
 </script>
+    
 </html>
  

@@ -10,11 +10,17 @@ import org.apache.catalina.servlet4preview.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.sl.pmp.entity.User;
 import com.sl.pmp.service.UserService;
 
 import net.sf.json.JSONArray;
+
+
+
+ 
 @SuppressWarnings("unused")
 @Controller
 @RequestMapping("/user")
@@ -57,10 +63,11 @@ public class UserController {
 			return "redirect:http://localhost:8080/user/loginPag";  
    	 }
 	 @RequestMapping("/list")
-	 public void getlist(HttpServletResponse resp){
-		  List <User> list =list=userServiceImpl.getList();
-		  JSONArray data=JSONArray.fromObject(list);
-		  resp.setCharacterEncoding("utf-8");
+	 @ResponseBody
+	 public void getlist(int pagesize,int pagenum,HttpServletResponse resp){
+	 	List<User> list= userServiceImpl.getList(pagesize,pagenum);
+	 	  JSONArray data = JSONArray.fromObject(list);
+ 	 	 resp.setCharacterEncoding("utf-8");
 		  PrintWriter respWritter;
 		try {
 			//得到输出流
@@ -71,6 +78,7 @@ public class UserController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	 	          
 	 	              
 	 }
 }

@@ -21,8 +21,8 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public List<User> getList() {
-		return userDao.getList();
+	public List<User> getList(int pagesize,int pagenum) {
+		return userDao.getList(pagesize,pagenum);
 	}
 	 
 

@@ -3,24 +3,6 @@
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <!--
-<link rel="stylesheet" type="text/css" href="../css/base.css"/>
-<link rel="stylesheet" type="text/css" href="../css/style.css"/>
-
-<link rel="stylesheet" type="text/css" href="../css/fakeLoader.css"/>
-<script src="../js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="../js/jquery-ui.js"></script>
-<script type="text/javascript" src="../js/highcharts.js"></script>
-<script src="../js/jquery-ui-datepicker.min.js"></script>
-<script src="../js/respond.min.js"></script>
-<script type="text/javascript" src="../js/style.js"></script>
-<script type="text/javascript" src="../js/lefter.js"></script>
-<script type="text/javascript" src="../js/fakeLoader.js"></script>
--->
-
-
-
-
 <link rel="stylesheet" type="text/css" href="../css/fakeLoader.css">
 <link rel="stylesheet" href="../css/all.css">
 <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
@@ -42,8 +24,9 @@
 <script src="../js/paging.js"></script>
 <script type="text/javascript" src="../js/multiple-select.js"></script>
 <script type="text/javascript" src="../js/jquery.ez-bg-resize.js"></script>
-<script type="text/javascript" src="../js/jquery.cookie.js"></script>    <!-- <link rel="stylesheet" type="text/css" href="../css/alerm/dataTable.css"/>
-    <script type="text/javascript" src="../js/alerm/tableRowCheckboxToggle.js"></script> -->
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="../js/jquery.page.js"></script>
     <link rel="stylesheet" href="../css/alerm/alert.css">
     <title>报警管理</title>
 
@@ -198,128 +181,10 @@
 </style>
 
 <div class="top clear">
-        <!------------------header begin-------------------->
-        <div class="header-box">
-            <div class="header-wrap">
-                <div class="header clear">
-                    <!-------------------  logo  -------------------------->
-                    <div class="logo clear left">
-                        <!-- <a href="#"> -->
-                            <div class="logoWrap clear " style="padding-top:0">
-                                <img src="../images/index/icon_png_1/gxds_logo.png" alt="" class="logo-icon " style="display:none;">
-                            </div>
-                        <!-- </a> -->
-                    </div>
-                    <!-------------------  date  -------------------------->
-                    <div class="date-box left">
-                        <div class="date-wrap">
-                            <div class="date"></div>
-                        </div>
-                    </div>
-					<!--高新公司名称-->
-					<div class="companyName">
-						<div class="companyWrap">
-							<div class="company">
-								互联网智能配电系统	
-							</div>
-						</div>
-					</div>
-					
-					<!-------------------  皮肤  -------------------------->
-
-
-                     <div class="skin right">
-                        <div class="skin-box">
-                            <div>
-                                <img class="skin-icon left" src="../images/index/icon_png_1/skin.png">
-                            </div>
-                            <ul class="skin_option">
-                                <li class="triangle" style="margin-left:52%;border-bottom-color:rgba(0,0,0,0.35)!important"></li>
-                                <li class="skin_opttion_wrap">
-                                	<ul id="nav-shadow">
-										<li class="button-color-1">
-											<div class="shin_black"></div>
-										</li>
-										<li class="button-color-2">
-											<div class="shin_white"></div>
-										</li>
-									</ul>
-                                </li>
-                            </ul><!--
-                            <div >
-                            	
-                            </div>-->
-                        </div>
-                    </div>
-
-
-
-                    <!-------------------  安全运行天数  -------------------------->
-                    <div class="days-box right">
-                        <div class="days-wrap">
-                            <div class="days">
-                        		安全运行<span>807</span>天
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-------------------  用户  -------------------------->
-                    <div class="user-box right">
-                        <div class="user-wrap">
-                            <div class="users">
-                                <div class="users-icon-box left">
-                                    <div>
-                                        <img class="users-icon left" src="../images/index/icon_png_1/user.png">
-                                    </div>
-                                </div>
-                                <span class="userName left">test</span>
-                            </div>
-                            <ul class="user-detail" style="z-index: 2147483647; display: none;">
-                                <li class="triangle"></li>
-                                
-                                <a class="logout" href="http://www.sl-pmp.com/Personal_manage/index"><li class="user-list" style="border-bottom:1px solid #ccc;">个人中心</li></a>
-                                
-                                <a class="logout" href="http://www.sl-pmp.com/login/out"><li class="user-list">退出登录</li></a>
-                            </ul>
-                        </div>
-                    </div>
-                                            <!-------------------  提示  -------------------------->
-                        <div class="alert-box right">
-                            <div class="alert-wrap">
-                                <div class="alert">
-                                    <div class="alert-icon-box left">
-                                        <div>
-                                            <img class="alert-icon left" src="../images/index/icon_png_1/alert.png">
-                                        </div>
-                                    </div>
-                                    <span class="alertNum left" id="alert_count">20</span>
-                                </div>
-                            </div>
-                        </div>
-                    
-
-
-                     
-
-                </div>
-            </div>
-
-        </div>
-
-        <!--换肤的提示框-->
-        
-        
-        <!-------------------header end--------------------->
+       
 
     <div class="left topRight clearfix">
-        <!--<div class="left topuserinfo">
-            欢迎使用，test　<a href="/login/out/">退出登录</a>&nbsp;
-                                </div>-->
-        
-
-
-
+      
         <!--------------------警告框------------------------>
         <div class="alertBox" style="display: none; left: 505px;">
             <div class="alert-box-title" style="width:100%;text-align:center;">
@@ -339,12 +204,19 @@
             </table>
             <div class="alert-btn-wrap">
                 <button class="alertBtn">确定</button>
-                <div id="turn_page" class="tcdPageCode right mt20"><span class="disabled">上一页</span><span class="current">1</span><a href="javascript:;" class="tcdNumber">2</a><a href="javascript:;" class="tcdNumber">3</a><a href="javascript:;" class="tcdNumber">4</a><span>...</span><a href="javascript:;" class="tcdNumber">10</a><a href="javascript:;" class="nextPage">下一页</a></div>
+                <div id="turn_page" class="tcdPageCode right mt20">
+	                <span class="disabled">上一页</span>
+	                <span class="current" onclick="choosePag(1)">1</span>
+	                <a href="javascript:;" class="tcdNumber">2</a>
+	                <a href="javascript:;" class="tcdNumber">3</a>
+	                <a href="javascript:;" class="tcdNumber">4</a>
+	                <span>...</span>
+	                <a href="javascript:;" class="tcdNumber">10</a>
+                	<a href="javascript:;" class="nextPage">下一页</a>											
+                </div>
             </div>
         </div>
         <audio class="audio_lvl" loop="loop" src="../audio/3071.wav"></audio>
-        <!--<link rel="stylesheet" type="text/css" href="../css/alerm/alert.css">-->
-        <script src="../js/jquery.page.js"></script>
         <script type="text/javascript">
 
 			//系统维护弹框
@@ -392,10 +264,10 @@
             });
 
             $(".alert-box").click(function(){
-                window.location="http://www.sl-pmp.com/alerm_manage/index/"
+                //window.location="http://www.sl-pmp.com/alerm_manage/index/"
             });
             function get_status() {
-                $.get("http://www.sl-pmp.com/alerm_manage/get_alert_count/", function(result){
+               /*  $.get("http://www.sl-pmp.com/alerm_manage/get_alert_count/", function(result){
                     if( $("#alert_count").text().length != 0 && result !== $("#alert_count").text()){
                         //$(".audio_lvl").get(0).play();
                         $("#alert_count").html(result);
@@ -404,7 +276,7 @@
                         $("#alert_count").html(result);
                     }
                     
-                })
+                }) */
             }
             
                         
@@ -428,23 +300,23 @@
                                 "永久": function() {
                                     var skin = 0;
                                     $.ajax({
-                                        url: 'http://www.sl-pmp.com/chart/change_skin_db/'+skin,
+                                      /*   url: 'http://www.sl-pmp.com/chart/change_skin_db/'+skin,
                                         dataType: 'json',
                                         success: function (data) {
                                             location.reload(true);
                                         },
-                                        error: function () { alert('Error !'); }
+                                        error: function () { alert('Error !'); } */
                                     }) 
                                 },
                                 "本次": function() {
                                     var skin = 0;
                                     $.ajax({
-                                        url: 'http://www.sl-pmp.com/chart/change_skin/'+skin,
+                                       /*  url: 'http://www.sl-pmp.com/chart/change_skin/'+skin,
                                         dataType: 'json',
                                         success: function (data) {
                                             location.reload(true);
                                         },
-                                        error: function () { alert('Error !'); }
+                                        error: function () { alert('Error !'); } */
                                     }) 
                                     $( this ).dialog( "close" );
                                 },
@@ -472,23 +344,23 @@
                                 "永久": function() {
                                     var skin = 1;
                                     $.ajax({
-                                        url: 'http://www.sl-pmp.com/chart/change_skin_db/'+skin,
+                                       /*  url: 'http://www.sl-pmp.com/chart/change_skin_db/'+skin,
                                         dataType: 'json',
                                         success: function (data) {
                                             location.reload(true);
                                         },
-                                        error: function () { alert('Error !'); }
+                                        error: function () { alert('Error !'); } */
                                     }) 
                                 },
                                 "本次": function() {
                                     var skin = 1;
                                     $.ajax({
-                                        url: 'http://www.sl-pmp.com/chart/change_skin/'+skin,
+                                       /*  url: 'http://www.sl-pmp.com/chart/change_skin/'+skin,
                                         dataType: 'json',
                                         success: function (data) {
                                             location.reload(true);
                                         },
-                                        error: function () { alert('Error !'); }
+                                        error: function () { alert('Error !'); } */
                                     }) 
                                     $( this ).dialog( "close" );
                                 },
@@ -547,12 +419,12 @@
                     now_is_display = 0;
                 }
                 if(now_is_display){
-                    $.get("http://www.sl-pmp.com/alerm_manage/get_alert_detail/"+now_is_display,function(result){
+                   /*  $.get("http://www.sl-pmp.com/alerm_manage/get_alert_detail/"+now_is_display,function(result){
                         var data = eval(result);
                         if(data[1]!=null){
                             warning_alert(data);
                         }                    
-                    })
+                    }) */
                 }
                 
             }  
@@ -601,13 +473,13 @@
                         }else{
                             now_is_display = 0;
                         }
-                        $.get("http://www.sl-pmp.com/alerm_manage/get_alert_detail/"+now_is_display+"/"+p,function(result){
+                       /*  $.get("http://www.sl-pmp.com/alerm_manage/get_alert_detail/"+now_is_display+"/"+p,function(result){
                             var data = eval(result);
                             if(data[1]!=null){
                                 $("#alert_logs").empty();
                                 warning_alert(data);
                             }                    
-                        })
+                        }) */
                     }
                 });
 
@@ -632,9 +504,9 @@
                     
                 });
                 display_ids_str=str.substring(0,str.length-1);
-                $.post("http://www.sl-pmp.com/alerm_manage/update_display_ids/",
+               /*  $.post("http://www.sl-pmp.com/alerm_manage/update_display_ids/",
                     {"ids":display_ids_str}
-                );
+                ); */
                 $(".audio_lvl").get(0).pause();
                 $(".alertBox").hide();
                 window.location.reload();
@@ -659,7 +531,20 @@
             <p>您是否需要永久换肤？</p>
         </div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div>
 
-
+<script type="text/javascript">
+	function choosePag(Num){
+		 $.ajax({
+		        type: 'GET',
+		        data: { pagSize: "20", pagNum:num},
+		        url: "http://localhost:8080/alerm/getAlermDataByPagNum",
+		        async:false,
+		        success: function(data){
+		        	var i=0;
+		        	
+		        }
+		 })
+	}
+</script>
 
 
 
@@ -675,126 +560,7 @@
 </style>
 
 <div class="nav left" id="nav" style="height: 1530px;">
-    <div class="nav-father" style="padding-top:0;">
-                    <!-- 非分级主菜单 -->
-        <div class="div2 topo " onclick="window.location.href='#'">
-        
-        	
-            <!--<img src="../images/index/icon_png_1/icon_topo.png" alt="" >网络拓扑图        -->
-        	<span class="fontClass icon-topo"></span>
-        	网络拓扑图			
-        </div>
-                            <!-- 非分级主菜单 -->
-        <div class="div2 chart " onclick="window.location.href='#'">
-        
-        	
-            <!--<img src="../images/index/icon_png_1/icon_chart.png" alt="" >负荷概况        -->
-        	<span class="fontClass icon-chart"></span>
-        	负荷概况			
-        </div>
-                            <!-- 非分级主菜单 -->
-        <div class="div2 power_monitor " onclick="window.location.href='#'">
-        
-        	
-            <!--<img src="../images/index/icon_png_1/icon_power_monitor.png" alt="" >电力监控        -->
-        	<span class="fontClass icon-power_monitor"></span>
-        	电力监控			
-        </div>
-                            <!-- 非分级主菜单 -->
-        <div class="div2 camera_manage " onclick="window.location.href='#'">
-        
-        	
-            <!--<img src="../images/index/icon_png_1/icon_camera_manage.png" alt="" >视频监控        -->
-        	<span class="fontClass icon-camera_manage"></span>
-        	视频监控			
-        </div>
-                            <!-- 非分级主菜单 -->
-        <div class="div2 environment " onclick="window.location.href='#'">
-        
-        	
-            <!--<img src="../images/index/icon_png_1/icon_environment.png" alt="" >环境监控        -->
-        	<span class="fontClass icon-environment"></span>
-        	环境监控			
-        </div>
-                            <!-- 非分级主菜单 -->
-        <div class="div2 fire_monitor " onclick="window.location.href='#'">
-        
-        	
-            <!--<img src="../images/index/icon_png_1/icon_fire_monitor.png" alt="" >火灾监控        -->
-        	<span class="fontClass icon-fire_monitor"></span>
-        	火灾监控			
-        </div>
-                            <!-- 非分级主菜单 -->
-        <div class="div2 power_manage " onclick="window.location.href='#'">
-        
-        	
-            <!--<img src="../images/index/icon_png_1/icon_power_manage.png" alt="" >能耗管理        -->
-        	<span class="fontClass icon-power_manage"></span>
-        	能耗管理			
-        </div>
-                            <!-- 分级主菜单 -->
-        <div class="div2 power_analysis power_analysis" id="menu_18" menuname="power_analysis" menulevel="-1">
-                        <span class="fontClass icon-power_analysis"></span>
-        	用电检测分析        </div><div class="div3 index" id="menu_18" menuname="ui_analysis" menulevel="18"><ul> <li class="ui_analysis power_analysisanalysis_by_tag"><a href="#">电压电流分析</a></li><li class="#"><a href="#">谐波分析</a></li><li class="multi_curve power_analysismulti_curve"><a href="#">温度实验分析</a></li><li class="power_loadrate power_loadrateload_rate"><a href="#">负载率</a></li><li class="power_cut_set power_analysispower_cut_set"><a href="#">断电容量分析</a></li></ul></div>
-                                                                                                            <!-- 非分级主菜单 -->
-        <div class="div2 reporting " onclick="window.location.href='#'">
-        
-        	
-            <!--<img src="../images/index/icon_png_1/icon_reporting.png" alt="" >报表打印        -->
-        	<span class="fontClass icon-reporting"></span>
-        	报表打印			
-        </div>
-                            <!-- 非分级主菜单 -->
-        <div class="div2 alerm_manage  div2-selected" onclick="window.location.href='#'">
-        
-        	
-            <!--<img src="../images/index/icon_png_1/icon_alerm_manage_white.png" alt="" >报警管理        -->
-        	<span class="fontClass icon-alerm_manage_white"></span>
-        	报警管理			
-        </div>
-                            <!-- 非分级主菜单 -->
-        <div class="div2 alerm_configer " onclick="window.location.href='#'">
-        
-        	
-            <!--<img src="../images/index/icon_png_1/icon_alerm_configer.png" alt="" >报警配置        -->
-        	<span class="fontClass icon-alerm_configer"></span>
-        	报警配置			
-        </div>
-                            <!-- 非分级主菜单 -->
-        <div class="div2 wiki " onclick="window.location.href='#'">
-        
-        	
-            <!--<img src="../images/index/icon_png_1/icon_wiki.png" alt="" >知识库        -->
-        	<span class="fontClass icon-wiki"></span>
-        	知识库			
-        </div>
-                            <!-- 非分级主菜单 -->
-        <div class="div2 user_manage " onclick="window.location.href='#'">
-        
-        	
-            <!--<img src="../images/index/icon_png_1/icon_user_manage.png" alt="" >用户管理        -->
-        	<span class="fontClass icon-user_manage"></span>
-        	用户管理			
-        </div>
-                            <!-- 非分级主菜单 -->
-        <div class="div2 user_log_manage " onclick="window.location.href='#'">
-        
-        	
-            <!--<img src="../images/index/icon_png_1/icon_user_log_manage.png" alt="" >操作记录        -->
-        	<span class="fontClass icon-user_log_manage"></span>
-        	操作记录			
-        </div>
-                            <!-- 非分级主菜单 -->
-        <div class="div2 help " onclick="window.location.href='#'">
-        
-        	
-            <!--<img src="../images/index/icon_png_1/icon_help.png" alt="" >帮助        -->
-        	<span class="fontClass icon-help"></span>
-        	帮助			
-        </div>
-                            
-        <!-- TODO以下代码在海航项目演示后去掉 -->
-        </div>
+    
 </div>
 
 
@@ -919,8 +685,8 @@ $(document).on('ready', function(){
                                         </select><span tabindex="0" id="selectmenu2-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="selectmenu2-menu" aria-haspopup="true" class="ui-selectmenu2-button ui-selectmenu2-button-closed ui-corner-all ui-button ui-widget"><span class="ui-selectmenu2-icon ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu2-text">全部</span></span>
                 </div>
                 
-                <span><input class="con-selct-name left" type="button" value="查询" style="width: 50px;background-color: blue;"></span>
-                
+                <span><input  type="button" value="查询" onclick="queryByiterm()" style="width: 50px;background-color: blue;"></span>
+                <!-- class="con-selct-name left" -->
                 
             </div>
             <!-- 
@@ -953,564 +719,9 @@ $(document).on('ready', function(){
                  <!------------------- 具体报警数据 ---------------------------->
                  
                 <tbody id="logs_manage">
-                                    <tr id="line_15352213" lid="15352213" class="alert-table-value alert-table-tr odd_row trImportant runselect">
-                      <!-- <td><input type="checkbox" id="15352213" /></td> -->
-                        <td class="alert-id">15352213</td>
-                        <td class="alert-grade">故障</td>
-                                                <td class="alert-room">新工厂配电室</td>
-                                                <td class="alert-station">1#回路低压仪表前半部分 1-1 进线柜 谐波 Va谐波总量</td>
-                        <td class="alert-time" style="white-space: nowrap">2018-11-28 12:00:04</td>
-                        <td class="alert-cate">谐波电压过高</td>
-                        <td class="alert-sz">6.00</td>
-                        <td class="alert-yz">5</td>
-                        <td class="alert-qrr operater"></td>
-                        <td class="alert-qrsjconfirm_time"></td>
-                          
-                        <td class="alert-status log_status">未解决</td>
-                        <td class="alert-operate">
-                      <span class="alert-line oper_del">标为已解决</span>
-                                                        	
-                            	<span class="split">|</span>
-                      <span class="alert-line oper_mark">维修登记</span>
-                                                     <!--<a class="alert-line oper_mark" href="#">标为已解决</a>-->  	
-                                                     <!--<a class="alert-line oper_del" href="#">删除</a>-->
-                        </td>
-                        
-                       <td class="alert-detail">
-                        
-                        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color: white;">
-						查看
-						</a>
-                        
-                        </td>
-                        
-                    </tr>
-                    <tr class="clear" id="effect_15352213" style="display:none;">
-                      
-                    </tr>
+                  
                     
-                    <!-- ---------------------------一行----------------------------- -->
-                    
-                    <tr id="line_15352213" lid="15352213" class="alert-table-value alert-table-tr odd_row trImportant runselect">
-                      <!-- <td><input type="checkbox" id="15352213" /></td> -->
-                        <td class="alert-id">15352213</td>
-                        <td class="alert-grade">故障</td>
-                                                <td class="alert-room">新工厂配电室</td>
-                                                <td class="alert-station">1#回路低压仪表前半部分 1-1 进线柜 谐波 Va谐波总量</td>
-                        <td class="alert-time" style="white-space: nowrap">2018-11-28 12:00:04</td>
-                        <td class="alert-cate">谐波电压过高</td>
-                        <td class="alert-sz">6.00</td>
-                        <td class="alert-yz">5</td>
-                        <td class="alert-qrr operater"></td>
-                        <td class="alert-qrsjconfirm_time"></td>
-                          
-                        <td class="alert-status log_status">未解决</td>
-                        <td class="alert-operate">
-                      <span class="alert-line oper_del">标为已解决</span>
-                                                        	
-                            	<span class="split">|</span>
-                      <span class="alert-line oper_mark">维修登记</span>
-                                                     <!--<a class="alert-line oper_mark" href="#">标为已解决</a>-->  	
-                                                     <!--<a class="alert-line oper_del" href="#">删除</a>-->
-                        </td>
-                        
-                       <td class="alert-detail">
-                        
-                        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color: white;">
-						查看
-						</a>
-                        
-                        </td>
-                        
-                    </tr>
-                    <tr class="clear" id="effect_15352213" style="display:none;">
-                      
-                    </tr>
-                    
-                    <!-- ---------------------------一行----------------------------- -->
-                    <tr id="line_15352213" lid="15352213" class="alert-table-value alert-table-tr odd_row trImportant runselect">
-                      <!-- <td><input type="checkbox" id="15352213" /></td> -->
-                        <td class="alert-id">15352213</td>
-                        <td class="alert-grade">故障</td>
-                                                <td class="alert-room">新工厂配电室</td>
-                                                <td class="alert-station">1#回路低压仪表前半部分 1-1 进线柜 谐波 Va谐波总量</td>
-                        <td class="alert-time" style="white-space: nowrap">2018-11-28 12:00:04</td>
-                        <td class="alert-cate">谐波电压过高</td>
-                        <td class="alert-sz">6.00</td>
-                        <td class="alert-yz">5</td>
-                        <td class="alert-qrr operater"></td>
-                        <td class="alert-qrsjconfirm_time"></td>
-                          
-                        <td class="alert-status log_status">未解决</td>
-                        <td class="alert-operate">
-                      <span class="alert-line oper_del">标为已解决</span>
-                                                        	
-                            	<span class="split">|</span>
-                      <span class="alert-line oper_mark">维修登记</span>
-                                                     <!--<a class="alert-line oper_mark" href="#">标为已解决</a>-->  	
-                                                     <!--<a class="alert-line oper_del" href="#">删除</a>-->
-                        </td>
-                        
-                        <td class="alert-detail">
-                        
-                        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color: white;">
-						查看
-						</a>
-                        
-                        </td>
-                        
-                    </tr>
-                    <tr class="clear" id="effect_15352213" style="display:none;">
-                      
-                    </tr>
-                    
-                    <!-- ---------------------------一行----------------------------- -->
-                    <tr id="line_15352213" lid="15352213" class="alert-table-value alert-table-tr odd_row trImportant runselect">
-                      <!-- <td><input type="checkbox" id="15352213" /></td> -->
-                        <td class="alert-id">15352213</td>
-                        <td class="alert-grade">故障</td>
-                                                <td class="alert-room">新工厂配电室</td>
-                                                <td class="alert-station">1#回路低压仪表前半部分 1-1 进线柜 谐波 Va谐波总量</td>
-                        <td class="alert-time" style="white-space: nowrap">2018-11-28 12:00:04</td>
-                        <td class="alert-cate">谐波电压过高</td>
-                        <td class="alert-sz">6.00</td>
-                        <td class="alert-yz">5</td>
-                        <td class="alert-qrr operater"></td>
-                        <td class="alert-qrsjconfirm_time"></td>
-                          
-                        <td class="alert-status log_status">未解决</td>
-                        <td class="alert-operate">
-                      <span class="alert-line oper_del">标为已解决</span>
-                                                        	
-                            	<span class="split">|</span>
-                      <span class="alert-line oper_mark">维修登记</span>
-                                                     <!--<a class="alert-line oper_mark" href="#">标为已解决</a>-->  	
-                                                     <!--<a class="alert-line oper_del" href="#">删除</a>-->
-                        </td>
-                        
-                        <td class="alert-detail">
-                        
-                        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color: white;">
-						查看
-						</a>
-                        
-                        </td>
-                        
-                    </tr>
-                    <tr class="clear" id="effect_15352213" style="display:none;">
-                      
-                    </tr>
-                    
-                    <!-- ---------------------------一行----------------------------- -->
-                    <tr id="line_15352213" lid="15352213" class="alert-table-value alert-table-tr odd_row trImportant runselect">
-                      <!-- <td><input type="checkbox" id="15352213" /></td> -->
-                        <td class="alert-id">15352213</td>
-                        <td class="alert-grade">故障</td>
-                                                <td class="alert-room">新工厂配电室</td>
-                                                <td class="alert-station">1#回路低压仪表前半部分 1-1 进线柜 谐波 Va谐波总量</td>
-                        <td class="alert-time" style="white-space: nowrap">2018-11-28 12:00:04</td>
-                        <td class="alert-cate">谐波电压过高</td>
-                        <td class="alert-sz">6.00</td>
-                        <td class="alert-yz">5</td>
-                        <td class="alert-qrr operater"></td>
-                        <td class="alert-qrsjconfirm_time"></td>
-                          
-                        <td class="alert-status log_status">未解决</td>
-                        <td class="alert-operate">
-                      <span class="alert-line oper_del">标为已解决</span>
-                                                        	
-                            	<span class="split">|</span>
-                      <span class="alert-line oper_mark">维修登记</span>
-                                                     <!--<a class="alert-line oper_mark" href="#">标为已解决</a>-->  	
-                                                     <!--<a class="alert-line oper_del" href="#">删除</a>-->
-                        </td>
-                        
-                        <td class="alert-detail">
-                        
-                        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color: white;">
-						查看
-						</a>
-                        
-                        </td>
-                        
-                    </tr>
-                    <tr class="clear" id="effect_15352213" style="display:none;">
-                      
-                    </tr>
-                    
-                    <!-- ---------------------------一行----------------------------- -->
-                    <tr id="line_15352213" lid="15352213" class="alert-table-value alert-table-tr odd_row trImportant runselect">
-                      <!-- <td><input type="checkbox" id="15352213" /></td> -->
-                        <td class="alert-id">15352213</td>
-                        <td class="alert-grade">故障</td>
-                                                <td class="alert-room">新工厂配电室</td>
-                                                <td class="alert-station">1#回路低压仪表前半部分 1-1 进线柜 谐波 Va谐波总量</td>
-                        <td class="alert-time" style="white-space: nowrap">2018-11-28 12:00:04</td>
-                        <td class="alert-cate">谐波电压过高</td>
-                        <td class="alert-sz">6.00</td>
-                        <td class="alert-yz">5</td>
-                        <td class="alert-qrr operater"></td>
-                        <td class="alert-qrsjconfirm_time"></td>
-                          
-                        <td class="alert-status log_status">未解决</td>
-                        <td class="alert-operate">
-                      <span class="alert-line oper_del">标为已解决</span>
-                                                        	
-                            	<span class="split">|</span>
-                      <span class="alert-line oper_mark">维修登记</span>
-                                                     <!--<a class="alert-line oper_mark" href="#">标为已解决</a>-->  	
-                                                     <!--<a class="alert-line oper_del" href="#">删除</a>-->
-                        </td>
-                        
-                       <td class="alert-detail">
-                        
-                        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color: white;">
-						查看
-						</a>
-                        
-                        </td>
-                        
-                    </tr>
-                    <tr class="clear" id="effect_15352213" style="display:none;">
-                      
-                    </tr>
-                    
-                    <!-- ---------------------------一行----------------------------- -->
-                    <tr id="line_15352213" lid="15352213" class="alert-table-value alert-table-tr odd_row trImportant runselect">
-                      <!-- <td><input type="checkbox" id="15352213" /></td> -->
-                        <td class="alert-id">15352213</td>
-                        <td class="alert-grade">故障</td>
-                                                <td class="alert-room">新工厂配电室</td>
-                                                <td class="alert-station">1#回路低压仪表前半部分 1-1 进线柜 谐波 Va谐波总量</td>
-                        <td class="alert-time" style="white-space: nowrap">2018-11-28 12:00:04</td>
-                        <td class="alert-cate">谐波电压过高</td>
-                        <td class="alert-sz">6.00</td>
-                        <td class="alert-yz">5</td>
-                        <td class="alert-qrr operater"></td>
-                        <td class="alert-qrsjconfirm_time"></td>
-                          
-                        <td class="alert-status log_status">未解决</td>
-                        <td class="alert-operate">
-                      <span class="alert-line oper_del">标为已解决</span>
-                                                        	
-                            	<span class="split">|</span>
-                      <span class="alert-line oper_mark">维修登记</span>
-                                                     <!--<a class="alert-line oper_mark" href="#">标为已解决</a>-->  	
-                                                     <!--<a class="alert-line oper_del" href="#">删除</a>-->
-                        </td>
-                        
-                    <td class="alert-detail">
-                        
-                        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color: white;">
-						查看
-						</a>
-                        
-                        </td>
-                        
-                    </tr>
-                    <tr class="clear" id="effect_15352213" style="display:none;">
-                      
-                    </tr>
-                    
-                    <!-- ---------------------------一行----------------------------- -->
-                    <tr id="line_15352213" lid="15352213" class="alert-table-value alert-table-tr odd_row trImportant runselect">
-                      <!-- <td><input type="checkbox" id="15352213" /></td> -->
-                        <td class="alert-id">15352213</td>
-                        <td class="alert-grade">故障</td>
-                                                <td class="alert-room">新工厂配电室</td>
-                                                <td class="alert-station">1#回路低压仪表前半部分 1-1 进线柜 谐波 Va谐波总量</td>
-                        <td class="alert-time" style="white-space: nowrap">2018-11-28 12:00:04</td>
-                        <td class="alert-cate">谐波电压过高</td>
-                        <td class="alert-sz">6.00</td>
-                        <td class="alert-yz">5</td>
-                        <td class="alert-qrr operater"></td>
-                        <td class="alert-qrsjconfirm_time"></td>
-                          
-                        <td class="alert-status log_status">未解决</td>
-                        <td class="alert-operate">
-                      <span class="alert-line oper_del">标为已解决</span>
-                                                        	
-                            	<span class="split">|</span>
-                      <span class="alert-line oper_mark">维修登记</span>
-                                                     <!--<a class="alert-line oper_mark" href="#">标为已解决</a>-->  	
-                                                     <!--<a class="alert-line oper_del" href="#">删除</a>-->
-                        </td>
-                        
-                       <td class="alert-detail">
-                        
-                        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color: white;">
-						查看
-						</a>
-                        
-                        </td>
-                        
-                    </tr>
-                    <tr class="clear" id="effect_15352213" style="display:none;">
-                      
-                    </tr>
-                    
-                    <!-- ---------------------------一行----------------------------- -->
-                    <tr id="line_15352213" lid="15352213" class="alert-table-value alert-table-tr odd_row trImportant runselect">
-                      <!-- <td><input type="checkbox" id="15352213" /></td> -->
-                        <td class="alert-id">15352213</td>
-                        <td class="alert-grade">故障</td>
-                                                <td class="alert-room">新工厂配电室</td>
-                                                <td class="alert-station">1#回路低压仪表前半部分 1-1 进线柜 谐波 Va谐波总量</td>
-                        <td class="alert-time" style="white-space: nowrap">2018-11-28 12:00:04</td>
-                        <td class="alert-cate">谐波电压过高</td>
-                        <td class="alert-sz">6.00</td>
-                        <td class="alert-yz">5</td>
-                        <td class="alert-qrr operater"></td>
-                        <td class="alert-qrsjconfirm_time"></td>
-                          
-                        <td class="alert-status log_status">未解决</td>
-                        <td class="alert-operate">
-                      <span class="alert-line oper_del">标为已解决</span>
-                                                        	
-                            	<span class="split">|</span>
-                      <span class="alert-line oper_mark">维修登记</span>
-                                                     <!--<a class="alert-line oper_mark" href="#">标为已解决</a>-->  	
-                                                     <!--<a class="alert-line oper_del" href="#">删除</a>-->
-                        </td>
-                        
-<td class="alert-detail">
-                        
-                        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color: white;">
-						查看
-						</a>
-                        
-                        </td>                        
-                    </tr>
-                    <tr class="clear" id="effect_15352213" style="display:none;">
-                      
-                    </tr>
-                    
-                    <!-- ---------------------------一行----------------------------- -->
-                    <tr id="line_15352213" lid="15352213" class="alert-table-value alert-table-tr odd_row trImportant runselect">
-                      <!-- <td><input type="checkbox" id="15352213" /></td> -->
-                        <td class="alert-id">15352213</td>
-                        <td class="alert-grade">故障</td>
-                                                <td class="alert-room">新工厂配电室</td>
-                                                <td class="alert-station">1#回路低压仪表前半部分 1-1 进线柜 谐波 Va谐波总量</td>
-                        <td class="alert-time" style="white-space: nowrap">2018-11-28 12:00:04</td>
-                        <td class="alert-cate">谐波电压过高</td>
-                        <td class="alert-sz">6.00</td>
-                        <td class="alert-yz">5</td>
-                        <td class="alert-qrr operater"></td>
-                        <td class="alert-qrsjconfirm_time"></td>
-                          
-                        <td class="alert-status log_status">未解决</td>
-                        <td class="alert-operate">
-                      <span class="alert-line oper_del">标为已解决</span>
-                                                        	
-                            	<span class="split">|</span>
-                      <span class="alert-line oper_mark">维修登记</span>
-                                                     <!--<a class="alert-line oper_mark" href="#">标为已解决</a>-->  	
-                                                     <!--<a class="alert-line oper_del" href="#">删除</a>-->
-                        </td>
-                        
-                       <td class="alert-detail">
-                        
-                        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color: white;">
-						查看
-						</a>
-                        
-                        </td>
-                        
-                    </tr>
-                    <tr class="clear" id="effect_15352213" style="display:none;">
-                      
-                    </tr>
-                    
-                    <!-- ---------------------------一行----------------------------- -->
-                    <tr id="line_15352213" lid="15352213" class="alert-table-value alert-table-tr odd_row trImportant runselect">
-                      <!-- <td><input type="checkbox" id="15352213" /></td> -->
-                        <td class="alert-id">15352213</td>
-                        <td class="alert-grade">故障</td>
-                                                <td class="alert-room">新工厂配电室</td>
-                                                <td class="alert-station">1#回路低压仪表前半部分 1-1 进线柜 谐波 Va谐波总量</td>
-                        <td class="alert-time" style="white-space: nowrap">2018-11-28 12:00:04</td>
-                        <td class="alert-cate">谐波电压过高</td>
-                        <td class="alert-sz">6.00</td>
-                        <td class="alert-yz">5</td>
-                        <td class="alert-qrr operater"></td>
-                        <td class="alert-qrsjconfirm_time"></td>
-                          
-                        <td class="alert-status log_status">未解决</td>
-                        <td class="alert-operate">
-                      <span class="alert-line oper_del">标为已解决</span>
-                                                        	
-                            	<span class="split">|</span>
-                      <span class="alert-line oper_mark">维修登记</span>
-                                                     <!--<a class="alert-line oper_mark" href="#">标为已解决</a>-->  	
-                                                     <!--<a class="alert-line oper_del" href="#">删除</a>-->
-                        </td>
-                        
-                      <td class="alert-detail">
-                        
-                        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color: white;">
-						查看
-						</a>
-                        
-                        </td>
-                        
-                    </tr>
-                    <tr class="clear" id="effect_15352213" style="display:none;">
-                      
-                    </tr>
-                    
-                    <!-- ---------------------------一行----------------------------- -->
-                    <tr id="line_15352213" lid="15352213" class="alert-table-value alert-table-tr odd_row trImportant runselect">
-                      <!-- <td><input type="checkbox" id="15352213" /></td> -->
-                        <td class="alert-id">15352213</td>
-                        <td class="alert-grade">故障</td>
-                                                <td class="alert-room">新工厂配电室</td>
-                                                <td class="alert-station">1#回路低压仪表前半部分 1-1 进线柜 谐波 Va谐波总量</td>
-                        <td class="alert-time" style="white-space: nowrap">2018-11-28 12:00:04</td>
-                        <td class="alert-cate">谐波电压过高</td>
-                        <td class="alert-sz">6.00</td>
-                        <td class="alert-yz">5</td>
-                        <td class="alert-qrr operater"></td>
-                        <td class="alert-qrsjconfirm_time"></td>
-                          
-                        <td class="alert-status log_status">未解决</td>
-                        <td class="alert-operate">
-                      <span class="alert-line oper_del">标为已解决</span>
-                                                        	
-                            	<span class="split">|</span>
-                      <span class="alert-line oper_mark">维修登记</span>
-                                                     <!--<a class="alert-line oper_mark" href="#">标为已解决</a>-->  	
-                                                     <!--<a class="alert-line oper_del" href="#">删除</a>-->
-                        </td>
-                        
-                        <td class="alert-detail">
-                        
-                        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color: white;">
-						查看
-						</a>
-                        
-                        </td>
-                    </tr>
-                    <tr class="clear" id="effect_15352213" style="display:none;">
-                      
-                    </tr>
-                    
-                    <!-- ---------------------------一行----------------------------- -->
-                    <tr id="line_15352213" lid="15352213" class="alert-table-value alert-table-tr odd_row trImportant runselect">
-                      <!-- <td><input type="checkbox" id="15352213" /></td> -->
-                        <td class="alert-id">15352213</td>
-                        <td class="alert-grade">故障</td>
-                                                <td class="alert-room">新工厂配电室</td>
-                                                <td class="alert-station">1#回路低压仪表前半部分 1-1 进线柜 谐波 Va谐波总量</td>
-                        <td class="alert-time" style="white-space: nowrap">2018-11-28 12:00:04</td>
-                        <td class="alert-cate">谐波电压过高</td>
-                        <td class="alert-sz">6.00</td>
-                        <td class="alert-yz">5</td>
-                        <td class="alert-qrr operater"></td>
-                        <td class="alert-qrsjconfirm_time"></td>
-                          
-                        <td class="alert-status log_status">未解决</td>
-                        <td class="alert-operate">
-                      <span class="alert-line oper_del">标为已解决</span>
-                                                        	
-                            	<span class="split">|</span>
-                      <span class="alert-line oper_mark">维修登记</span>
-                                                     <!--<a class="alert-line oper_mark" href="#">标为已解决</a>-->  	
-                                                     <!--<a class="alert-line oper_del" href="#">删除</a>-->
-                        </td>
-                        
-                      <td class="alert-detail">
-                        
-                        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color: white;">
-						查看
-						</a>
-                        
-                        </td>
-                        
-                    </tr>
-                    <tr class="clear" id="effect_15352213" style="display:none;">
-                      
-                    </tr>
-                    
-                    <!-- ---------------------------一行----------------------------- -->
-                    <tr id="line_15352213" lid="15352213" class="alert-table-value alert-table-tr odd_row trImportant runselect">
-                      <!-- <td><input type="checkbox" id="15352213" /></td> -->
-                        <td class="alert-id">15352213</td>
-                        <td class="alert-grade">故障</td>
-                                                <td class="alert-room">新工厂配电室</td>
-                                                <td class="alert-station">1#回路低压仪表前半部分 1-1 进线柜 谐波 Va谐波总量</td>
-                        <td class="alert-time" style="white-space: nowrap">2018-11-28 12:00:04</td>
-                        <td class="alert-cate">谐波电压过高</td>
-                        <td class="alert-sz">6.00</td>
-                        <td class="alert-yz">5</td>
-                        <td class="alert-qrr operater"></td>
-                        <td class="alert-qrsjconfirm_time"></td>
-                          
-                        <td class="alert-status log_status">未解决</td>
-                        <td class="alert-operate">
-                      <span class="alert-line oper_del">标为已解决</span>
-                                                        	
-                            	<span class="split">|</span>
-                      <span class="alert-line oper_mark">维修登记</span>
-                                                     <!--<a class="alert-line oper_mark" href="#">标为已解决</a>-->  	
-                                                     <!--<a class="alert-line oper_del" href="#">删除</a>-->
-                        </td>
-                        
-                       <td class="alert-detail">
-                        
-                        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color: white;">
-						查看
-						</a>
-                        
-                        </td>
-                        
-                    </tr>
-                    <tr class="clear" id="effect_15352213" style="display:none;">
-                      
-                    </tr>
-                    
-                    <!-- ---------------------------一行----------------------------- -->
-                    
-                    <tr id="line_15352213" lid="15352213" class="alert-table-value alert-table-tr odd_row trImportant runselect">
-                      <!-- <td><input type="checkbox" id="15352213" /></td> -->
-                        <td class="alert-id">15352213</td>
-                        <td class="alert-grade">故障</td>
-                                                <td class="alert-room">新工厂配电室</td>
-                                                <td class="alert-station">1#回路低压仪表前半部分 1-1 进线柜 谐波 Va谐波总量</td>
-                        <td class="alert-time" style="white-space: nowrap">2018-11-28 12:00:04</td>
-                        <td class="alert-cate">谐波电压过高</td>
-                        <td class="alert-sz">6.00</td>
-                        <td class="alert-yz">5</td>
-                        <td class="alert-qrr operater"></td>
-                        <td class="alert-qrsjconfirm_time"></td>
-                          
-                        <td class="alert-status log_status">未解决</td>
-                        <td class="alert-operate">
-                      <span class="alert-line oper_del">标为已解决</span>
-                                                        	
-                            	<span class="split">|</span>
-                      <span class="alert-line oper_mark">维修登记</span>
-                                                     <!--<a class="alert-line oper_mark" href="#">标为已解决</a>-->  	
-                                                     <!--<a class="alert-line oper_del" href="#">删除</a>-->
-                        </td>
-                        
-                        <td class="alert-detail">
-                        
-                        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color: white;">
-						查看
-						</a>
-                        
-                        </td>
-                        
-                    </tr>
-                    <tr class="clear" id="effect_15352213" style="display:none;">
-                      
-                    </tr>
-                    
-                    <!-- ---------------------------一行----------------------------- -->
-                    
-                    
-                                </tbody>
+                </tbody>
             </table>
 
             <div id="index"></div>
@@ -1567,7 +778,23 @@ $(document).on('ready', function(){
 			//console.log(i)
 		}
 	}
-	
+	function queryByiterm(){
+		 $.ajax({
+		        type: 'GET',
+		        data: { tgName: "20",
+		        		catName: "1" 
+		        		btime:"2018-11-13",
+		        		etime:"2018-12-26",
+		        		isDeal:"未解决"
+		        },
+		        url: "http://localhost:8080/alerm/getAlermDataByTerm",
+		        async:false,
+		        success: function(data){
+		        	var vv=data;
+		        }
+		 })
+		
+	}
 	/*使nav的高自动撑满屏幕*/
 	autodivheight();
 	function autodivheight(){ 
@@ -1741,6 +968,7 @@ $(function(){
         logs_flash(p);
     });
     function logs_flash(p){
+    	
         fl.show();
         var tg_id = $(".tg_id_select").val();
         var category = $(".category_select").val();
@@ -1752,7 +980,7 @@ $(function(){
             var trImportant = "";
         };
         $.ajax({
-            url:"http://www.sl-pmp.com/alerm_manage/get_ajax_logs",
+            url:"",
             data:{
                 "page":p,
                 "tg_id":tg_id,
@@ -2109,6 +1337,50 @@ $(function(){
     }).hide();
     
 });
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		 $.ajax({
+		        type: 'GET',
+		        data: { pagSize: "20", pagNum: "1" },
+		        url: "http://localhost:8080/alerm/getAlermDataByPagNum",
+		        async:false,
+		        success: function(data){
+		        	var tbdStr="";
+		        	var dd=data[0];
+		        	for(var i=0;i<data.length;i++){
+		        		tbdStr+='<tr id="" lid="15352213" class="alert-table-value alert-table-tr odd_row trImportant runselect">'+
+	                      '<td class="alert-id">'+data[i]["id"]+'</td>'+
+	                      '<td class="alert-grade">'+data[i]["level"]+'</td>'+
+	                      '<td class="alert-room">配电室</td>'+
+	                      '<td class="alert-station">'+data[i]["location"]+'</td>'+
+	                      '<td class="alert-time" style="white-space: nowrap">'+data[i]["log_time"]+'</td>'+
+	                      '<td class="alert-cate">'+data[i]["category"]+'</td>'+
+	                      '<td class="alert-sz">'+data[i]["valu"]+'</td>'+
+	                      '<td class="alert-yz">'+data[i]["th"]+'</td>'+
+	                      '<td class="alert-qrr operater">'+data[i]["operater"]+'</td>'+
+	                      '<td class="alert-qrsjconfirm_time">'+data[i]["confirm_time"]+'</td>'+
+	                      '<td class="alert-status log_status">'+data[i]["is_deal"]+'</td>'+
+	                      '<td class="alert-operate">'+
+			              '     <span class="alert-line oper_del">标为已解决</span>'+
+			              '      <span class="split">|</span>'+
+			              '      <span class="alert-line oper_mark">维修登记</span>'+
+	                      '</td>'+
+	                     '<td class="alert-detail">'+
+	                      '	<a href = "javascript:void(0)" onclick = "document.getElementById("light").style.display="block";document.getElementById("fade").style.display="block"" style="color: white;">查看</a>'+
+	                      '</td>'+
+	                 ' </tr>'+
+	                 ' <tr class="clear" id="effect_15352213" style="display:none;">'+
+	                  '</tr>';
+		        		
+		        	}
+		         	
+		        	$("#logs_manage").html(tbdStr);
+		        }
+		 })
+		
+	})
 </script>
 
 <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div><div class="ui-selectmenu-menu ui-front"><ul aria-hidden="true" aria-labelledby="selectmenu-button" id="selectmenu-menu" role="listbox" tabindex="0" class="ui-menu ui-corner-bottom ui-widget ui-widget-content"></ul></div><div class="ui-selectmenu-menu ui-front"><ul aria-hidden="true" aria-labelledby="selectmenu_type-button" id="selectmenu_type-menu" role="listbox" tabindex="0" class="ui-menu ui-corner-bottom ui-widget ui-widget-content"></ul></div></body>

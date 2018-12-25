@@ -7,7 +7,7 @@
 		where username=#{username}
 	</select> 
 	<select id="getList" resultType="com.sl.pmp.entity.User">
-	select id, username,password
-	from User
-	</select> 
+	select id, username,password 
+	from User order by id limit #{pagenum},#{pagesize}
+ 	</select> 
 </mapper>

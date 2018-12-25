@@ -3,6 +3,7 @@ package com.sl.pmp.dao;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import com.sl.pmp.entity.User;
 
@@ -10,5 +11,5 @@ import com.sl.pmp.entity.User;
 public interface UserDao {
 	User findUserByName(String username);
 
-	List<User> getList();
+	List<User> getList(@Param (value="pagesize")Integer pagesize,@Param (value="pagenum")Integer pagenum);
 }
